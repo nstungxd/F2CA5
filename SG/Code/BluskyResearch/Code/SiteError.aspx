@@ -1,0 +1,106 @@
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="SiteError.aspx.vb" Inherits="SiteError" %>
+
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+<head id="Head1" runat="server">
+
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="language" content="en-UK" />
+
+    <meta name="author" content="Ping media" /> 
+
+    <title>BluSky Research - Problem with this page</title>    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+
+    <!-- stylesheets -->
+    <link href="/media/styles/ping.base.css?v=3" rel="stylesheet" type="text/css" media="all" />
+    <link href="/media/styles/ping.styles.css?v=3" rel="stylesheet" type="text/css" media="all" />
+    <link href="/media/styles/ping.plugins.css?v=3" rel="stylesheet" type="text/css" media="all" />
+    <link href="/media/styles/ping.print.css?v=3" rel="stylesheet" type="text/css" media="print" />
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="/media/styles/ping.ie.css?v=3" media="all" /><![endif]-->
+
+    <!-- Javascript -->
+	<script src="https://secureping.co.uk/safe/scripts/libs/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://secureping.co.uk/safe/scripts/jquery.min.js"></script>
+    
+    <asp:PlaceHolder runat="server" ID="phAnalyticsCode"></asp:PlaceHolder>
+
+</head>
+<body id="top">
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <form id="form1" runat="server">
+    
+        <ajaxToolkit:ToolkitScriptManager runat="Server" EnablePartialRendering="true" ID="ScriptManager" />
+
+        <div class="login-container">
+            <header class="wrapper clearfix">
+                <div class="h_contact">
+                    <span class="h_c_icon ir"></span>
+                    <span class="h_c_tel">+44 (0)1572 420012 - </span>
+                    <a href="mailto:info@bluskymarketing.com" title="info@bluskymarketing.com">info@bluskymarketing.com</a>
+                </div>
+                <div class="h_social">
+                    <a href="https://twitter.com/BluSkyMarketing" title="Twitter" target="_blank" class="h_c_t ir">Twitter</a>
+                    <a href="http://uk.linkedin.com/company/blusky-marketing" title="LinkedIn" target="_blank" class="h_c_l ir">LinkedIn</a>
+                    <a href="https://plus.google.com/u/0/115082518914090279459/posts" title="Google+" target="_blank" class="h_c_g ir">Google+</a>
+                </div>
+            </header>
+            <section>
+                <div class="s_logo clearfix">
+                    <asp:Image runat="server" ID="imgLogo" ImageUrl="/media/images/logo.png" AlternateText="logo" />
+                    <span class="strapline">For a fluid approach to marketing research</span>
+                </div>
+                
+                <div class="s_login">
+                    <p>
+                        <span class="title bold">Problem with this page</span>
+                    </p>
+                    <p>
+                        There seems to be a problem with this page.
+                    </p>
+                    <p>
+                        Please <a href="/">click here to continue</a>.
+                    </p>
+                </div>
+            </section>
+            <footer class="wrapper clearfix">
+                <div class="footer_info">
+                    <p>Copyright &copy; <%= Now.Year.ToString() %></p>
+                </div>
+            </footer>
+        </div>
+
+        <script type="text/javascript" src="https://secureping.co.uk/safe/scripts/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="https://secureping.co.uk/safe/scripts/ping/ping.browser.js"></script>
+        <script type="text/javascript" src="/scripts/ping.scripts.js"></script>
+
+    </form>
+
+    <!--[if lt IE 7 ]>
+	    <script src="https://secureping.co.uk/safe/scripts/libs/dd_belatedpng.js"></script>
+	    <script> DD_belatedPNG.fix('.png_bg');</script>
+	<![endif]-->
+
+</body>
+</html>

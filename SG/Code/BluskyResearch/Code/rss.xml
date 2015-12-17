@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Latest News</title>
+    <link>http://www.website.co.uk</link>
+    <description>Latest news</description>
+    <ttl>60</ttl>
+    <item>
+      <title>Hola</title>
+      <link>http://www.website.co.uk/news/hola.aspx</link>
+      <guid>http://www.website.co.uk/news/hola.aspx</guid>
+      <description>Leadin Text</description>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0100</pubDate>
+    </item>
+  </channel>
+</rss>

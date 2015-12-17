@@ -1,0 +1,31 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PingCore.Simba
+</name>
+</assembly>
+<members>
+<member name="P:PingCore.Simba.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:PingCore.Simba.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:PingCore.Simba.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:PingCore.Simba.CreateAdmin.CreateAdminUtility.AfterSaveModeEnum">
+	<summary>
+ Emit code for this aftersave
+ </summary>
+	<remarks>
+ Relationship(\d+) OR CustomLink(\d+) OR url
+ </remarks>
+</member>
+</members>
+</doc>

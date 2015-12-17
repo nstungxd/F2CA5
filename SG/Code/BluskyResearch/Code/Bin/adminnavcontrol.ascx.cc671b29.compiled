@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CompiledUserControls/Controls/AdminNavControl.ascx" hash="a4f1d9d05" filehash="4bfad0878943e80f" flags="100000" assembly="App_Web_adminnavcontrol.ascx.cc671b29" type="ASP.AdminNavControl">
+    <filedeps>
+        <filedep name="/CompiledUserControls/Controls/AdminNavControl.ascx" />
+        <filedep name="/CompiledUserControls/Controls/AdminNavControl.ascx.vb" />
+        <filedep name="/CompiledUserControls/Controls/MenuControl.ascx" />
+        <filedep name="/CompiledUserControls/Controls/MenuControl.ascx.vb" />
+    </filedeps>
+</preserve>

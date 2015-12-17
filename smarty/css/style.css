@@ -1,0 +1,331 @@
+/* CSS Document */
+
+body {margin:0px; background:url(../images/bg-body.png) repeat-x top; font:normal 17px Arial, Helvetica, sans-serif; color:#575757; text-decoration:none;}
+body.pop{ background:url(); }
+input {background-color:#ffffff; border:1px solid #dbdbdb; font:normal 12px Arial, Helvetica, sans-serif; color:#353535; text-decoration:none;}
+.drop-down {background-color:#ffffff; border:1px solid #dbdbdb; font:normal 12px Arial, Helvetica, sans-serif; color:#353535; text-decoration:none;}
+
+#main-width {margin:auto; width:100%;}
+#top-menu {margin-top:17px; text-align:center; height:40px;}
+
+ul#nav-tabstrips {
+PADDING-BOTTOM: 0px; MARGIN: auto; PADDING-TOP:0px; LIST-STYLE-TYPE:none; margin-left: 50px; padding-left: 0; }
+
+ul#nav-tabstrips li {
+display: block; float:left; margin-right:2px; padding-right: 5px; } /* background: url(../images/strip.gif) no-repeat bottom right;*/
+
+ul#nav-tabstrips li a {
+DISPLAY:block; COLOR:#a9a9a9; TEXT-DECORATION: none; }
+
+ul#nav-tabstrips li a em {
+PADDING-RIGHT:15px; DISPLAY:block; PADDING-LEFT:15px; FONT:bold 14px Arial, Helvetica, sans-serif;  padding-top:13px; padding-bottom: 10px; }
+
+ul#nav-tabstrips li a:hover {BACKGROUND-POSITION: left center; BACKGROUND-IMAGE: url(../images/tab-active-left.gif); COLOR: #91ccfb; BACKGROUND-REPEAT: no-repeat; font-weight: bold;  }
+
+ul#nav-tabstrips li a:hover em {
+BACKGROUND-POSITION: right center; BACKGROUND-IMAGE: url(../images/tab-active-right.gif) ; COLOR: #91ccfb; BACKGROUND-REPEAT: no-repeat; font-weight: bold; }
+
+ul#nav-tabstrips li a.current {BACKGROUND-POSITION: right top; BACKGROUND-IMAGE: url(../images/tab-active-left.gif); BACKGROUND-POSITION:left top; COLOR: #91ccfb; BACKGROUND-REPEAT: no-repeat; font-weight: normal;}
+
+ul#nav-tabstrips li a.current em {BACKGROUND-POSITION: right top; BACKGROUND-IMAGE: url(../images/tab-active-right.gif); COLOR: #91ccfb; BACKGROUND-REPEAT: no-repeat; font-weight: bold; }
+
+.clear {clear:both; height:1px;}
+.banner-left {float:left; width:20%; background:url(../images/dotted-line.gif) no-repeat right; margin-right:39px; height:109px;}
+.banner-right {float:left; width:65%; padding-top:23px;}
+.welcome-text {font:bold 17px Arial, Helvetica, sans-serif; color:#ffffff; text-decoration:none;}
+.welcome-text span{font:normal 12px Arial, Helvetica, sans-serif; color:#ffffff; text-decoration:none;}
+.logo {height:79px; padding-top:15px; text-align:center;}
+
+.midd-left-width {float:middle;  margin-right:1px; margin-left:10px; }
+.midd-right-width {float:right; width:27%; margin-right:10px; margin-top: 10px;}
+
+
+h1 { font-size: 23px; color: #3170a1; margin:0 0 5px 0; line-height:30px }
+.security-bg {background-color:#ffffff; border:4px solid #9ebed7; width:330px;}
+.security-hadd {background-color:#d7e7f3; font:bold 22px Arial, Helvetica, sans-serif; color:#363636; text-decoration:none; height:50px; padding-top:8px; padding-left:10px;}
+/*.organization {border-bottom:1px solid #c4d4e0; font:bold 22px Arial, Helvetica, sans-serif; color:#306fa0; text-decoration:none; height:47px; padding-top:16px; padding-left:10px;}
+.organization a{font:bold 22px Arial, Helvetica, sans-serif; color:#306fa0; text-decoration:none;}
+.organization a:hover {font:bold 22px Arial, Helvetica, sans-serif; color:#363636; text-decoration:none;}*/
+.blue {font:normal 17px Arial, Helvetica, sans-serif; color:#0a5087; text-decoration:none;}
+.user {margin:auto; width:293px;  margin-bottom:1px; margin-top:1px;}
+.user-input-bg {background:url(../images/input-bg.gif) no-repeat; padding-left:5px;  height:27px; padding-top:8px; margin-top:1px;}
+.user-input {background:none; border:none; font:bold 15px Arial, Helvetica, sans-serif; color:#363636; text-decoration:none;}
+.username {font:bold 15px Arial, Helvetica, sans-serif; color:#888888; text-decoration:none; margin-top:3px;}
+.remember {font:bold 15px Arial, Helvetica, sans-serif; color:#888888; text-decoration:none; margin-top:3px;}
+.forget-pass {margin-top:5px;}
+a.forget-pass{font:bold 15px Arial, Helvetica, sans-serif; color:#3a7aac; text-decoration:underline;}
+a:hover.forget-pass {font:bold 15px Arial, Helvetica, sans-serif; color:#3a7aac; text-decoration:none;}
+
+.organization { font:bold 22px Arial, Helvetica, sans-serif; color:#306fa0; text-decoration:none;  display:block; }
+.organization a{border-bottom:1px solid #ffffff; background-color:#d7e7f3; font:bold 22px Arial, Helvetica, sans-serif; color:#306fa0; text-decoration:none; display:block; height:39px; padding-top:3px; padding-left:10px;}
+.organization a.active {border-bottom:1px solid #d7e7f3; background-color:#ffffff; font:bold 22px Arial, Helvetica, sans-serif; color:#363636; text-decoration:none; display:block;height:39px; padding-top:3px; padding-left:10px;}
+.organization a:hover {border-bottom:1px solid #d7e7f3; background-color:#f0f9ff; font:bold 22px Arial, Helvetica, sans-serif; color:#363636; text-decoration:none; display:block;height:39px; padding-top:3px; padding-left:10px;}
+
+.footer {position:fixed;background-color:#ffffff; width:100%; display:block; bottom:0px; border-top:1px solid #dedede; font:normal 12px Arial, Helvetica, sans-serif; color:#646464; text-decoration:none; text-align:center; line-height:7px; margin:1px 0 0 0; padding-top:1px; padding-bottom:1px;}
+.footer a {font:normal 12px Arial, Helvetica, sans-serif; color:#646464; text-decoration:none; }
+.footer a:hover {font:normal 12px Arial, Helvetica, sans-serif; color:#3271a2; text-decoration:none; }
+.footer span {font:normal 12px Arial, Helvetica, sans-serif; color:#646464; text-decoration:none; line-height:7px;}
+.valignmidd { vertical-align:middle;}
+.relative { position: relative; }
+.home-banner-img { position: absolute; top:-50px; right: 59px; }
+
+.lang_flags { float:right; padding-right:3px; padding-top:10px; }
+.errormsg { height:29px; font-size:13px; float:right; padding-right:10px; color:#ff0000; }
+.pointer { cursor:pointer; }
+.iconsize { height: 35px; width:35px; }
+.err { color:#ff0000; font-size:13px; }
+.pop label.lbl { display:inline-block; }
+.msg {color:red;}
+
+/* Css For JScrollPane */
+/* Stylesheet for my demo pages for jScrollPane - these styles aren't necessary for using jScrollPane and aren't specific to any particular example */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 80%;
+}
+
+a.jScrollArrowUp {
+	background: url(../images/jscroll/basic_arrow_up.gif) repeat-x 0 0;
+}
+a.jScrollArrowUp:hover {
+	background-position: 0 -15px;
+}
+a.jScrollArrowDown {
+	background: url(../images/jscroll/basic_arrow_down.gif) repeat-x 0 0;
+}
+a.jScrollArrowDown:hover {
+	background-position: 0 -15px;
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+	background-position: 0 -30px;
+}
+
+
+.orange-bar .jScrollPaneTrack {
+	background: #f60;
+}
+.orange-bar .jScrollPaneDrag {
+	background: #00f url(../images/jscroll/drag_grab.gif) no-repeat 50% 50%;
+}
+.orange-bar .scroll-pane {
+	background: #eeeeee;
+}
+
+.holder {
+	float: left;
+	margin: 10px;
+}
+
+.scroll-pane {
+	height: 327px;
+	overflow: auto;
+	background: #eeeeee;
+	float: left;
+}
+
+.wide {
+	width: 400px;
+}
+
+.super-wide {
+	width: 700px;
+}
+
+.tall {
+	height: 400px;
+}
+
+#pane1 {
+}
+#pane2 {
+	width:99.1%;
+	height:327px;
+}
+#pane3 {
+	height: 190px;
+}
+#pane4 {
+	height: 190px;
+}
+
+#pane1, #pane2, #pane3, #pane4 {
+	height:327px;
+}
+
+.winXP .jScrollPaneTrack {
+	background: url(../images/jscroll/windows_track.gif) repeat-y;
+}
+.winXP .jScrollPaneDrag {
+	background: url(../images/jscroll/windows_drag_middle.gif) no-repeat 0 50%;
+}
+.winXP .jScrollPaneDragTop {
+	background: url(../images/jscroll/windows_drag_top.gif) no-repeat;
+	height: 4px;
+}
+.winXP .jScrollPaneDragBottom {
+	background: url(../images/jscroll/windows_drag_bottom.gif) no-repeat;
+	height: 4px;
+}
+.winXP a.jScrollArrowUp {
+	height: 17px;
+	background: url(../images/jscroll/windows_arrow_up.gif) no-repeat 0 0;
+}
+.winXP a.jScrollArrowUp:hover {
+	background-position: 0 -20px;
+}
+.winXP a.jScrollArrowDown {
+	height: 17px;
+	background: url(../images/jscroll/windows_arrow_down.gif) no-repeat 0 0;
+}
+.winXP a.jScrollArrowDown:hover {
+	background-position: 0 -20px;
+}
+.winXP a.jScrollActiveArrowButton, .winXP a.jScrollActiveArrowButton:hover {
+	background-position: 0 -40px;
+}
+
+
+.osX .jScrollPaneTrack {
+	background: url(../images/jscroll/osx_track.gif) repeat-y;
+}
+.osX .jScrollPaneDrag {
+	background: url(../images/jscroll/osx_drag_middle.gif) repeat-y;
+}
+.osX .jScrollPaneDragTop {
+	background: url(../images/jscroll/osx_drag_top.gif) no-repeat;
+	height: 6px;
+}
+.osX .jScrollPaneDragBottom {
+	background: url(../images/jscroll/osx_drag_bottom.gif) no-repeat;
+	height: 7px;
+}
+.osX a.jScrollArrowUp {
+	height: 24px;
+	background: url(../images/jscroll/osx_arrow_up.png) no-repeat 0 -30px;
+}
+.osX a.jScrollArrowUp:hover {
+	background-position: 0 0;
+}
+.osX a.jScrollArrowDown {
+	height: 24px;
+	background: url(../images/jscroll/osx_arrow_down.png) no-repeat 0 -30px;
+}
+.osX a.jScrollArrowDown:hover {
+	background-position: 0 0;
+}
+
+.left .jScrollPaneTrack {
+	left: 0;
+	right: auto;
+}
+.left a.jScrollArrowUp {
+	left: 0;
+	right: auto;
+}
+.left a.jScrollArrowDown {
+	left: 0;
+	right: auto;
+}
+
+
+/* IE SPECIFIC HACKED STYLES */
+* html .osX .jScrollPaneDragBottom {
+	bottom: -1px;
+}
+/* /IE SPECIFIC HACKED STYLES */
+
+/* /JScrollStyle Ends Here */
+
+/* /JScrollPane Starts Here */
+
+.jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+}
+
+.jScrollPaneTrack {
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	height: 100%;
+	background: #aaa;
+}
+.jScrollPaneDrag {
+	position: absolute;
+	background: #666;
+	cursor: pointer;
+	overflow: hidden;
+}
+.jScrollPaneDragTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.jScrollPaneDragBottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+a.jScrollArrowUp {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	/*background-color: #666;*/
+	height: 9px;
+}
+a.jScrollArrowUp:hover {
+	/*background-color: #f60;*/
+}
+
+a.jScrollArrowDown {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	/*background-color: #666;*/
+	height: 9px;
+}
+a.jScrollArrowDown:hover {
+	/*background-color: #f60;*/
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+	/*background-color: #f00;*/
+}
+
+/* Jquery UI Date Time Picker */
+.ui-timepicker-div .ui-widget-header{ margin-bottom: 8px; }
+.ui-timepicker-div dl{ text-align: left; }
+.ui-timepicker-div dl dt{ height: 25px; }
+.ui-timepicker-div dl dd{ margin: -25px 0 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+/* --- */
+
+/* JQuery Password Strength Indicator */
+.is0 { background:url('../images/psindicator/progressimg.png') no-repeat 0 0; width:138px; height:7px; }
+.is10 { background-position:0 -7px; }
+.is20 { background-position:0 -14px; }
+.is30 { background-position:0 -21px; }
+.is40 { background-position:0 -28px; }
+.is50 { background-position:0 -35px; }
+.is60 { background-position:0 -42px; }
+.is70 { background-position:0 -49px; }
+.is80 { background-position:0 -56px; }
+.is90 { background-position:0 -63px; }
+.is100 { background-position:0 -70px; }
+/* --- */
+
+.btllbl { background:url('../images/btn-bg.png') repeat-x; cursor:pointer; display:inline-block; height:19px; padding-top:1.9px; vertical-align:middle; text-align:center; margin-right:3px; border:1px solid #eeeeee; color:#3777a9; text-decoration:none; }
+.btllbl b { padding:3px; }
+.btllbl:hover { color:#f7a310; }
+body.pop .middle-container { float:left; }

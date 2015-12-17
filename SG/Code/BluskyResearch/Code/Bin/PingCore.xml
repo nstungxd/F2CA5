@@ -1,0 +1,94 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PingCore
+</name>
+</assembly>
+<members>
+<member name="T:PingCore.MyControls.MyDropDownList2">
+	<summary>
+ ver 2 - has nullvalue option, default has changed, default was 0, now null
+ </summary>
+	<remarks></remarks>
+</member><member name="P:PingCore.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:PingCore.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:PingCore.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:PingCore.WebsiteControls.Ckeditor.BaseHref">
+	<summary>
+ The base href URL used to resolve relative and absolute URLs in the editor content.
+ </summary>
+</member><member name="P:PingCore.WebsiteControls.Ckeditor.Height">
+	<summary>
+ The height of editing area( content ), in relative or absolute.
+ </summary>
+</member><member name="P:PingCore.WebsiteControls.Ckeditor.Width">
+	<summary>
+ The width of editing area( content ), in relative or absolute.
+ </summary>
+</member><member name="P:PingCore.WebsiteControls.Ckeditor.Toolbar">
+	<summary>
+ The toolbox (alias toolbar) definition.
+ </summary>
+</member><member name="P:PingCore.WebsiteControls.Ckeditor.ContentsCss">
+	<summary>
+ The CSS file(s) as a csv list to be used to apply style to the contents.
+ </summary>
+</member><member name="P:PingCore.WebsiteControls.Ckeditor.Settings">
+	<summary>
+ Set custom ckeditor settings as a csv list.
+ </summary>
+</member><member name="P:PingCore.WebsiteControls.ImageMedia.Extension">
+	<summary>
+ The default format this image will be saved as. For png or gif files the default will be png, for all other image files the default will be jpg.
+ </summary>
+</member><member name="M:PingCore.WebsiteControls.ImageMedia.Resize(System.Nullable{System.Int32},System.Nullable{System.Int32})">
+	<summary>
+ Resizes image to fit within the specified with and height, aspect ratio is maintained.
+ </summary>
+	<param name="width">The maximum width the image has to fit within, set to null to not restrict width.</param>
+	<param name="height">The maximum height the image has to fit within, set to null to not restrict height.</param>
+	<returns>A reference to this object to allow chaining operations together.</returns>
+</member><member name="M:PingCore.WebsiteControls.ImageMedia.Crop(System.Nullable{System.Int32},System.Nullable{System.Int32})">
+	<summary>
+ Crops the image in the middle resizing it down to fit as much of the image as possible. Note, image is not enlarged to fit desired width and height.
+ </summary>
+	<param name="width">The desired width to crop the image to, set to null to not perform horizontal cropping.</param>
+	<param name="height">The desired height to crop the image to, set to null to not perform vertical cropping.</param>
+	<returns>A reference to this object to allow chaining operations together.</returns>
+</member><member name="M:PingCore.WebsiteControls.ImageMedia.ToByteArray">
+	<summary>
+ Returns the binary data of the image as either jpg or png as specified by the Extension property.
+ </summary>
+</member><member name="M:PingCore.WebsiteControls.ImageMedia.Create(System.Byte[])">
+	<summary>
+ Create a image object that can be interacted with from binary data.
+ </summary>
+	<exception cref="T:System.NotSupportedException">If the supplied binary data is not a valid image, the NotSupportedException will be thrown.</exception>
+</member><member name="M:PingCore.MyData.AdminUtility.ParseCsv(System.Collections.Generic.LinkedList{PingCore.MyData.Tuple{System.String,System.String}},System.String)">
+	<summary>
+ split the csv string, populate a list of key/value pairs
+ </summary>
+	<param name="l">
+ list of pairs
+ </param>
+	<param name="csv">
+ serialized string to be split
+ </param>
+	<remarks>
+ - split into array
+ - loop over array, creating option every second loop
+ </remarks>
+</member>
+</members>
+</doc>

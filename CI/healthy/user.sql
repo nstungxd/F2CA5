@@ -1,0 +1,1 @@
+ALTER TABLE `user` ADD `CreateBy` INT NULL , ADD `DateModified` DATETIME NULL , ADD `GroupSeq` INT NULL ;

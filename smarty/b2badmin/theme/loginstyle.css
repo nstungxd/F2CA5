@@ -1,0 +1,28 @@
+body {
+	margin-left: 0px;
+	margin-top: 70px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.login-border {border:3px solid #464646;}
+.login-topstrip {background-image:url(../images/top-strip.gif); background-repeat:repeat-x; height:38px;}
+.login-middlebg {background-image:url(../images/login-middlebg.gif); background-repeat:repeat-x; background-color:#ECECEC; padding-top:10px; padding-bottom:30px; padding-left:10px; padding-right:10px;}
+
+.redlink-big {font-family:Arial, Helvetica, sans-serif; font-size:20px; font-weight:bold; color:#3170a1; text-decoration:underline;}
+.redlink-big:link {font-family:Arial, Helvetica, sans-serif; font-size:20px; font-weight:bold; color:#3170a1; text-decoration:underline;}
+.redlink-big:visited {font-family:Arial, Helvetica, sans-serif; font-size:20px; font-weight:bold; color:#3170a1; text-decoration:underline;}
+.redlink-big:hover {font-family:Arial, Helvetica, sans-serif; font-size:20px; font-weight:bold; color:#3170a1; text-decoration:none;}
+
+.vr-dottedline {background-image:url(../images/vr-dottedline.gif); background-repeat:repeat-y; background-position:top right;}
+
+.logintopborder{border-top:1px solid #D1D1D1; background-color:#FFFFFF;}
+.loginleftrightborder{border-left:1px solid #D1D1D1; background-color:#FFFFFF; border-right:1px solid #D1D1D1;}
+.loginbottbg{background-image:url(../images/login-bottbg.gif); background-repeat:repeat-x;}
+.loginbottbg1{background-image:url(../images/login-bottbg1.gif); background-repeat:repeat-x;}
+.login-padding {padding:10px;}
+
+.login-greymatter {font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; color:#3776a8; text-decoration:none;}
+.signin {font-family:Arial, Helvetica, sans-serif; font-size:22px; font-weight:bold; color:#3170a1; text-decoration:none;}
+.reqmsg {font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#FF0000; text-decoration:none;}
+.green-head {font-family:Arial, Helvetica, sans-serif; font-size:20px; font-weight:bold; color:#248500; text-decoration:none; }
+.err { color:#ff0000; font-size:13px; }

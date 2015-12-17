@@ -1,0 +1,17 @@
+﻿
+/*----------------------------------------------------------------------------- 
+Alternative Stylesheet
+Built:      01/03/07 
+Author:     Aaron Bradley
+Website:    www.ping-media.co.uk
+Desc:       Large Text styles
+-----------------------------------------------------------------------------*/
+body 
+{
+    font-size:106%;
+}
+
+#contactform input, #contactform textarea{font-size:1.3em;}
+#quotes .quote{font-size:0.7em;}
+#quotes span{font-size:0.8em;}
+#showcase .showcaseitem{font-size:0.8em;}

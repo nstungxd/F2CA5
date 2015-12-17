@@ -1,0 +1,5 @@
+ALTER TABLE `user` ADD `template_id` INT NULL;
+ALTER TABLE `user` ADD `footer` VARCHAR( 500 ) NULL ;
+ALTER TABLE `doctor` ADD `Isdisplay` BOOLEAN NOT NULL DEFAULT FALSE;
+ALTER TABLE `doctor` ADD `IdAllied` BOOLEAN NOT NULL DEFAULT FALSE;
+ALTER TABLE  `slide` ADD  `description` VARCHAR( 500 ) NULL;

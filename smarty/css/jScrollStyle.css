@@ -1,0 +1,156 @@
+/* Stylesheet for my demo pages for jScrollPane - these styles aren't necessary for using jScrollPane and aren't specific to any particular example */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 80%;
+}
+
+a.jScrollArrowUp {
+	background: url(../images/jscroll/basic_arrow_up.gif) repeat-x 0 0;
+}
+a.jScrollArrowUp:hover {
+	background-position: 0 -15px;
+}
+a.jScrollArrowDown {
+	background: url(../images/jscroll/basic_arrow_down.gif) repeat-x 0 0;
+}
+a.jScrollArrowDown:hover {
+	background-position: 0 -15px;
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+	background-position: 0 -30px;
+}
+
+
+.orange-bar .jScrollPaneTrack {
+	background: #f60;
+}
+.orange-bar .jScrollPaneDrag {
+	background: #00f url(../images/jscroll/drag_grab.gif) no-repeat 50% 50%;
+}
+.orange-bar .scroll-pane {
+	background: #eeeeee;
+}
+
+.holder {
+	float: left;
+	margin: 10px;
+}
+
+.scroll-pane {
+	height: 327px;
+	overflow: auto;
+	background: #eeeeee;
+	float: left;
+}
+
+.wide {
+	width: 400px;
+}
+
+.super-wide {
+	width: 700px;
+}
+
+.tall {
+	height: 400px;
+}
+
+#pane1 {
+}
+#pane2 {
+	width:100%;
+	height:327px;
+}
+#pane3 {
+	height: 190px;
+}
+#pane4 {
+	height: 190px;
+}
+
+#pane1, #pane2, #pane3, #pane4 {
+	height:327px;
+}
+
+.winXP .jScrollPaneTrack {
+	background: url(../images/jscroll/windows_track.gif) repeat-y;
+}
+.winXP .jScrollPaneDrag {
+	background: url(../images/jscroll/windows_drag_middle.gif) no-repeat 0 50%;
+}
+.winXP .jScrollPaneDragTop {
+	background: url(../images/jscroll/windows_drag_top.gif) no-repeat;
+	height: 4px;
+}
+.winXP .jScrollPaneDragBottom {
+	background: url(../images/jscroll/windows_drag_bottom.gif) no-repeat;
+	height: 4px;
+}
+.winXP a.jScrollArrowUp {
+	height: 17px;
+	background: url(../images/jscroll/windows_arrow_up.gif) no-repeat 0 0;
+}
+.winXP a.jScrollArrowUp:hover {
+	background-position: 0 -20px;
+}
+.winXP a.jScrollArrowDown {
+	height: 17px;
+	background: url(../images/jscroll/windows_arrow_down.gif) no-repeat 0 0;
+}
+.winXP a.jScrollArrowDown:hover {
+	background-position: 0 -20px;
+}
+.winXP a.jScrollActiveArrowButton, .winXP a.jScrollActiveArrowButton:hover {
+	background-position: 0 -40px;
+}
+
+
+.osX .jScrollPaneTrack {
+	background: url(../images/jscroll/osx_track.gif) repeat-y;
+}
+.osX .jScrollPaneDrag {
+	background: url(../images/jscroll/osx_drag_middle.gif) repeat-y;
+}
+.osX .jScrollPaneDragTop {
+	background: url(../images/jscroll/osx_drag_top.gif) no-repeat;
+	height: 6px;
+}
+.osX .jScrollPaneDragBottom {
+	background: url(../images/jscroll/osx_drag_bottom.gif) no-repeat;
+	height: 7px;
+}
+.osX a.jScrollArrowUp {
+	height: 24px;
+	background: url(../images/jscroll/osx_arrow_up.png) no-repeat 0 -30px;
+}
+.osX a.jScrollArrowUp:hover {
+	background-position: 0 0;
+}
+.osX a.jScrollArrowDown {
+	height: 24px;
+	background: url(../images/jscroll/osx_arrow_down.png) no-repeat 0 -30px;
+}
+.osX a.jScrollArrowDown:hover {
+	background-position: 0 0;
+}
+
+.left .jScrollPaneTrack {
+	left: 0;
+	right: auto;
+}
+.left a.jScrollArrowUp {
+	left: 0;
+	right: auto;
+}
+.left a.jScrollArrowDown {
+	left: 0;
+	right: auto;
+}
+
+
+/* IE SPECIFIC HACKED STYLES */
+* html .osX .jScrollPaneDragBottom {
+	bottom: -1px;
+}
+/* /IE SPECIFIC HACKED STYLES */

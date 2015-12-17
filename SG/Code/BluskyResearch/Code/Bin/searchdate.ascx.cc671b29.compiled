@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CompiledUserControls/Controls/SearchDate.ascx" hash="a4f1d9d05" filehash="1c57aaa95300b8ce" flags="100000" assembly="App_Web_searchdate.ascx.cc671b29" type="ASP.SearchDate">
+    <filedeps>
+        <filedep name="/CompiledUserControls/Controls/SearchDate.ascx" />
+        <filedep name="/CompiledUserControls/Controls/SearchDate.ascx.vb" />
+    </filedeps>
+</preserve>

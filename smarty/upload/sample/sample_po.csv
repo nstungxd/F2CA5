@@ -1,0 +1,10 @@
+Supplier Company Name	,Supplier Company ID	,Supplier Code	,Invoice Supplier Code	,Related PO Code 	,Buyer Name	,Buyer ID	,Buyer Contact Party 	,Invoice Code	,Issue Date	,Invioce Description	,Opening Unit	,Supplier Order Num	,Invoice Type	,Line Item Tax	,VAT	,Other tax 1	,Freight	,Miscellaneous	,Discount Baseline	,Max Cash Discount Days	,Max Cash Discount Percentage	,Normal Cash Discount Days 	,Normal Cash Discount Percentage	,Bill To Party	,Bill To AddLine 1	,Bill To AddLine 2	,Bill To City	,Bill To Country	,Bill To State	,Bill To ZipCode	,Bill To Contact Party	,Bill To Contact Telephone	,Currency	,Invoice Total	,Prepayment	,tSourcingDocument	,tGlobalAgreement	,tPaymentTerms	,tFOB	,tDeliveryTerms	,tShippingControl	,tConditionsForPayment	,tPenalties	,tSpecialInstruction	,tNote
+HBPHP	,61	,00110081730001	,test01	,	,HB.NET	,62	,bprty	,001110617inv3	,2011-06-17	,	,	,	,	,Yes	,3.00	,3.00	,	,	,0000-00-00	,0	,0.00	,0	,0.00	,bprty	,address	,	,city	,AL	,BR	,1111	,bprty	,123-1231231231	,USD	,306.00	,0.00	,test text	,test text	,test text	,test text	,test text	,test text	,test text	,test text	,test text	,test text	,
+###items###
+Order Type	,Item Description	,Item Line No	,Quantity	,Unit Of Measure	,Price	,Amount	,VAT	,Other Tax	,Sub Item Type	,Sub Item Quantity	,Sub Item Rate	,Sub Item Amount	,Line Total
+Goods	,desc	,0000000001	,10	,m	,10.00	,100.00	,1.00	,1.00	,Discount	,10	,50.00	,-51.00	,102.00	,
+Goods	,desc	,0000000001	,10	,m	,10.00	,100.00	,1.00	,1.00	,	,0	,0.00	,0.00	,102.00	,
+Discount	,desc	,0000000001	,10	,m	,10.00	,100.00	,1.00	,1.00	,	,0	,0.00	,0.00	,30.00	,
+Charge	,desc	,0000000001	,10	,m	,10.00	,100.00	,1.00	,1.00	,	,0	,0.00	,0.00	,30.00	,
+Goods	,desc	,0000000001	,10	,m	,10.00	,100.00	,1.00	,1.00	,Charge	,10	,50.00	,51.00	,102.00	,
+

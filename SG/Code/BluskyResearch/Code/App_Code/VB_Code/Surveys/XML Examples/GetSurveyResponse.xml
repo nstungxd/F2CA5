@@ -1,0 +1,2369 @@
+﻿<apiresult>
+  <result_ok>1</result_ok> 
+  <total_count>11</total_count> 
+  <page>1</page> 
+  <total_pages>1</total_pages> 
+  <results_per_page>50</results_per_page> 
+- <data>
+- <_0>
+  <id>1</id> 
+  <contact_id /> 
+  <status>Deleted</status> 
+  <is_test_data>1</is_test_data> 
+  <datesubmitted>2013-09-24 05:32:19</datesubmitted> 
+  <sResponseComment /> 
+  <responseID>1</responseID> 
+  <question4option10001 /> 
+  <question4option10002 /> 
+  <question4option10003>Meeting or Event</question4option10003> 
+  <question4option10004 /> 
+- <question4option10006>
+  <value>Other</value> 
+  <other>0</other> 
+  </question4option10006>
+  <question5option10007 /> 
+  <question5option10008 /> 
+  <question5option10009 /> 
+  <question5option10010 /> 
+  <question5option10011 /> 
+  <question5option10012 /> 
+  <question5option10013 /> 
+  <question5option10014 /> 
+  <question5option10015 /> 
+  <question5option10016 /> 
+  <question5option10017 /> 
+  <question5option10018 /> 
+- <question5option10019>
+  <value /> 
+  <other /> 
+  </question5option10019>
+  <question6option10020 /> 
+  <question6option10021 /> 
+  <question6option10022 /> 
+  <question6option10023 /> 
+  <question6option10024 /> 
+  <question6option10025 /> 
+  <question6option10026 /> 
+- <question6option10027>
+  <value /> 
+  <other /> 
+  </question6option10027>
+  <question8>Poor</question8> 
+  <question10>Yes</question10> 
+  <question11>Definitely Yes</question11> 
+  <question12>55 Appletree Ct</question12> 
+  <question15>Agree</question15> 
+  <question16>Agree</question16> 
+  <question17>Strongly Disagree</question17> 
+  <question18>Agree</question18> 
+  <question19 /> 
+  <question22 /> 
+  <question23>Agree</question23> 
+  <question24 /> 
+  <question25>Neither Agree nor Disagree</question25> 
+  <question26>Agree</question26> 
+  <question27 /> 
+  <question28>Neither Agree nor Disagree</question28> 
+  <question29>Banana</question29> 
+  <question30>No</question30> 
+  <question31>No</question31> 
+  <question33 /> 
+  <question34 /> 
+  <question35 /> 
+  <question36 /> 
+  <question37 /> 
+  <question40>Good</question40> 
+  <question41>Very Poor</question41> 
+  <question42>Fair</question42> 
+  <question43 /> 
+  <question44>Very Poor</question44> 
+  <question45>Very Poor</question45> 
+  <question46>finally love it tv show</question46> 
+  <question49 /> 
+  <question50 /> 
+  <question51 /> 
+  <question52 /> 
+  <question53 /> 
+  <question54 /> 
+  <question57>Strongly Agree</question57> 
+  <question58>Agree</question58> 
+  <question59>Strongly Disagree</question59> 
+  <question60 /> 
+  <question63 /> 
+  <question64 /> 
+  <question65 /> 
+  <question66>0</question66> 
+  <question67>Met</question67> 
+  <question68 /> 
+  <question69>Female</question69> 
+  <question70 /> 
+  <question71option10092>grapes</question71option10092> 
+  <question71option10093>0</question71option10093> 
+  <question72option10094 /> 
+  <question72option10095 /> 
+  <question72option10096 /> 
+  <question72option10097 /> 
+  <question73>... please select the box</question73> 
+  <variableSTANDARD_IP /> 
+  <variableSTANDARD_LONG /> 
+  <variableSTANDARD_LAT /> 
+  <variableSTANDARD_GEOCOUNTRY /> 
+  <variableSTANDARD_GEOCITY /> 
+  <variableSTANDARD_GEOREGION /> 
+  <variableSTANDARD_GEOPOSTAL /> 
+  <variableSTANDARD_RESPONSETIME /> 
+  <variableSTANDARD_COMMENTS /> 
+  <variableSTANDARD_GEODMA>0</variableSTANDARD_GEODMA> 
+  <variableSTANDARD_REFERER>https://appv3.sgizmo.com/projects/editor?id=1377138</variableSTANDARD_REFERER> 
+  <variableSTANDARD_USERAGENT>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:23.0) Gecko/20100101 Firefox/23.0</variableSTANDARD_USERAGENT> 
+  <variablePORTAL_RELATIONSHIP /> 
+  <variable2shown /> 
+  <variable4shown>1</variable4shown> 
+  <variable5shown>1</variable5shown> 
+  <variable6shown>1</variable6shown> 
+  <variable7shown>1</variable7shown> 
+  <variable8shown>1</variable8shown> 
+  <variable8>10031</variable8> 
+  <variable9shown>1</variable9shown> 
+  <variable10shown>1</variable10shown> 
+  <variable10>10034</variable10> 
+  <variable11shown>1</variable11shown> 
+  <variable11>10033</variable11> 
+  <variable12shown>1</variable12shown> 
+  <variable13shown /> 
+  <variable14shown>1</variable14shown> 
+  <variable15shown>1</variable15shown> 
+  <variable15>10039</variable15> 
+  <variable16shown>1</variable16shown> 
+  <variable16>10039</variable16> 
+  <variable17shown>1</variable17shown> 
+  <variable17>10042</variable17> 
+  <variable18shown>1</variable18shown> 
+  <variable18>10039</variable18> 
+  <variable19shown>1</variable19shown> 
+  <variable21shown>1</variable21shown> 
+  <variable22shown>1</variable22shown> 
+  <variable22 /> 
+  <variable23shown>1</variable23shown> 
+  <variable23>10045</variable23> 
+  <variable24shown>1</variable24shown> 
+  <variable24 /> 
+  <variable25shown>1</variable25shown> 
+  <variable25>10046</variable25> 
+  <variable26shown>1</variable26shown> 
+  <variable26>10045</variable26> 
+  <variable27shown>1</variable27shown> 
+  <variable27 /> 
+  <variable28shown>1</variable28shown> 
+  <variable28>10046</variable28> 
+  <variable29shown>1</variable29shown> 
+  <variable30shown>1</variable30shown> 
+  <variable30>10050</variable30> 
+  <variable31shown>1</variable31shown> 
+  <variable31>10052</variable31> 
+  <variable32shown /> 
+  <variable33 /> 
+  <variable33shown /> 
+  <variable34 /> 
+  <variable34shown /> 
+  <variable35 /> 
+  <variable35shown /> 
+  <variable36 /> 
+  <variable36shown /> 
+  <variable37shown /> 
+  <variable39shown>1</variable39shown> 
+  <variable40shown>1</variable40shown> 
+  <variable40>10059</variable40> 
+  <variable41shown>1</variable41shown> 
+  <variable41>10062</variable41> 
+  <variable42shown>1</variable42shown> 
+  <variable42>10060</variable42> 
+  <variable43shown>1</variable43shown> 
+  <variable43 /> 
+  <variable44shown>1</variable44shown> 
+  <variable44>10062</variable44> 
+  <variable45shown>1</variable45shown> 
+  <variable45>10062</variable45> 
+  <variable46shown>1</variable46shown> 
+  <variable48shown>1</variable48shown> 
+  <variable49 /> 
+  <variable49shown /> 
+  <variable50 /> 
+  <variable50shown /> 
+  <variable51 /> 
+  <variable51shown /> 
+  <variable52 /> 
+  <variable52shown /> 
+  <variable53 /> 
+  <variable53shown /> 
+  <variable54shown>1</variable54shown> 
+  <variable56shown>1</variable56shown> 
+  <variable57shown>1</variable57shown> 
+  <variable57>10068</variable57> 
+  <variable58shown>1</variable58shown> 
+  <variable58>10069</variable58> 
+  <variable59shown>1</variable59shown> 
+  <variable59>10072</variable59> 
+  <variable60shown>1</variable60shown> 
+  <variable62shown>1</variable62shown> 
+  <variable63 /> 
+  <variable63shown /> 
+  <variable64 /> 
+  <variable64shown /> 
+  <variable65 /> 
+  <variable65shown /> 
+  <variable66shown>1</variable66shown> 
+  <variable67shown>1</variable67shown> 
+  <variable67>10081</variable67> 
+  <variable68shown>1</variable68shown> 
+  <variable69shown>1</variable69shown> 
+  <variable69>10084</variable69> 
+  <variable70shown>1</variable70shown> 
+  <variable70 /> 
+  <variable71shown>1</variable71shown> 
+  <variable72shown>1</variable72shown> 
+  <variable73shown>1</variable73shown> 
+  <variable73>10098</variable73> 
+  </_0>
+- <_1>
+  <id>2</id> 
+  <contact_id /> 
+  <status>Deleted</status> 
+  <is_test_data>1</is_test_data> 
+  <datesubmitted>2013-09-24 05:32:19</datesubmitted> 
+  <sResponseComment /> 
+  <responseID>2</responseID> 
+  <question4option10001 /> 
+  <question4option10002 /> 
+  <question4option10003 /> 
+  <question4option10004 /> 
+  <question4option10006 /> 
+  <question4option10006other /> 
+  <question5option10007 /> 
+  <question5option10008 /> 
+  <question5option10009>Magazine/newspaper article</question5option10009> 
+  <question5option10010>Internet searches (e.g. Google, Yahoo, etc.)</question5option10010> 
+  <question5option10011 /> 
+  <question5option10012 /> 
+  <question5option10013 /> 
+  <question5option10014 /> 
+  <question5option10015>www.thearchlondon.com</question5option10015> 
+  <question5option10016 /> 
+  <question5option10017 /> 
+  <question5option10018 /> 
+  <question5option10019>Other</question5option10019> 
+  <question5option10019other /> 
+  <question6option10020 /> 
+  <question6option10021>Emailed Direct</question6option10021> 
+  <question6option10022>www.thearchlondon.com</question6option10022> 
+  <question6option10023>Other websites (e.g. Expedia)</question6option10023> 
+  <question6option10024>The Arch Sales Team</question6option10024> 
+  <question6option10025>Company or Organisation</question6option10025> 
+  <question6option10026>Travel Agent</question6option10026> 
+  <question6option10027>Other</question6option10027> 
+  <question6option10027other>10/16/1999</question6option10027other> 
+  <question8>Good</question8> 
+  <question10>Maybe</question10> 
+  <question11>Yes</question11> 
+  <question12>so what finally</question12> 
+  <question15>N/A</question15> 
+  <question16>Agree</question16> 
+  <question17 /> 
+  <question18 /> 
+  <question19>for once Smithy grapes</question19> 
+  <question22>Strongly Agree</question22> 
+  <question23>Agree</question23> 
+  <question24>Strongly Disagree</question24> 
+  <question25>Disagree</question25> 
+  <question26>Strongly Agree</question26> 
+  <question27 /> 
+  <question28>Disagree</question28> 
+  <question29 /> 
+  <question30>No</question30> 
+  <question31>No</question31> 
+  <question33 /> 
+  <question34 /> 
+  <question35 /> 
+  <question36 /> 
+  <question37 /> 
+  <question40>Poor</question40> 
+  <question41>Fair</question41> 
+  <question42>Poor</question42> 
+  <question43 /> 
+  <question44>Very Poor</question44> 
+  <question45>Excellent</question45> 
+  <question46 /> 
+  <question49>Strongly Disagree</question49> 
+  <question50>Disagree</question50> 
+  <question51>Disagree</question51> 
+  <question52>Strongly Agree</question52> 
+  <question53>Strongly Agree</question53> 
+  <question54 /> 
+  <question57 /> 
+  <question58>Disagree</question58> 
+  <question59 /> 
+  <question60>strongly customers so what</question60> 
+  <question63 /> 
+  <question64 /> 
+  <question65 /> 
+  <question66>10/22/2009</question66> 
+  <question67>Exceeded</question67> 
+  <question68 /> 
+  <question69>Male</question69> 
+  <question70 /> 
+  <question71option10092>don't customers tv show</question71option10092> 
+  <question71option10093 /> 
+  <question72option10094 /> 
+  <question72option10095 /> 
+  <question72option10096 /> 
+  <question72option10097 /> 
+  <question73 /> 
+  <variableSTANDARD_IP /> 
+  <variableSTANDARD_LONG /> 
+  <variableSTANDARD_LAT /> 
+  <variableSTANDARD_GEOCOUNTRY /> 
+  <variableSTANDARD_GEOCITY /> 
+  <variableSTANDARD_GEOREGION /> 
+  <variableSTANDARD_GEOPOSTAL /> 
+  <variableSTANDARD_RESPONSETIME /> 
+  <variableSTANDARD_COMMENTS /> 
+  <variableSTANDARD_GEODMA>0</variableSTANDARD_GEODMA> 
+  <variableSTANDARD_REFERER>https://appv3.sgizmo.com/projects/editor?id=1377138</variableSTANDARD_REFERER> 
+  <variableSTANDARD_USERAGENT>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:23.0) Gecko/20100101 Firefox/23.0</variableSTANDARD_USERAGENT> 
+  <variablePORTAL_RELATIONSHIP /> 
+  <variable2shown /> 
+  <variable4shown>1</variable4shown> 
+  <variable5shown>1</variable5shown> 
+  <variable6shown>1</variable6shown> 
+  <variable7shown>1</variable7shown> 
+  <variable8shown>1</variable8shown> 
+  <variable8>10029</variable8> 
+  <variable9shown>1</variable9shown> 
+  <variable10shown>1</variable10shown> 
+  <variable10>10035</variable10> 
+  <variable11shown>1</variable11shown> 
+  <variable11>10034</variable11> 
+  <variable12shown>1</variable12shown> 
+  <variable13shown /> 
+  <variable14shown>1</variable14shown> 
+  <variable15shown>1</variable15shown> 
+  <variable15>10043</variable15> 
+  <variable16shown>1</variable16shown> 
+  <variable16>10039</variable16> 
+  <variable17shown>1</variable17shown> 
+  <variable17 /> 
+  <variable18shown>1</variable18shown> 
+  <variable18 /> 
+  <variable19shown>1</variable19shown> 
+  <variable21shown>1</variable21shown> 
+  <variable22shown>1</variable22shown> 
+  <variable22>10044</variable22> 
+  <variable23shown>1</variable23shown> 
+  <variable23>10045</variable23> 
+  <variable24shown>1</variable24shown> 
+  <variable24>10048</variable24> 
+  <variable25shown>1</variable25shown> 
+  <variable25>10047</variable25> 
+  <variable26shown>1</variable26shown> 
+  <variable26>10044</variable26> 
+  <variable27shown>1</variable27shown> 
+  <variable27 /> 
+  <variable28shown>1</variable28shown> 
+  <variable28>10047</variable28> 
+  <variable29shown>1</variable29shown> 
+  <variable30shown>1</variable30shown> 
+  <variable30>10050</variable30> 
+  <variable31shown>1</variable31shown> 
+  <variable31>10052</variable31> 
+  <variable32shown /> 
+  <variable33 /> 
+  <variable33shown /> 
+  <variable34 /> 
+  <variable34shown /> 
+  <variable35 /> 
+  <variable35shown /> 
+  <variable36 /> 
+  <variable36shown /> 
+  <variable37shown /> 
+  <variable39shown>1</variable39shown> 
+  <variable40shown>1</variable40shown> 
+  <variable40>10061</variable40> 
+  <variable41shown>1</variable41shown> 
+  <variable41>10060</variable41> 
+  <variable42shown>1</variable42shown> 
+  <variable42>10061</variable42> 
+  <variable43shown>1</variable43shown> 
+  <variable43 /> 
+  <variable44shown>1</variable44shown> 
+  <variable44>10062</variable44> 
+  <variable45shown>1</variable45shown> 
+  <variable45>10058</variable45> 
+  <variable46shown>1</variable46shown> 
+  <variable48shown>1</variable48shown> 
+  <variable49>10067</variable49> 
+  <variable49shown>1</variable49shown> 
+  <variable50>10066</variable50> 
+  <variable50shown>1</variable50shown> 
+  <variable51>10066</variable51> 
+  <variable51shown>1</variable51shown> 
+  <variable52>10063</variable52> 
+  <variable52shown>1</variable52shown> 
+  <variable53>10063</variable53> 
+  <variable53shown>1</variable53shown> 
+  <variable54shown>1</variable54shown> 
+  <variable56shown>1</variable56shown> 
+  <variable57shown>1</variable57shown> 
+  <variable57 /> 
+  <variable58shown>1</variable58shown> 
+  <variable58>10071</variable58> 
+  <variable59shown>1</variable59shown> 
+  <variable59 /> 
+  <variable60shown>1</variable60shown> 
+  <variable62shown>1</variable62shown> 
+  <variable63 /> 
+  <variable63shown /> 
+  <variable64 /> 
+  <variable64shown /> 
+  <variable65 /> 
+  <variable65shown /> 
+  <variable66shown>1</variable66shown> 
+  <variable67shown>1</variable67shown> 
+  <variable67>10080</variable67> 
+  <variable68shown>1</variable68shown> 
+  <variable69shown>1</variable69shown> 
+  <variable69>10083</variable69> 
+  <variable70shown>1</variable70shown> 
+  <variable70 /> 
+  <variable71shown>1</variable71shown> 
+  <variable72shown>1</variable72shown> 
+  <variable73shown>1</variable73shown> 
+  <variable73 /> 
+  </_1>
+- <_2>
+  <id>3</id> 
+  <contact_id /> 
+  <status>Deleted</status> 
+  <is_test_data>1</is_test_data> 
+  <datesubmitted>2013-09-24 05:32:19</datesubmitted> 
+  <sResponseComment /> 
+  <responseID>3</responseID> 
+  <question4option10001 /> 
+  <question4option10002 /> 
+  <question4option10003 /> 
+  <question4option10004 /> 
+  <question4option10006 /> 
+  <question4option10006other /> 
+  <question5option10007 /> 
+  <question5option10008 /> 
+  <question5option10009 /> 
+  <question5option10010 /> 
+  <question5option10011 /> 
+  <question5option10012 /> 
+  <question5option10013 /> 
+  <question5option10014 /> 
+  <question5option10015 /> 
+  <question5option10016 /> 
+  <question5option10017 /> 
+  <question5option10018 /> 
+  <question5option10019 /> 
+  <question5option10019other /> 
+  <question6option10020 /> 
+  <question6option10021 /> 
+  <question6option10022 /> 
+  <question6option10023 /> 
+  <question6option10024 /> 
+  <question6option10025 /> 
+  <question6option10026 /> 
+  <question6option10027>Other</question6option10027> 
+  <question6option10027other>for apples i don't know a</question6option10027other> 
+  <question8>Excellent</question8> 
+  <question10 /> 
+  <question11 /> 
+  <question12>Chris.Randall@test.net</question12> 
+  <question15>Strongly Agree</question15> 
+  <question16 /> 
+  <question17>Strongly Disagree</question17> 
+  <question18>Neither agree or disagree</question18> 
+  <question19 /> 
+  <question22 /> 
+  <question23 /> 
+  <question24 /> 
+  <question25 /> 
+  <question26 /> 
+  <question27 /> 
+  <question28 /> 
+  <question29>email awesome love it</question29> 
+  <question30>Yes</question30> 
+  <question31>Yes</question31> 
+  <question33>Fair</question33> 
+  <question34>Very Poor</question34> 
+  <question35>Very Poor</question35> 
+  <question36>Fair</question36> 
+  <question37 /> 
+  <question40 /> 
+  <question41 /> 
+  <question42 /> 
+  <question43 /> 
+  <question44 /> 
+  <question45 /> 
+  <question46 /> 
+  <question49>Disagree</question49> 
+  <question50>Strongly Agree</question50> 
+  <question51>Neither Agree nor Disagree</question51> 
+  <question52>Agree</question52> 
+  <question53>Strongly Agree</question53> 
+  <question54 /> 
+  <question57 /> 
+  <question58>N/A</question58> 
+  <question59>Agree</question59> 
+  <question60>0</question60> 
+  <question63 /> 
+  <question64>Strongly Disagree</question64> 
+  <question65>Neither Agree nor Disagree</question65> 
+  <question66 /> 
+  <question67>Met</question67> 
+  <question68>0</question68> 
+  <question69>Male</question69> 
+  <question70 /> 
+  <question71option10092>Brittany@test.net</question71option10092> 
+  <question71option10093 /> 
+  <question72option10094>News &amp; Events</question72option10094> 
+  <question72option10095>HUNter 486 Brasserie</question72option10095> 
+  <question72option10096 /> 
+  <question72option10097 /> 
+  <question73>... please select the box</question73> 
+  <variableSTANDARD_IP /> 
+  <variableSTANDARD_LONG /> 
+  <variableSTANDARD_LAT /> 
+  <variableSTANDARD_GEOCOUNTRY /> 
+  <variableSTANDARD_GEOCITY /> 
+  <variableSTANDARD_GEOREGION /> 
+  <variableSTANDARD_GEOPOSTAL /> 
+  <variableSTANDARD_RESPONSETIME /> 
+  <variableSTANDARD_COMMENTS /> 
+  <variableSTANDARD_GEODMA>0</variableSTANDARD_GEODMA> 
+  <variableSTANDARD_REFERER>https://appv3.sgizmo.com/projects/editor?id=1377138</variableSTANDARD_REFERER> 
+  <variableSTANDARD_USERAGENT>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:23.0) Gecko/20100101 Firefox/23.0</variableSTANDARD_USERAGENT> 
+  <variablePORTAL_RELATIONSHIP /> 
+  <variable2shown /> 
+  <variable4shown>1</variable4shown> 
+  <variable5shown>1</variable5shown> 
+  <variable6shown>1</variable6shown> 
+  <variable7shown>1</variable7shown> 
+  <variable8shown>1</variable8shown> 
+  <variable8>10028</variable8> 
+  <variable9shown>1</variable9shown> 
+  <variable10shown>1</variable10shown> 
+  <variable10 /> 
+  <variable11shown>1</variable11shown> 
+  <variable11 /> 
+  <variable12shown>1</variable12shown> 
+  <variable13shown /> 
+  <variable14shown>1</variable14shown> 
+  <variable15shown>1</variable15shown> 
+  <variable15>10038</variable15> 
+  <variable16shown>1</variable16shown> 
+  <variable16 /> 
+  <variable17shown>1</variable17shown> 
+  <variable17>10042</variable17> 
+  <variable18shown>1</variable18shown> 
+  <variable18>10040</variable18> 
+  <variable19shown>1</variable19shown> 
+  <variable21shown>1</variable21shown> 
+  <variable22shown /> 
+  <variable22 /> 
+  <variable23shown /> 
+  <variable23 /> 
+  <variable24shown /> 
+  <variable24 /> 
+  <variable25shown /> 
+  <variable25 /> 
+  <variable26shown /> 
+  <variable26 /> 
+  <variable27shown /> 
+  <variable27 /> 
+  <variable28shown /> 
+  <variable28 /> 
+  <variable29shown>1</variable29shown> 
+  <variable30shown>1</variable30shown> 
+  <variable30>10049</variable30> 
+  <variable31shown>1</variable31shown> 
+  <variable31>10051</variable31> 
+  <variable32shown>1</variable32shown> 
+  <variable33>10055</variable33> 
+  <variable33shown>1</variable33shown> 
+  <variable34>10057</variable34> 
+  <variable34shown>1</variable34shown> 
+  <variable35>10057</variable35> 
+  <variable35shown>1</variable35shown> 
+  <variable36>10055</variable36> 
+  <variable36shown>1</variable36shown> 
+  <variable37shown>1</variable37shown> 
+  <variable39shown>1</variable39shown> 
+  <variable40shown /> 
+  <variable40 /> 
+  <variable41shown /> 
+  <variable41 /> 
+  <variable42shown /> 
+  <variable42 /> 
+  <variable43shown /> 
+  <variable43 /> 
+  <variable44shown /> 
+  <variable44 /> 
+  <variable45shown /> 
+  <variable45 /> 
+  <variable46shown>1</variable46shown> 
+  <variable48shown>1</variable48shown> 
+  <variable49>10066</variable49> 
+  <variable49shown>1</variable49shown> 
+  <variable50>10063</variable50> 
+  <variable50shown>1</variable50shown> 
+  <variable51>10065</variable51> 
+  <variable51shown>1</variable51shown> 
+  <variable52>10064</variable52> 
+  <variable52shown>1</variable52shown> 
+  <variable53>10063</variable53> 
+  <variable53shown>1</variable53shown> 
+  <variable54shown>1</variable54shown> 
+  <variable56shown>1</variable56shown> 
+  <variable57shown>1</variable57shown> 
+  <variable57 /> 
+  <variable58shown>1</variable58shown> 
+  <variable58>10073</variable58> 
+  <variable59shown>1</variable59shown> 
+  <variable59>10069</variable59> 
+  <variable60shown>1</variable60shown> 
+  <variable62shown>1</variable62shown> 
+  <variable63 /> 
+  <variable63shown>1</variable63shown> 
+  <variable64>10078</variable64> 
+  <variable64shown>1</variable64shown> 
+  <variable65>10076</variable65> 
+  <variable65shown>1</variable65shown> 
+  <variable66shown>1</variable66shown> 
+  <variable67shown>1</variable67shown> 
+  <variable67>10081</variable67> 
+  <variable68shown>1</variable68shown> 
+  <variable69shown>1</variable69shown> 
+  <variable69>10083</variable69> 
+  <variable70shown>1</variable70shown> 
+  <variable70 /> 
+  <variable71shown>1</variable71shown> 
+  <variable72shown>1</variable72shown> 
+  <variable73shown>1</variable73shown> 
+  <variable73>10098</variable73> 
+  </_2>
+- <_3>
+  <id>4</id> 
+  <contact_id /> 
+  <status>Deleted</status> 
+  <is_test_data>1</is_test_data> 
+  <datesubmitted>2013-09-24 05:32:19</datesubmitted> 
+  <sResponseComment /> 
+  <responseID>4</responseID> 
+  <question4option10001 /> 
+  <question4option10002 /> 
+  <question4option10003 /> 
+  <question4option10004>Private Celebration</question4option10004> 
+  <question4option10006 /> 
+  <question4option10006other /> 
+  <question5option10007 /> 
+  <question5option10008 /> 
+  <question5option10009 /> 
+  <question5option10010 /> 
+  <question5option10011 /> 
+  <question5option10012 /> 
+  <question5option10013 /> 
+  <question5option10014 /> 
+  <question5option10015 /> 
+  <question5option10016 /> 
+  <question5option10017 /> 
+  <question5option10018 /> 
+  <question5option10019 /> 
+  <question5option10019other /> 
+  <question6option10020 /> 
+  <question6option10021>Emailed Direct</question6option10021> 
+  <question6option10022>www.thearchlondon.com</question6option10022> 
+  <question6option10023>Other websites (e.g. Expedia)</question6option10023> 
+  <question6option10024>The Arch Sales Team</question6option10024> 
+  <question6option10025>Company or Organisation</question6option10025> 
+  <question6option10026 /> 
+  <question6option10027 /> 
+  <question6option10027other /> 
+  <question8>Excellent</question8> 
+  <question10 /> 
+  <question11 /> 
+  <question12 /> 
+  <question15 /> 
+  <question16 /> 
+  <question17 /> 
+  <question18 /> 
+  <question19>0</question19> 
+  <question22>Disagree</question22> 
+  <question23 /> 
+  <question24 /> 
+  <question25>Strongly Agree</question25> 
+  <question26 /> 
+  <question27>Strongly Agree</question27> 
+  <question28>Neither Agree nor Disagree</question28> 
+  <question29>don't strongly finally love it hate it</question29> 
+  <question30>Yes</question30> 
+  <question31>Yes</question31> 
+  <question33>Very Poor</question33> 
+  <question34>Excellent</question34> 
+  <question35>Very Poor</question35> 
+  <question36 /> 
+  <question37 /> 
+  <question40>Poor</question40> 
+  <question41>Very Poor</question41> 
+  <question42>Poor</question42> 
+  <question43>Very Poor</question43> 
+  <question44>Excellent</question44> 
+  <question45>Excellent</question45> 
+  <question46 /> 
+  <question49 /> 
+  <question50 /> 
+  <question51 /> 
+  <question52 /> 
+  <question53 /> 
+  <question54>1234564567</question54> 
+  <question57 /> 
+  <question58 /> 
+  <question59 /> 
+  <question60>customers finally</question60> 
+  <question63>Strongly Disagree</question63> 
+  <question64>Strongly Disagree</question64> 
+  <question65>Neither Agree nor Disagree</question65> 
+  <question66 /> 
+  <question67 /> 
+  <question68 /> 
+  <question69>Male</question69> 
+  <question70 /> 
+  <question71option10092 /> 
+  <question71option10093>strongly grapes Banana customers</question71option10093> 
+  <question72option10094>News &amp; Events</question72option10094> 
+  <question72option10095 /> 
+  <question72option10096>Private Dining &amp; Events</question72option10096> 
+  <question72option10097 /> 
+  <question73>... please select the box</question73> 
+  <variableSTANDARD_IP /> 
+  <variableSTANDARD_LONG /> 
+  <variableSTANDARD_LAT /> 
+  <variableSTANDARD_GEOCOUNTRY /> 
+  <variableSTANDARD_GEOCITY /> 
+  <variableSTANDARD_GEOREGION /> 
+  <variableSTANDARD_GEOPOSTAL /> 
+  <variableSTANDARD_RESPONSETIME /> 
+  <variableSTANDARD_COMMENTS /> 
+  <variableSTANDARD_GEODMA>0</variableSTANDARD_GEODMA> 
+  <variableSTANDARD_REFERER>https://appv3.sgizmo.com/projects/editor?id=1377138</variableSTANDARD_REFERER> 
+  <variableSTANDARD_USERAGENT>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:23.0) Gecko/20100101 Firefox/23.0</variableSTANDARD_USERAGENT> 
+  <variablePORTAL_RELATIONSHIP /> 
+  <variable2shown /> 
+  <variable4shown>1</variable4shown> 
+  <variable5shown>1</variable5shown> 
+  <variable6shown>1</variable6shown> 
+  <variable7shown>1</variable7shown> 
+  <variable8shown>1</variable8shown> 
+  <variable8>10028</variable8> 
+  <variable9shown>1</variable9shown> 
+  <variable10shown /> 
+  <variable10 /> 
+  <variable11shown /> 
+  <variable11 /> 
+  <variable12shown>1</variable12shown> 
+  <variable13shown /> 
+  <variable14shown>1</variable14shown> 
+  <variable15shown /> 
+  <variable15 /> 
+  <variable16shown /> 
+  <variable16 /> 
+  <variable17shown /> 
+  <variable17 /> 
+  <variable18shown /> 
+  <variable18 /> 
+  <variable19shown>1</variable19shown> 
+  <variable21shown>1</variable21shown> 
+  <variable22shown>1</variable22shown> 
+  <variable22>10047</variable22> 
+  <variable23shown>1</variable23shown> 
+  <variable23 /> 
+  <variable24shown>1</variable24shown> 
+  <variable24 /> 
+  <variable25shown>1</variable25shown> 
+  <variable25>10044</variable25> 
+  <variable26shown>1</variable26shown> 
+  <variable26 /> 
+  <variable27shown>1</variable27shown> 
+  <variable27>10044</variable27> 
+  <variable28shown>1</variable28shown> 
+  <variable28>10046</variable28> 
+  <variable29shown>1</variable29shown> 
+  <variable30shown>1</variable30shown> 
+  <variable30>10049</variable30> 
+  <variable31shown>1</variable31shown> 
+  <variable31>10051</variable31> 
+  <variable32shown>1</variable32shown> 
+  <variable33>10057</variable33> 
+  <variable33shown>1</variable33shown> 
+  <variable34>10053</variable34> 
+  <variable34shown>1</variable34shown> 
+  <variable35>10057</variable35> 
+  <variable35shown>1</variable35shown> 
+  <variable36 /> 
+  <variable36shown>1</variable36shown> 
+  <variable37shown>1</variable37shown> 
+  <variable39shown>1</variable39shown> 
+  <variable40shown>1</variable40shown> 
+  <variable40>10061</variable40> 
+  <variable41shown>1</variable41shown> 
+  <variable41>10062</variable41> 
+  <variable42shown>1</variable42shown> 
+  <variable42>10061</variable42> 
+  <variable43shown>1</variable43shown> 
+  <variable43>10062</variable43> 
+  <variable44shown>1</variable44shown> 
+  <variable44>10058</variable44> 
+  <variable45shown>1</variable45shown> 
+  <variable45>10058</variable45> 
+  <variable46shown>1</variable46shown> 
+  <variable48shown>1</variable48shown> 
+  <variable49 /> 
+  <variable49shown /> 
+  <variable50 /> 
+  <variable50shown /> 
+  <variable51 /> 
+  <variable51shown /> 
+  <variable52 /> 
+  <variable52shown /> 
+  <variable53 /> 
+  <variable53shown /> 
+  <variable54shown>1</variable54shown> 
+  <variable56shown>1</variable56shown> 
+  <variable57shown /> 
+  <variable57 /> 
+  <variable58shown /> 
+  <variable58 /> 
+  <variable59shown /> 
+  <variable59 /> 
+  <variable60shown>1</variable60shown> 
+  <variable62shown>1</variable62shown> 
+  <variable63>10078</variable63> 
+  <variable63shown>1</variable63shown> 
+  <variable64>10078</variable64> 
+  <variable64shown>1</variable64shown> 
+  <variable65>10076</variable65> 
+  <variable65shown>1</variable65shown> 
+  <variable66shown>1</variable66shown> 
+  <variable67shown>1</variable67shown> 
+  <variable67 /> 
+  <variable68shown>1</variable68shown> 
+  <variable69shown>1</variable69shown> 
+  <variable69>10083</variable69> 
+  <variable70shown>1</variable70shown> 
+  <variable70 /> 
+  <variable71shown>1</variable71shown> 
+  <variable72shown>1</variable72shown> 
+  <variable73shown>1</variable73shown> 
+  <variable73>10098</variable73> 
+  </_3>
+- <_4>
+  <id>5</id> 
+  <contact_id /> 
+  <status>Deleted</status> 
+  <is_test_data>1</is_test_data> 
+  <datesubmitted>2013-09-24 05:32:19</datesubmitted> 
+  <sResponseComment /> 
+  <responseID>5</responseID> 
+  <question4option10001 /> 
+  <question4option10002 /> 
+  <question4option10003 /> 
+  <question4option10004 /> 
+  <question4option10006>Other</question4option10006> 
+  <question4option10006other>7/8/2000</question4option10006other> 
+  <question5option10007>Stayed previously</question5option10007> 
+  <question5option10008>Word of mouth</question5option10008> 
+  <question5option10009>Magazine/newspaper article</question5option10009> 
+  <question5option10010>Internet searches (e.g. Google, Yahoo, etc.)</question5option10010> 
+  <question5option10011>The Arch London Emails</question5option10011> 
+  <question5option10012>Social Media (e.g. Facebook, Twitter, etc)</question5option10012> 
+  <question5option10013 /> 
+  <question5option10014>Advertisement</question5option10014> 
+  <question5option10015 /> 
+  <question5option10016>Company or organisation booked</question5option10016> 
+  <question5option10017>Trip advisor</question5option10017> 
+  <question5option10018>Promotion with other company</question5option10018> 
+  <question5option10019 /> 
+  <question5option10019other /> 
+  <question6option10020>Called Direct</question6option10020> 
+  <question6option10021>Emailed Direct</question6option10021> 
+  <question6option10022>www.thearchlondon.com</question6option10022> 
+  <question6option10023 /> 
+  <question6option10024>The Arch Sales Team</question6option10024> 
+  <question6option10025 /> 
+  <question6option10026>Travel Agent</question6option10026> 
+  <question6option10027>Other</question6option10027> 
+  <question6option10027other>really?</question6option10027other> 
+  <question8 /> 
+  <question10>Definitely No</question10> 
+  <question11>No</question11> 
+  <question12 /> 
+  <question15>Agree</question15> 
+  <question16 /> 
+  <question17>Neither agree or disagree</question17> 
+  <question18>Disagree</question18> 
+  <question19>6/9/2009</question19> 
+  <question22>Agree</question22> 
+  <question23 /> 
+  <question24>Agree</question24> 
+  <question25>Neither Agree nor Disagree</question25> 
+  <question26>Disagree</question26> 
+  <question27>Strongly Agree</question27> 
+  <question28>Strongly Disagree</question28> 
+  <question29 /> 
+  <question30>No</question30> 
+  <question31>Yes</question31> 
+  <question33 /> 
+  <question34 /> 
+  <question35 /> 
+  <question36 /> 
+  <question37 /> 
+  <question40>Very Poor</question40> 
+  <question41>Good</question41> 
+  <question42 /> 
+  <question43>Good</question43> 
+  <question44>Very Poor</question44> 
+  <question45 /> 
+  <question46>9/1/1999</question46> 
+  <question49 /> 
+  <question50 /> 
+  <question51 /> 
+  <question52 /> 
+  <question53 /> 
+  <question54>4/4/2009</question54> 
+  <question57>Agree</question57> 
+  <question58>Neither Agree nor Disagree</question58> 
+  <question59>Neither Agree nor Disagree</question59> 
+  <question60>27 Apex Dr</question60> 
+  <question63 /> 
+  <question64 /> 
+  <question65 /> 
+  <question66 /> 
+  <question67>Met</question67> 
+  <question68>email awesome simple the</question68> 
+  <question69>Female</question69> 
+  <question70 /> 
+  <question71option10092 /> 
+  <question71option10093>hate it finally once a</question71option10093> 
+  <question72option10094 /> 
+  <question72option10095 /> 
+  <question72option10096 /> 
+  <question72option10097>Offers &amp; Promotions</question72option10097> 
+  <question73>... please select the box</question73> 
+  <variableSTANDARD_IP /> 
+  <variableSTANDARD_LONG /> 
+  <variableSTANDARD_LAT /> 
+  <variableSTANDARD_GEOCOUNTRY /> 
+  <variableSTANDARD_GEOCITY /> 
+  <variableSTANDARD_GEOREGION /> 
+  <variableSTANDARD_GEOPOSTAL /> 
+  <variableSTANDARD_RESPONSETIME /> 
+  <variableSTANDARD_COMMENTS /> 
+  <variableSTANDARD_GEODMA>0</variableSTANDARD_GEODMA> 
+  <variableSTANDARD_REFERER>https://appv3.sgizmo.com/projects/editor?id=1377138</variableSTANDARD_REFERER> 
+  <variableSTANDARD_USERAGENT>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:23.0) Gecko/20100101 Firefox/23.0</variableSTANDARD_USERAGENT> 
+  <variablePORTAL_RELATIONSHIP /> 
+  <variable2shown /> 
+  <variable4shown>1</variable4shown> 
+  <variable5shown>1</variable5shown> 
+  <variable6shown>1</variable6shown> 
+  <variable7shown>1</variable7shown> 
+  <variable8shown /> 
+  <variable8 /> 
+  <variable9shown>1</variable9shown> 
+  <variable10shown>1</variable10shown> 
+  <variable10>10037</variable10> 
+  <variable11shown>1</variable11shown> 
+  <variable11>10036</variable11> 
+  <variable12shown>1</variable12shown> 
+  <variable13shown /> 
+  <variable14shown>1</variable14shown> 
+  <variable15shown>1</variable15shown> 
+  <variable15>10039</variable15> 
+  <variable16shown>1</variable16shown> 
+  <variable16 /> 
+  <variable17shown>1</variable17shown> 
+  <variable17>10040</variable17> 
+  <variable18shown>1</variable18shown> 
+  <variable18>10041</variable18> 
+  <variable19shown>1</variable19shown> 
+  <variable21shown>1</variable21shown> 
+  <variable22shown>1</variable22shown> 
+  <variable22>10045</variable22> 
+  <variable23shown>1</variable23shown> 
+  <variable23 /> 
+  <variable24shown>1</variable24shown> 
+  <variable24>10045</variable24> 
+  <variable25shown>1</variable25shown> 
+  <variable25>10046</variable25> 
+  <variable26shown>1</variable26shown> 
+  <variable26>10047</variable26> 
+  <variable27shown>1</variable27shown> 
+  <variable27>10044</variable27> 
+  <variable28shown>1</variable28shown> 
+  <variable28>10048</variable28> 
+  <variable29shown>1</variable29shown> 
+  <variable30shown>1</variable30shown> 
+  <variable30>10050</variable30> 
+  <variable31shown>1</variable31shown> 
+  <variable31>10051</variable31> 
+  <variable32shown /> 
+  <variable33 /> 
+  <variable33shown /> 
+  <variable34 /> 
+  <variable34shown /> 
+  <variable35 /> 
+  <variable35shown /> 
+  <variable36 /> 
+  <variable36shown /> 
+  <variable37shown /> 
+  <variable39shown>1</variable39shown> 
+  <variable40shown>1</variable40shown> 
+  <variable40>10062</variable40> 
+  <variable41shown>1</variable41shown> 
+  <variable41>10059</variable41> 
+  <variable42shown>1</variable42shown> 
+  <variable42 /> 
+  <variable43shown>1</variable43shown> 
+  <variable43>10059</variable43> 
+  <variable44shown>1</variable44shown> 
+  <variable44>10062</variable44> 
+  <variable45shown>1</variable45shown> 
+  <variable45 /> 
+  <variable46shown>1</variable46shown> 
+  <variable48shown>1</variable48shown> 
+  <variable49 /> 
+  <variable49shown /> 
+  <variable50 /> 
+  <variable50shown /> 
+  <variable51 /> 
+  <variable51shown /> 
+  <variable52 /> 
+  <variable52shown /> 
+  <variable53 /> 
+  <variable53shown /> 
+  <variable54shown>1</variable54shown> 
+  <variable56shown>1</variable56shown> 
+  <variable57shown>1</variable57shown> 
+  <variable57>10069</variable57> 
+  <variable58shown>1</variable58shown> 
+  <variable58>10070</variable58> 
+  <variable59shown>1</variable59shown> 
+  <variable59>10070</variable59> 
+  <variable60shown>1</variable60shown> 
+  <variable62shown>1</variable62shown> 
+  <variable63 /> 
+  <variable63shown /> 
+  <variable64 /> 
+  <variable64shown /> 
+  <variable65 /> 
+  <variable65shown /> 
+  <variable66shown>1</variable66shown> 
+  <variable67shown>1</variable67shown> 
+  <variable67>10081</variable67> 
+  <variable68shown>1</variable68shown> 
+  <variable69shown>1</variable69shown> 
+  <variable69>10084</variable69> 
+  <variable70shown>1</variable70shown> 
+  <variable70 /> 
+  <variable71shown>1</variable71shown> 
+  <variable72shown>1</variable72shown> 
+  <variable73shown>1</variable73shown> 
+  <variable73>10098</variable73> 
+  </_4>
+- <_5>
+  <id>6</id> 
+  <contact_id /> 
+  <status>Deleted</status> 
+  <is_test_data>1</is_test_data> 
+  <datesubmitted>2013-09-24 05:32:19</datesubmitted> 
+  <sResponseComment /> 
+  <responseID>6</responseID> 
+  <question4option10001 /> 
+  <question4option10002 /> 
+  <question4option10003 /> 
+  <question4option10004 /> 
+  <question4option10006>Other</question4option10006> 
+  <question4option10006other>0</question4option10006other> 
+  <question5option10007 /> 
+  <question5option10008 /> 
+  <question5option10009 /> 
+  <question5option10010 /> 
+  <question5option10011 /> 
+  <question5option10012 /> 
+  <question5option10013 /> 
+  <question5option10014 /> 
+  <question5option10015 /> 
+  <question5option10016 /> 
+  <question5option10017 /> 
+  <question5option10018 /> 
+  <question5option10019 /> 
+  <question5option10019other /> 
+  <question6option10020 /> 
+  <question6option10021>Emailed Direct</question6option10021> 
+  <question6option10022>www.thearchlondon.com</question6option10022> 
+  <question6option10023>Other websites (e.g. Expedia)</question6option10023> 
+  <question6option10024 /> 
+  <question6option10025 /> 
+  <question6option10026 /> 
+  <question6option10027 /> 
+  <question6option10027other /> 
+  <question8>Good</question8> 
+  <question10>Maybe</question10> 
+  <question11>No</question11> 
+  <question12 /> 
+  <question15 /> 
+  <question16 /> 
+  <question17 /> 
+  <question18 /> 
+  <question19 /> 
+  <question22>Strongly Disagree</question22> 
+  <question23>Neither Agree nor Disagree</question23> 
+  <question24 /> 
+  <question25 /> 
+  <question26>Strongly Disagree</question26> 
+  <question27>Strongly Agree</question27> 
+  <question28>Disagree</question28> 
+  <question29>strongly once customers</question29> 
+  <question30>No</question30> 
+  <question31>Yes</question31> 
+  <question33 /> 
+  <question34 /> 
+  <question35 /> 
+  <question36 /> 
+  <question37 /> 
+  <question40 /> 
+  <question41 /> 
+  <question42 /> 
+  <question43 /> 
+  <question44 /> 
+  <question45 /> 
+  <question46 /> 
+  <question49 /> 
+  <question50 /> 
+  <question51>Neither Agree nor Disagree</question51> 
+  <question52>Neither Agree nor Disagree</question52> 
+  <question53>Disagree</question53> 
+  <question54 /> 
+  <question57>N/A</question57> 
+  <question58>Strongly Disagree</question58> 
+  <question59>Agree</question59> 
+  <question60 /> 
+  <question63>Agree</question63> 
+  <question64>Agree</question64> 
+  <question65 /> 
+  <question66 /> 
+  <question67 /> 
+  <question68 /> 
+  <question69>Female</question69> 
+  <question70 /> 
+  <question71option10092>i don't know a customers</question71option10092> 
+  <question71option10093 /> 
+  <question72option10094 /> 
+  <question72option10095>HUNter 486 Brasserie</question72option10095> 
+  <question72option10096>Private Dining &amp; Events</question72option10096> 
+  <question72option10097>Offers &amp; Promotions</question72option10097> 
+  <question73>... please select the box</question73> 
+  <variableSTANDARD_IP /> 
+  <variableSTANDARD_LONG /> 
+  <variableSTANDARD_LAT /> 
+  <variableSTANDARD_GEOCOUNTRY /> 
+  <variableSTANDARD_GEOCITY /> 
+  <variableSTANDARD_GEOREGION /> 
+  <variableSTANDARD_GEOPOSTAL /> 
+  <variableSTANDARD_RESPONSETIME /> 
+  <variableSTANDARD_COMMENTS /> 
+  <variableSTANDARD_GEODMA>0</variableSTANDARD_GEODMA> 
+  <variableSTANDARD_REFERER>https://appv3.sgizmo.com/projects/editor?id=1377138</variableSTANDARD_REFERER> 
+  <variableSTANDARD_USERAGENT>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:23.0) Gecko/20100101 Firefox/23.0</variableSTANDARD_USERAGENT> 
+  <variablePORTAL_RELATIONSHIP /> 
+  <variable2shown /> 
+  <variable4shown>1</variable4shown> 
+  <variable5shown>1</variable5shown> 
+  <variable6shown>1</variable6shown> 
+  <variable7shown>1</variable7shown> 
+  <variable8shown>1</variable8shown> 
+  <variable8>10029</variable8> 
+  <variable9shown>1</variable9shown> 
+  <variable10shown>1</variable10shown> 
+  <variable10>10035</variable10> 
+  <variable11shown>1</variable11shown> 
+  <variable11>10036</variable11> 
+  <variable12shown>1</variable12shown> 
+  <variable13shown /> 
+  <variable14shown>1</variable14shown> 
+  <variable15shown /> 
+  <variable15 /> 
+  <variable16shown /> 
+  <variable16 /> 
+  <variable17shown /> 
+  <variable17 /> 
+  <variable18shown /> 
+  <variable18 /> 
+  <variable19shown>1</variable19shown> 
+  <variable21shown>1</variable21shown> 
+  <variable22shown>1</variable22shown> 
+  <variable22>10048</variable22> 
+  <variable23shown>1</variable23shown> 
+  <variable23>10046</variable23> 
+  <variable24shown>1</variable24shown> 
+  <variable24 /> 
+  <variable25shown>1</variable25shown> 
+  <variable25 /> 
+  <variable26shown>1</variable26shown> 
+  <variable26>10048</variable26> 
+  <variable27shown>1</variable27shown> 
+  <variable27>10044</variable27> 
+  <variable28shown>1</variable28shown> 
+  <variable28>10047</variable28> 
+  <variable29shown>1</variable29shown> 
+  <variable30shown>1</variable30shown> 
+  <variable30>10050</variable30> 
+  <variable31shown>1</variable31shown> 
+  <variable31>10051</variable31> 
+  <variable32shown /> 
+  <variable33 /> 
+  <variable33shown /> 
+  <variable34 /> 
+  <variable34shown /> 
+  <variable35 /> 
+  <variable35shown /> 
+  <variable36 /> 
+  <variable36shown /> 
+  <variable37shown /> 
+  <variable39shown>1</variable39shown> 
+  <variable40shown /> 
+  <variable40 /> 
+  <variable41shown /> 
+  <variable41 /> 
+  <variable42shown /> 
+  <variable42 /> 
+  <variable43shown /> 
+  <variable43 /> 
+  <variable44shown /> 
+  <variable44 /> 
+  <variable45shown /> 
+  <variable45 /> 
+  <variable46shown>1</variable46shown> 
+  <variable48shown>1</variable48shown> 
+  <variable49 /> 
+  <variable49shown>1</variable49shown> 
+  <variable50 /> 
+  <variable50shown>1</variable50shown> 
+  <variable51>10065</variable51> 
+  <variable51shown>1</variable51shown> 
+  <variable52>10065</variable52> 
+  <variable52shown>1</variable52shown> 
+  <variable53>10066</variable53> 
+  <variable53shown>1</variable53shown> 
+  <variable54shown>1</variable54shown> 
+  <variable56shown>1</variable56shown> 
+  <variable57shown>1</variable57shown> 
+  <variable57>10073</variable57> 
+  <variable58shown>1</variable58shown> 
+  <variable58>10072</variable58> 
+  <variable59shown>1</variable59shown> 
+  <variable59>10069</variable59> 
+  <variable60shown>1</variable60shown> 
+  <variable62shown>1</variable62shown> 
+  <variable63>10075</variable63> 
+  <variable63shown>1</variable63shown> 
+  <variable64>10075</variable64> 
+  <variable64shown>1</variable64shown> 
+  <variable65 /> 
+  <variable65shown>1</variable65shown> 
+  <variable66shown>1</variable66shown> 
+  <variable67shown>1</variable67shown> 
+  <variable67 /> 
+  <variable68shown>1</variable68shown> 
+  <variable69shown>1</variable69shown> 
+  <variable69>10084</variable69> 
+  <variable70shown>1</variable70shown> 
+  <variable70 /> 
+  <variable71shown>1</variable71shown> 
+  <variable72shown>1</variable72shown> 
+  <variable73shown>1</variable73shown> 
+  <variable73>10098</variable73> 
+  </_5>
+- <_6>
+  <id>7</id> 
+  <contact_id /> 
+  <status>Deleted</status> 
+  <is_test_data>1</is_test_data> 
+  <datesubmitted>2013-09-24 05:32:19</datesubmitted> 
+  <sResponseComment /> 
+  <responseID>7</responseID> 
+  <question4option10001>Business</question4option10001> 
+  <question4option10002>Leisure</question4option10002> 
+  <question4option10003>Meeting or Event</question4option10003> 
+  <question4option10004>Private Celebration</question4option10004> 
+  <question4option10006>Other</question4option10006> 
+  <question4option10006other>love it once strongly</question4option10006other> 
+  <question5option10007>Stayed previously</question5option10007> 
+  <question5option10008 /> 
+  <question5option10009>Magazine/newspaper article</question5option10009> 
+  <question5option10010>Internet searches (e.g. Google, Yahoo, etc.)</question5option10010> 
+  <question5option10011>The Arch London Emails</question5option10011> 
+  <question5option10012>Social Media (e.g. Facebook, Twitter, etc)</question5option10012> 
+  <question5option10013>Recommendation</question5option10013> 
+  <question5option10014>Advertisement</question5option10014> 
+  <question5option10015>www.thearchlondon.com</question5option10015> 
+  <question5option10016>Company or organisation booked</question5option10016> 
+  <question5option10017>Trip advisor</question5option10017> 
+  <question5option10018>Promotion with other company</question5option10018> 
+  <question5option10019 /> 
+  <question5option10019other /> 
+  <question6option10020 /> 
+  <question6option10021>Emailed Direct</question6option10021> 
+  <question6option10022 /> 
+  <question6option10023>Other websites (e.g. Expedia)</question6option10023> 
+  <question6option10024 /> 
+  <question6option10025 /> 
+  <question6option10026>Travel Agent</question6option10026> 
+  <question6option10027>Other</question6option10027> 
+  <question6option10027other>for fortune</question6option10027other> 
+  <question8>Excellent</question8> 
+  <question10 /> 
+  <question11 /> 
+  <question12 /> 
+  <question15>Disagree</question15> 
+  <question16>N/A</question16> 
+  <question17 /> 
+  <question18>Strongly Agree</question18> 
+  <question19 /> 
+  <question22 /> 
+  <question23>Strongly Disagree</question23> 
+  <question24>Strongly Agree</question24> 
+  <question25>Neither Agree nor Disagree</question25> 
+  <question26 /> 
+  <question27>Strongly Agree</question27> 
+  <question28>Agree</question28> 
+  <question29 /> 
+  <question30>Yes</question30> 
+  <question31>Yes</question31> 
+  <question33>Excellent</question33> 
+  <question34>Good</question34> 
+  <question35>Fair</question35> 
+  <question36>Fair</question36> 
+  <question37>0</question37> 
+  <question40>Very Poor</question40> 
+  <question41>Good</question41> 
+  <question42>Excellent</question42> 
+  <question43>Very Poor</question43> 
+  <question44>Excellent</question44> 
+  <question45>Very Poor</question45> 
+  <question46>0</question46> 
+  <question49>Neither Agree nor Disagree</question49> 
+  <question50 /> 
+  <question51>Neither Agree nor Disagree</question51> 
+  <question52 /> 
+  <question53>Agree</question53> 
+  <question54 /> 
+  <question57>Strongly Agree</question57> 
+  <question58>Disagree</question58> 
+  <question59>Strongly Agree</question59> 
+  <question60 /> 
+  <question63 /> 
+  <question64 /> 
+  <question65 /> 
+  <question66 /> 
+  <question67>Met</question67> 
+  <question68 /> 
+  <question69>Male</question69> 
+  <question70>25-34</question70> 
+  <question71option10092>65 Cline St</question71option10092> 
+  <question71option10093>55 Cliff Nelson Rd</question71option10093> 
+  <question72option10094>News &amp; Events</question72option10094> 
+  <question72option10095>HUNter 486 Brasserie</question72option10095> 
+  <question72option10096>Private Dining &amp; Events</question72option10096> 
+  <question72option10097>Offers &amp; Promotions</question72option10097> 
+  <question73>... please select the box</question73> 
+  <variableSTANDARD_IP /> 
+  <variableSTANDARD_LONG /> 
+  <variableSTANDARD_LAT /> 
+  <variableSTANDARD_GEOCOUNTRY /> 
+  <variableSTANDARD_GEOCITY /> 
+  <variableSTANDARD_GEOREGION /> 
+  <variableSTANDARD_GEOPOSTAL /> 
+  <variableSTANDARD_RESPONSETIME /> 
+  <variableSTANDARD_COMMENTS /> 
+  <variableSTANDARD_GEODMA>0</variableSTANDARD_GEODMA> 
+  <variableSTANDARD_REFERER>https://appv3.sgizmo.com/projects/editor?id=1377138</variableSTANDARD_REFERER> 
+  <variableSTANDARD_USERAGENT>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:23.0) Gecko/20100101 Firefox/23.0</variableSTANDARD_USERAGENT> 
+  <variablePORTAL_RELATIONSHIP /> 
+  <variable2shown /> 
+  <variable4shown>1</variable4shown> 
+  <variable5shown>1</variable5shown> 
+  <variable6shown>1</variable6shown> 
+  <variable7shown>1</variable7shown> 
+  <variable8shown>1</variable8shown> 
+  <variable8>10028</variable8> 
+  <variable9shown>1</variable9shown> 
+  <variable10shown /> 
+  <variable10 /> 
+  <variable11shown /> 
+  <variable11 /> 
+  <variable12shown>1</variable12shown> 
+  <variable13shown /> 
+  <variable14shown>1</variable14shown> 
+  <variable15shown>1</variable15shown> 
+  <variable15>10041</variable15> 
+  <variable16shown>1</variable16shown> 
+  <variable16>10043</variable16> 
+  <variable17shown>1</variable17shown> 
+  <variable17 /> 
+  <variable18shown>1</variable18shown> 
+  <variable18>10038</variable18> 
+  <variable19shown>1</variable19shown> 
+  <variable21shown>1</variable21shown> 
+  <variable22shown>1</variable22shown> 
+  <variable22 /> 
+  <variable23shown>1</variable23shown> 
+  <variable23>10048</variable23> 
+  <variable24shown>1</variable24shown> 
+  <variable24>10044</variable24> 
+  <variable25shown>1</variable25shown> 
+  <variable25>10046</variable25> 
+  <variable26shown>1</variable26shown> 
+  <variable26 /> 
+  <variable27shown>1</variable27shown> 
+  <variable27>10044</variable27> 
+  <variable28shown>1</variable28shown> 
+  <variable28>10045</variable28> 
+  <variable29shown>1</variable29shown> 
+  <variable30shown>1</variable30shown> 
+  <variable30>10049</variable30> 
+  <variable31shown>1</variable31shown> 
+  <variable31>10051</variable31> 
+  <variable32shown>1</variable32shown> 
+  <variable33>10053</variable33> 
+  <variable33shown>1</variable33shown> 
+  <variable34>10054</variable34> 
+  <variable34shown>1</variable34shown> 
+  <variable35>10055</variable35> 
+  <variable35shown>1</variable35shown> 
+  <variable36>10055</variable36> 
+  <variable36shown>1</variable36shown> 
+  <variable37shown>1</variable37shown> 
+  <variable39shown>1</variable39shown> 
+  <variable40shown>1</variable40shown> 
+  <variable40>10062</variable40> 
+  <variable41shown>1</variable41shown> 
+  <variable41>10059</variable41> 
+  <variable42shown>1</variable42shown> 
+  <variable42>10058</variable42> 
+  <variable43shown>1</variable43shown> 
+  <variable43>10062</variable43> 
+  <variable44shown>1</variable44shown> 
+  <variable44>10058</variable44> 
+  <variable45shown>1</variable45shown> 
+  <variable45>10062</variable45> 
+  <variable46shown>1</variable46shown> 
+  <variable48shown>1</variable48shown> 
+  <variable49>10065</variable49> 
+  <variable49shown>1</variable49shown> 
+  <variable50 /> 
+  <variable50shown>1</variable50shown> 
+  <variable51>10065</variable51> 
+  <variable51shown>1</variable51shown> 
+  <variable52 /> 
+  <variable52shown>1</variable52shown> 
+  <variable53>10064</variable53> 
+  <variable53shown>1</variable53shown> 
+  <variable54shown>1</variable54shown> 
+  <variable56shown>1</variable56shown> 
+  <variable57shown>1</variable57shown> 
+  <variable57>10068</variable57> 
+  <variable58shown>1</variable58shown> 
+  <variable58>10071</variable58> 
+  <variable59shown>1</variable59shown> 
+  <variable59>10068</variable59> 
+  <variable60shown>1</variable60shown> 
+  <variable62shown>1</variable62shown> 
+  <variable63 /> 
+  <variable63shown /> 
+  <variable64 /> 
+  <variable64shown /> 
+  <variable65 /> 
+  <variable65shown /> 
+  <variable66shown>1</variable66shown> 
+  <variable67shown>1</variable67shown> 
+  <variable67>10081</variable67> 
+  <variable68shown>1</variable68shown> 
+  <variable69shown>1</variable69shown> 
+  <variable69>10083</variable69> 
+  <variable70shown>1</variable70shown> 
+  <variable70>10087</variable70> 
+  <variable71shown>1</variable71shown> 
+  <variable72shown>1</variable72shown> 
+  <variable73shown>1</variable73shown> 
+  <variable73>10098</variable73> 
+  </_6>
+- <_7>
+  <id>8</id> 
+  <contact_id /> 
+  <status>Deleted</status> 
+  <is_test_data>1</is_test_data> 
+  <datesubmitted>2013-09-24 05:32:19</datesubmitted> 
+  <sResponseComment /> 
+  <responseID>8</responseID> 
+  <question4option10001>Business</question4option10001> 
+  <question4option10002 /> 
+  <question4option10003 /> 
+  <question4option10004 /> 
+  <question4option10006>Other</question4option10006> 
+  <question4option10006other>0</question4option10006other> 
+  <question5option10007>Stayed previously</question5option10007> 
+  <question5option10008>Word of mouth</question5option10008> 
+  <question5option10009>Magazine/newspaper article</question5option10009> 
+  <question5option10010>Internet searches (e.g. Google, Yahoo, etc.)</question5option10010> 
+  <question5option10011 /> 
+  <question5option10012>Social Media (e.g. Facebook, Twitter, etc)</question5option10012> 
+  <question5option10013>Recommendation</question5option10013> 
+  <question5option10014>Advertisement</question5option10014> 
+  <question5option10015>www.thearchlondon.com</question5option10015> 
+  <question5option10016>Company or organisation booked</question5option10016> 
+  <question5option10017 /> 
+  <question5option10018>Promotion with other company</question5option10018> 
+  <question5option10019>Other</question5option10019> 
+  <question5option10019other>187 Cline Dr</question5option10019other> 
+  <question6option10020 /> 
+  <question6option10021 /> 
+  <question6option10022 /> 
+  <question6option10023>Other websites (e.g. Expedia)</question6option10023> 
+  <question6option10024 /> 
+  <question6option10025 /> 
+  <question6option10026 /> 
+  <question6option10027>Other</question6option10027> 
+  <question6option10027other>11/17/2005</question6option10027other> 
+  <question8 /> 
+  <question10>Definitely No</question10> 
+  <question11>No</question11> 
+  <question12 /> 
+  <question15 /> 
+  <question16 /> 
+  <question17 /> 
+  <question18 /> 
+  <question19 /> 
+  <question22>Strongly Agree</question22> 
+  <question23>Strongly Agree</question23> 
+  <question24>Neither Agree nor Disagree</question24> 
+  <question25>Strongly Disagree</question25> 
+  <question26>Disagree</question26> 
+  <question27>Strongly Agree</question27> 
+  <question28>Disagree</question28> 
+  <question29 /> 
+  <question30>No</question30> 
+  <question31>No</question31> 
+  <question33 /> 
+  <question34 /> 
+  <question35 /> 
+  <question36 /> 
+  <question37 /> 
+  <question40>Poor</question40> 
+  <question41>Fair</question41> 
+  <question42>Excellent</question42> 
+  <question43>Poor</question43> 
+  <question44>Good</question44> 
+  <question45 /> 
+  <question46>once good for so what the</question46> 
+  <question49 /> 
+  <question50 /> 
+  <question51 /> 
+  <question52 /> 
+  <question53 /> 
+  <question54 /> 
+  <question57 /> 
+  <question58 /> 
+  <question59 /> 
+  <question60 /> 
+  <question63>Agree</question63> 
+  <question64>Disagree</question64> 
+  <question65>Agree</question65> 
+  <question66 /> 
+  <question67 /> 
+  <question68>0</question68> 
+  <question69>Male</question69> 
+  <question70 /> 
+  <question71option10092>tv show for Smithy email for</question71option10092> 
+  <question71option10093 /> 
+  <question72option10094 /> 
+  <question72option10095 /> 
+  <question72option10096 /> 
+  <question72option10097 /> 
+  <question73>... please select the box</question73> 
+  <variableSTANDARD_IP /> 
+  <variableSTANDARD_LONG /> 
+  <variableSTANDARD_LAT /> 
+  <variableSTANDARD_GEOCOUNTRY /> 
+  <variableSTANDARD_GEOCITY /> 
+  <variableSTANDARD_GEOREGION /> 
+  <variableSTANDARD_GEOPOSTAL /> 
+  <variableSTANDARD_RESPONSETIME /> 
+  <variableSTANDARD_COMMENTS /> 
+  <variableSTANDARD_GEODMA>0</variableSTANDARD_GEODMA> 
+  <variableSTANDARD_REFERER>https://appv3.sgizmo.com/projects/editor?id=1377138</variableSTANDARD_REFERER> 
+  <variableSTANDARD_USERAGENT>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:23.0) Gecko/20100101 Firefox/23.0</variableSTANDARD_USERAGENT> 
+  <variablePORTAL_RELATIONSHIP /> 
+  <variable2shown /> 
+  <variable4shown>1</variable4shown> 
+  <variable5shown>1</variable5shown> 
+  <variable6shown>1</variable6shown> 
+  <variable7shown>1</variable7shown> 
+  <variable8shown /> 
+  <variable8 /> 
+  <variable9shown>1</variable9shown> 
+  <variable10shown>1</variable10shown> 
+  <variable10>10037</variable10> 
+  <variable11shown>1</variable11shown> 
+  <variable11>10036</variable11> 
+  <variable12shown>1</variable12shown> 
+  <variable13shown /> 
+  <variable14shown>1</variable14shown> 
+  <variable15shown /> 
+  <variable15 /> 
+  <variable16shown /> 
+  <variable16 /> 
+  <variable17shown /> 
+  <variable17 /> 
+  <variable18shown /> 
+  <variable18 /> 
+  <variable19shown>1</variable19shown> 
+  <variable21shown>1</variable21shown> 
+  <variable22shown>1</variable22shown> 
+  <variable22>10044</variable22> 
+  <variable23shown>1</variable23shown> 
+  <variable23>10044</variable23> 
+  <variable24shown>1</variable24shown> 
+  <variable24>10046</variable24> 
+  <variable25shown>1</variable25shown> 
+  <variable25>10048</variable25> 
+  <variable26shown>1</variable26shown> 
+  <variable26>10047</variable26> 
+  <variable27shown>1</variable27shown> 
+  <variable27>10044</variable27> 
+  <variable28shown>1</variable28shown> 
+  <variable28>10047</variable28> 
+  <variable29shown>1</variable29shown> 
+  <variable30shown>1</variable30shown> 
+  <variable30>10050</variable30> 
+  <variable31shown>1</variable31shown> 
+  <variable31>10052</variable31> 
+  <variable32shown /> 
+  <variable33 /> 
+  <variable33shown /> 
+  <variable34 /> 
+  <variable34shown /> 
+  <variable35 /> 
+  <variable35shown /> 
+  <variable36 /> 
+  <variable36shown /> 
+  <variable37shown /> 
+  <variable39shown>1</variable39shown> 
+  <variable40shown>1</variable40shown> 
+  <variable40>10061</variable40> 
+  <variable41shown>1</variable41shown> 
+  <variable41>10060</variable41> 
+  <variable42shown>1</variable42shown> 
+  <variable42>10058</variable42> 
+  <variable43shown>1</variable43shown> 
+  <variable43>10061</variable43> 
+  <variable44shown>1</variable44shown> 
+  <variable44>10059</variable44> 
+  <variable45shown>1</variable45shown> 
+  <variable45 /> 
+  <variable46shown>1</variable46shown> 
+  <variable48shown>1</variable48shown> 
+  <variable49 /> 
+  <variable49shown /> 
+  <variable50 /> 
+  <variable50shown /> 
+  <variable51 /> 
+  <variable51shown /> 
+  <variable52 /> 
+  <variable52shown /> 
+  <variable53 /> 
+  <variable53shown /> 
+  <variable54shown>1</variable54shown> 
+  <variable56shown>1</variable56shown> 
+  <variable57shown /> 
+  <variable57 /> 
+  <variable58shown /> 
+  <variable58 /> 
+  <variable59shown /> 
+  <variable59 /> 
+  <variable60shown>1</variable60shown> 
+  <variable62shown>1</variable62shown> 
+  <variable63>10075</variable63> 
+  <variable63shown>1</variable63shown> 
+  <variable64>10077</variable64> 
+  <variable64shown>1</variable64shown> 
+  <variable65>10075</variable65> 
+  <variable65shown>1</variable65shown> 
+  <variable66shown>1</variable66shown> 
+  <variable67shown>1</variable67shown> 
+  <variable67 /> 
+  <variable68shown>1</variable68shown> 
+  <variable69shown>1</variable69shown> 
+  <variable69>10083</variable69> 
+  <variable70shown>1</variable70shown> 
+  <variable70 /> 
+  <variable71shown>1</variable71shown> 
+  <variable72shown>1</variable72shown> 
+  <variable73shown>1</variable73shown> 
+  <variable73>10098</variable73> 
+  </_7>
+- <_8>
+  <id>9</id> 
+  <contact_id /> 
+  <status>Deleted</status> 
+  <is_test_data>1</is_test_data> 
+  <datesubmitted>2013-09-24 05:32:19</datesubmitted> 
+  <sResponseComment /> 
+  <responseID>9</responseID> 
+  <question4option10001>Business</question4option10001> 
+  <question4option10002 /> 
+  <question4option10003>Meeting or Event</question4option10003> 
+  <question4option10004>Private Celebration</question4option10004> 
+  <question4option10006>Other</question4option10006> 
+  <question4option10006other>0</question4option10006other> 
+  <question5option10007 /> 
+  <question5option10008>Word of mouth</question5option10008> 
+  <question5option10009>Magazine/newspaper article</question5option10009> 
+  <question5option10010>Internet searches (e.g. Google, Yahoo, etc.)</question5option10010> 
+  <question5option10011>The Arch London Emails</question5option10011> 
+  <question5option10012 /> 
+  <question5option10013>Recommendation</question5option10013> 
+  <question5option10014>Advertisement</question5option10014> 
+  <question5option10015>www.thearchlondon.com</question5option10015> 
+  <question5option10016>Company or organisation booked</question5option10016> 
+  <question5option10017>Trip advisor</question5option10017> 
+  <question5option10018>Promotion with other company</question5option10018> 
+  <question5option10019>Other</question5option10019> 
+  <question5option10019other /> 
+  <question6option10020 /> 
+  <question6option10021 /> 
+  <question6option10022 /> 
+  <question6option10023 /> 
+  <question6option10024 /> 
+  <question6option10025 /> 
+  <question6option10026 /> 
+  <question6option10027 /> 
+  <question6option10027other /> 
+  <question8>Poor</question8> 
+  <question10>Definitely No</question10> 
+  <question11 /> 
+  <question12>1/6/2000</question12> 
+  <question15 /> 
+  <question16 /> 
+  <question17 /> 
+  <question18 /> 
+  <question19 /> 
+  <question22>Agree</question22> 
+  <question23>Neither Agree nor Disagree</question23> 
+  <question24>Strongly Disagree</question24> 
+  <question25 /> 
+  <question26>Disagree</question26> 
+  <question27 /> 
+  <question28>Strongly Agree</question28> 
+  <question29>apricots for</question29> 
+  <question30>No</question30> 
+  <question31 /> 
+  <question33 /> 
+  <question34 /> 
+  <question35 /> 
+  <question36 /> 
+  <question37 /> 
+  <question40 /> 
+  <question41 /> 
+  <question42 /> 
+  <question43>Very Poor</question43> 
+  <question44>Very Poor</question44> 
+  <question45 /> 
+  <question46 /> 
+  <question49>Strongly Agree</question49> 
+  <question50>Strongly Disagree</question50> 
+  <question51 /> 
+  <question52>Strongly Disagree</question52> 
+  <question53 /> 
+  <question54>0</question54> 
+  <question57 /> 
+  <question58 /> 
+  <question59 /> 
+  <question60>customers</question60> 
+  <question63>Agree</question63> 
+  <question64>Strongly Disagree</question64> 
+  <question65>Strongly Disagree</question65> 
+  <question66>0</question66> 
+  <question67>Fell Below</question67> 
+  <question68>Smithy fortune</question68> 
+  <question69>Male</question69> 
+  <question70 /> 
+  <question71option10092>0</question71option10092> 
+  <question71option10093>a</question71option10093> 
+  <question72option10094 /> 
+  <question72option10095 /> 
+  <question72option10096 /> 
+  <question72option10097 /> 
+  <question73>... please select the box</question73> 
+  <variableSTANDARD_IP /> 
+  <variableSTANDARD_LONG /> 
+  <variableSTANDARD_LAT /> 
+  <variableSTANDARD_GEOCOUNTRY /> 
+  <variableSTANDARD_GEOCITY /> 
+  <variableSTANDARD_GEOREGION /> 
+  <variableSTANDARD_GEOPOSTAL /> 
+  <variableSTANDARD_RESPONSETIME /> 
+  <variableSTANDARD_COMMENTS /> 
+  <variableSTANDARD_GEODMA>0</variableSTANDARD_GEODMA> 
+  <variableSTANDARD_REFERER>https://appv3.sgizmo.com/projects/editor?id=1377138</variableSTANDARD_REFERER> 
+  <variableSTANDARD_USERAGENT>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:23.0) Gecko/20100101 Firefox/23.0</variableSTANDARD_USERAGENT> 
+  <variablePORTAL_RELATIONSHIP /> 
+  <variable2shown /> 
+  <variable4shown>1</variable4shown> 
+  <variable5shown>1</variable5shown> 
+  <variable6shown>1</variable6shown> 
+  <variable7shown>1</variable7shown> 
+  <variable8shown>1</variable8shown> 
+  <variable8>10031</variable8> 
+  <variable9shown>1</variable9shown> 
+  <variable10shown>1</variable10shown> 
+  <variable10>10037</variable10> 
+  <variable11shown>1</variable11shown> 
+  <variable11 /> 
+  <variable12shown>1</variable12shown> 
+  <variable13shown /> 
+  <variable14shown>1</variable14shown> 
+  <variable15shown /> 
+  <variable15 /> 
+  <variable16shown /> 
+  <variable16 /> 
+  <variable17shown /> 
+  <variable17 /> 
+  <variable18shown /> 
+  <variable18 /> 
+  <variable19shown>1</variable19shown> 
+  <variable21shown>1</variable21shown> 
+  <variable22shown>1</variable22shown> 
+  <variable22>10045</variable22> 
+  <variable23shown>1</variable23shown> 
+  <variable23>10046</variable23> 
+  <variable24shown>1</variable24shown> 
+  <variable24>10048</variable24> 
+  <variable25shown>1</variable25shown> 
+  <variable25 /> 
+  <variable26shown>1</variable26shown> 
+  <variable26>10047</variable26> 
+  <variable27shown>1</variable27shown> 
+  <variable27 /> 
+  <variable28shown>1</variable28shown> 
+  <variable28>10044</variable28> 
+  <variable29shown>1</variable29shown> 
+  <variable30shown>1</variable30shown> 
+  <variable30>10050</variable30> 
+  <variable31shown>1</variable31shown> 
+  <variable31 /> 
+  <variable32shown /> 
+  <variable33 /> 
+  <variable33shown /> 
+  <variable34 /> 
+  <variable34shown /> 
+  <variable35 /> 
+  <variable35shown /> 
+  <variable36 /> 
+  <variable36shown /> 
+  <variable37shown /> 
+  <variable39shown>1</variable39shown> 
+  <variable40shown>1</variable40shown> 
+  <variable40 /> 
+  <variable41shown>1</variable41shown> 
+  <variable41 /> 
+  <variable42shown>1</variable42shown> 
+  <variable42 /> 
+  <variable43shown>1</variable43shown> 
+  <variable43>10062</variable43> 
+  <variable44shown>1</variable44shown> 
+  <variable44>10062</variable44> 
+  <variable45shown>1</variable45shown> 
+  <variable45 /> 
+  <variable46shown>1</variable46shown> 
+  <variable48shown>1</variable48shown> 
+  <variable49>10063</variable49> 
+  <variable49shown>1</variable49shown> 
+  <variable50>10067</variable50> 
+  <variable50shown>1</variable50shown> 
+  <variable51 /> 
+  <variable51shown>1</variable51shown> 
+  <variable52>10067</variable52> 
+  <variable52shown>1</variable52shown> 
+  <variable53 /> 
+  <variable53shown>1</variable53shown> 
+  <variable54shown>1</variable54shown> 
+  <variable56shown>1</variable56shown> 
+  <variable57shown /> 
+  <variable57 /> 
+  <variable58shown /> 
+  <variable58 /> 
+  <variable59shown /> 
+  <variable59 /> 
+  <variable60shown>1</variable60shown> 
+  <variable62shown>1</variable62shown> 
+  <variable63>10075</variable63> 
+  <variable63shown>1</variable63shown> 
+  <variable64>10078</variable64> 
+  <variable64shown>1</variable64shown> 
+  <variable65>10078</variable65> 
+  <variable65shown>1</variable65shown> 
+  <variable66shown>1</variable66shown> 
+  <variable67shown>1</variable67shown> 
+  <variable67>10082</variable67> 
+  <variable68shown>1</variable68shown> 
+  <variable69shown>1</variable69shown> 
+  <variable69>10083</variable69> 
+  <variable70shown>1</variable70shown> 
+  <variable70 /> 
+  <variable71shown>1</variable71shown> 
+  <variable72shown>1</variable72shown> 
+  <variable73shown>1</variable73shown> 
+  <variable73>10098</variable73> 
+  </_8>
+- <_9>
+  <id>10</id> 
+  <contact_id /> 
+  <status>Deleted</status> 
+  <is_test_data>1</is_test_data> 
+  <datesubmitted>2013-09-24 05:32:19</datesubmitted> 
+  <sResponseComment /> 
+  <responseID>10</responseID> 
+  <question4option10001>Business</question4option10001> 
+  <question4option10002 /> 
+  <question4option10003 /> 
+  <question4option10004 /> 
+  <question4option10006 /> 
+  <question4option10006other /> 
+  <question5option10007 /> 
+  <question5option10008 /> 
+  <question5option10009 /> 
+  <question5option10010 /> 
+  <question5option10011 /> 
+  <question5option10012 /> 
+  <question5option10013 /> 
+  <question5option10014 /> 
+  <question5option10015 /> 
+  <question5option10016 /> 
+  <question5option10017 /> 
+  <question5option10018 /> 
+  <question5option10019 /> 
+  <question5option10019other /> 
+  <question6option10020>Called Direct</question6option10020> 
+  <question6option10021>Emailed Direct</question6option10021> 
+  <question6option10022 /> 
+  <question6option10023>Other websites (e.g. Expedia)</question6option10023> 
+  <question6option10024>The Arch Sales Team</question6option10024> 
+  <question6option10025>Company or Organisation</question6option10025> 
+  <question6option10026>Travel Agent</question6option10026> 
+  <question6option10027>Other</question6option10027> 
+  <question6option10027other>9/27/2005</question6option10027other> 
+  <question8>Poor</question8> 
+  <question10>No</question10> 
+  <question11>Definitely Yes</question11> 
+  <question12 /> 
+  <question15>Strongly Agree</question15> 
+  <question16>N/A</question16> 
+  <question17>Strongly Disagree</question17> 
+  <question18 /> 
+  <question19>0</question19> 
+  <question22>Agree</question22> 
+  <question23 /> 
+  <question24 /> 
+  <question25>Neither Agree nor Disagree</question25> 
+  <question26 /> 
+  <question27>Neither Agree nor Disagree</question27> 
+  <question28>Neither Agree nor Disagree</question28> 
+  <question29 /> 
+  <question30>Yes</question30> 
+  <question31>Yes</question31> 
+  <question33>Good</question33> 
+  <question34>Good</question34> 
+  <question35>Poor</question35> 
+  <question36>Very Poor</question36> 
+  <question37>0</question37> 
+  <question40>Poor</question40> 
+  <question41>Excellent</question41> 
+  <question42>Poor</question42> 
+  <question43 /> 
+  <question44>Very Poor</question44> 
+  <question45>Excellent</question45> 
+  <question46>164 Happy Hollow Rd</question46> 
+  <question49>Disagree</question49> 
+  <question50>Neither Agree nor Disagree</question50> 
+  <question51>Neither Agree nor Disagree</question51> 
+  <question52>Disagree</question52> 
+  <question53>Strongly Disagree</question53> 
+  <question54>0</question54> 
+  <question57>Strongly Agree</question57> 
+  <question58 /> 
+  <question59>Strongly Disagree</question59> 
+  <question60>fortune good really?</question60> 
+  <question63 /> 
+  <question64>Agree</question64> 
+  <question65 /> 
+  <question66>the simple a</question66> 
+  <question67 /> 
+  <question68 /> 
+  <question69>Male</question69> 
+  <question70>55-64</question70> 
+  <question71option10092>01234567743</question71option10092> 
+  <question71option10093 /> 
+  <question72option10094 /> 
+  <question72option10095 /> 
+  <question72option10096 /> 
+  <question72option10097 /> 
+  <question73 /> 
+  <variableSTANDARD_IP /> 
+  <variableSTANDARD_LONG /> 
+  <variableSTANDARD_LAT /> 
+  <variableSTANDARD_GEOCOUNTRY /> 
+  <variableSTANDARD_GEOCITY /> 
+  <variableSTANDARD_GEOREGION /> 
+  <variableSTANDARD_GEOPOSTAL /> 
+  <variableSTANDARD_RESPONSETIME /> 
+  <variableSTANDARD_COMMENTS /> 
+  <variableSTANDARD_GEODMA>0</variableSTANDARD_GEODMA> 
+  <variableSTANDARD_REFERER>https://appv3.sgizmo.com/projects/editor?id=1377138</variableSTANDARD_REFERER> 
+  <variableSTANDARD_USERAGENT>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:23.0) Gecko/20100101 Firefox/23.0</variableSTANDARD_USERAGENT> 
+  <variablePORTAL_RELATIONSHIP /> 
+  <variable2shown /> 
+  <variable4shown>1</variable4shown> 
+  <variable5shown>1</variable5shown> 
+  <variable6shown>1</variable6shown> 
+  <variable7shown>1</variable7shown> 
+  <variable8shown>1</variable8shown> 
+  <variable8>10031</variable8> 
+  <variable9shown>1</variable9shown> 
+  <variable10shown>1</variable10shown> 
+  <variable10>10036</variable10> 
+  <variable11shown>1</variable11shown> 
+  <variable11>10033</variable11> 
+  <variable12shown>1</variable12shown> 
+  <variable13shown /> 
+  <variable14shown>1</variable14shown> 
+  <variable15shown>1</variable15shown> 
+  <variable15>10038</variable15> 
+  <variable16shown>1</variable16shown> 
+  <variable16>10043</variable16> 
+  <variable17shown>1</variable17shown> 
+  <variable17>10042</variable17> 
+  <variable18shown>1</variable18shown> 
+  <variable18 /> 
+  <variable19shown>1</variable19shown> 
+  <variable21shown>1</variable21shown> 
+  <variable22shown>1</variable22shown> 
+  <variable22>10045</variable22> 
+  <variable23shown>1</variable23shown> 
+  <variable23 /> 
+  <variable24shown>1</variable24shown> 
+  <variable24 /> 
+  <variable25shown>1</variable25shown> 
+  <variable25>10046</variable25> 
+  <variable26shown>1</variable26shown> 
+  <variable26 /> 
+  <variable27shown>1</variable27shown> 
+  <variable27>10046</variable27> 
+  <variable28shown>1</variable28shown> 
+  <variable28>10046</variable28> 
+  <variable29shown>1</variable29shown> 
+  <variable30shown>1</variable30shown> 
+  <variable30>10049</variable30> 
+  <variable31shown>1</variable31shown> 
+  <variable31>10051</variable31> 
+  <variable32shown>1</variable32shown> 
+  <variable33>10054</variable33> 
+  <variable33shown>1</variable33shown> 
+  <variable34>10054</variable34> 
+  <variable34shown>1</variable34shown> 
+  <variable35>10056</variable35> 
+  <variable35shown>1</variable35shown> 
+  <variable36>10057</variable36> 
+  <variable36shown>1</variable36shown> 
+  <variable37shown>1</variable37shown> 
+  <variable39shown>1</variable39shown> 
+  <variable40shown>1</variable40shown> 
+  <variable40>10061</variable40> 
+  <variable41shown>1</variable41shown> 
+  <variable41>10058</variable41> 
+  <variable42shown>1</variable42shown> 
+  <variable42>10061</variable42> 
+  <variable43shown>1</variable43shown> 
+  <variable43 /> 
+  <variable44shown>1</variable44shown> 
+  <variable44>10062</variable44> 
+  <variable45shown>1</variable45shown> 
+  <variable45>10058</variable45> 
+  <variable46shown>1</variable46shown> 
+  <variable48shown>1</variable48shown> 
+  <variable49>10066</variable49> 
+  <variable49shown>1</variable49shown> 
+  <variable50>10065</variable50> 
+  <variable50shown>1</variable50shown> 
+  <variable51>10065</variable51> 
+  <variable51shown>1</variable51shown> 
+  <variable52>10066</variable52> 
+  <variable52shown>1</variable52shown> 
+  <variable53>10067</variable53> 
+  <variable53shown>1</variable53shown> 
+  <variable54shown>1</variable54shown> 
+  <variable56shown>1</variable56shown> 
+  <variable57shown>1</variable57shown> 
+  <variable57>10068</variable57> 
+  <variable58shown>1</variable58shown> 
+  <variable58 /> 
+  <variable59shown>1</variable59shown> 
+  <variable59>10072</variable59> 
+  <variable60shown>1</variable60shown> 
+  <variable62shown>1</variable62shown> 
+  <variable63 /> 
+  <variable63shown>1</variable63shown> 
+  <variable64>10075</variable64> 
+  <variable64shown>1</variable64shown> 
+  <variable65 /> 
+  <variable65shown>1</variable65shown> 
+  <variable66shown>1</variable66shown> 
+  <variable67shown>1</variable67shown> 
+  <variable67 /> 
+  <variable68shown>1</variable68shown> 
+  <variable69shown>1</variable69shown> 
+  <variable69>10083</variable69> 
+  <variable70shown>1</variable70shown> 
+  <variable70>10090</variable70> 
+  <variable71shown>1</variable71shown> 
+  <variable72shown>1</variable72shown> 
+  <variable73shown>1</variable73shown> 
+  <variable73 /> 
+  </_9>
+- <_10>
+  <id>11</id> 
+  <contact_id /> 
+  <status>Deleted</status> 
+  <is_test_data>1</is_test_data> 
+  <datesubmitted>2013-09-24 05:32:08</datesubmitted> 
+  <sResponseComment /> 
+  <responseID>11</responseID> 
+  <question4option10001>Business</question4option10001> 
+  <question4option10002 /> 
+  <question4option10003 /> 
+  <question4option10004 /> 
+  <question4option10006 /> 
+  <question4option10006other /> 
+  <question5option10007>Stayed previously</question5option10007> 
+  <question5option10008 /> 
+  <question5option10009 /> 
+  <question5option10010 /> 
+  <question5option10011 /> 
+  <question5option10012 /> 
+  <question5option10013 /> 
+  <question5option10014 /> 
+  <question5option10015 /> 
+  <question5option10016 /> 
+  <question5option10017 /> 
+  <question5option10018 /> 
+  <question5option10019 /> 
+  <question5option10019other /> 
+  <question6option10020 /> 
+  <question6option10021 /> 
+  <question6option10022 /> 
+  <question6option10023 /> 
+  <question6option10024 /> 
+  <question6option10025 /> 
+  <question6option10026 /> 
+  <question6option10027 /> 
+  <question6option10027other /> 
+  <question8 /> 
+  <question10 /> 
+  <question11 /> 
+  <question12 /> 
+  <question15 /> 
+  <question16 /> 
+  <question17 /> 
+  <question18 /> 
+  <question19 /> 
+  <question22 /> 
+  <question23 /> 
+  <question24 /> 
+  <question25 /> 
+  <question26 /> 
+  <question27 /> 
+  <question28 /> 
+  <question29 /> 
+  <question30 /> 
+  <question31 /> 
+  <question33 /> 
+  <question34 /> 
+  <question35 /> 
+  <question36 /> 
+  <question37 /> 
+  <question40 /> 
+  <question41 /> 
+  <question42 /> 
+  <question43 /> 
+  <question44 /> 
+  <question45 /> 
+  <question46 /> 
+  <question49 /> 
+  <question50 /> 
+  <question51 /> 
+  <question52 /> 
+  <question53 /> 
+  <question54 /> 
+  <question57 /> 
+  <question58 /> 
+  <question59 /> 
+  <question60 /> 
+  <question63 /> 
+  <question64 /> 
+  <question65 /> 
+  <question66 /> 
+  <question67 /> 
+  <question68 /> 
+  <question69 /> 
+  <question70 /> 
+  <question71option10092 /> 
+  <question71option10093 /> 
+  <question72option10094 /> 
+  <question72option10095 /> 
+  <question72option10096 /> 
+  <question72option10097 /> 
+  <question73 /> 
+  <variableSTANDARD_IP>176.227.128.57</variableSTANDARD_IP> 
+  <variableSTANDARD_LONG>-0.13</variableSTANDARD_LONG> 
+  <variableSTANDARD_LAT>51.5</variableSTANDARD_LAT> 
+  <variableSTANDARD_GEOCOUNTRY>United Kingdom</variableSTANDARD_GEOCOUNTRY> 
+  <variableSTANDARD_GEOCITY /> 
+  <variableSTANDARD_GEOREGION /> 
+  <variableSTANDARD_GEOPOSTAL /> 
+  <variableSTANDARD_RESPONSETIME /> 
+  <variableSTANDARD_COMMENTS /> 
+  <variableSTANDARD_GEODMA>0</variableSTANDARD_GEODMA> 
+  <variableSTANDARD_REFERER /> 
+  <variableSTANDARD_USERAGENT>Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36</variableSTANDARD_USERAGENT> 
+  <variablePORTAL_RELATIONSHIP /> 
+  <variable2shown>1</variable2shown> 
+  <variable4shown>1</variable4shown> 
+  <variable5shown>1</variable5shown> 
+  <variable6shown>1</variable6shown> 
+  <variable7shown>1</variable7shown> 
+  <variable8shown /> 
+  <variable8 /> 
+  <variable9shown>1</variable9shown> 
+  <variable10shown /> 
+  <variable10 /> 
+  <variable11shown /> 
+  <variable11 /> 
+  <variable12shown>1</variable12shown> 
+  <variable13shown>1</variable13shown> 
+  <variable14shown>1</variable14shown> 
+  <variable15shown /> 
+  <variable15 /> 
+  <variable16shown /> 
+  <variable16 /> 
+  <variable17shown /> 
+  <variable17 /> 
+  <variable18shown /> 
+  <variable18 /> 
+  <variable19shown>1</variable19shown> 
+  <variable21shown /> 
+  <variable22shown /> 
+  <variable22 /> 
+  <variable23shown /> 
+  <variable23 /> 
+  <variable24shown /> 
+  <variable24 /> 
+  <variable25shown /> 
+  <variable25 /> 
+  <variable26shown /> 
+  <variable26 /> 
+  <variable27shown /> 
+  <variable27 /> 
+  <variable28shown /> 
+  <variable28 /> 
+  <variable29shown /> 
+  <variable30shown /> 
+  <variable30 /> 
+  <variable31shown /> 
+  <variable31 /> 
+  <variable32shown /> 
+  <variable33 /> 
+  <variable33shown /> 
+  <variable34 /> 
+  <variable34shown /> 
+  <variable35 /> 
+  <variable35shown /> 
+  <variable36 /> 
+  <variable36shown /> 
+  <variable37shown /> 
+  <variable39shown /> 
+  <variable40shown /> 
+  <variable40 /> 
+  <variable41shown /> 
+  <variable41 /> 
+  <variable42shown /> 
+  <variable42 /> 
+  <variable43shown /> 
+  <variable43 /> 
+  <variable44shown /> 
+  <variable44 /> 
+  <variable45shown /> 
+  <variable45 /> 
+  <variable46shown /> 
+  <variable48shown /> 
+  <variable49 /> 
+  <variable49shown /> 
+  <variable50 /> 
+  <variable50shown /> 
+  <variable51 /> 
+  <variable51shown /> 
+  <variable52 /> 
+  <variable52shown /> 
+  <variable53 /> 
+  <variable53shown /> 
+  <variable54shown /> 
+  <variable56shown /> 
+  <variable57shown /> 
+  <variable57 /> 
+  <variable58shown /> 
+  <variable58 /> 
+  <variable59shown /> 
+  <variable59 /> 
+  <variable60shown /> 
+  <variable62shown /> 
+  <variable63 /> 
+  <variable63shown /> 
+  <variable64 /> 
+  <variable64shown /> 
+  <variable65 /> 
+  <variable65shown /> 
+  <variable66shown /> 
+  <variable67shown /> 
+  <variable67 /> 
+  <variable68shown /> 
+  <variable69shown /> 
+  <variable69 /> 
+  <variable70shown /> 
+  <variable70 /> 
+  <variable71shown /> 
+  <variable72shown /> 
+  <variable73shown /> 
+  <variable73 /> 
+  </_10>
+  </data>
+  </apiresult>

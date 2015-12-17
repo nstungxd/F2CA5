@@ -1,0 +1,22 @@
+ _____ _____ _   _  _____ 
+|  __ \_   _| \ | |/ ____|
+| |__) || | |  \| | |  __ 
+|  ___/ | | | . ` | | |_ |
+| |    _| |_| |\  | |__| |
+|_|   |_____|_| \_|\_____|
+
+
+
+
+# TEAM
+
+	Company: Ping Media
+	Contact: info@ping-media.co.uk
+	Twitter: @ping_media
+
+
+# TECHNOLOGY COLOPHON
+
+	Language: English
+	Doctype: HTML5
+	Standards: HTML5, CSS3, .NET 4

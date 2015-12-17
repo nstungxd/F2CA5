@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CompiledUserControls/Controls/Many2Many.ascx" hash="a4f1d9d05" filehash="3ef914eba02575d9" flags="100000" assembly="App_Web_many2many.ascx.cc671b29" type="ASP.Many2Many">
+    <filedeps>
+        <filedep name="/CompiledUserControls/Controls/Many2Many.ascx" />
+        <filedep name="/CompiledUserControls/Controls/Many2Many.ascx.vb" />
+    </filedeps>
+</preserve>

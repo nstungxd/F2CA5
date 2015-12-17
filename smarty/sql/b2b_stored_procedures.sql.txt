@@ -1,0 +1,19 @@
+/* Procedure structure for procedure `GetInbox` */
+
+DROP PROCEDURE IF EXISTS  `GetInbox`;
+
+DELIMITER $$
+
+CREATE PROCEDURE `GetInbox`(usertype char,wherecl text,groupby varchar(255),orderby varchar(255),varlimit varchar(255))
+BEGIN  IF usertype = 'OA' THEN  SET @SQL = CONCAT("SELECT * FROM b2b_user_action_verification WHERE 1=1 ",wherecl," ",groupby ," ", orderby , " " , varlimit);PREPARE stmt FROM @SQL;EXECUTE stmt;DEALLOCATE PREPARE stmt;ELSEIF usertype = 'OU' THEN SET @SQL = CONCAT("SELECT * FROM b2b_user_action_verification WHERE 1=1 ",wherecl," ",groupby ," ", orderby , " " , varlimit);PREPARE stmt FROM @SQL; EXECUTE stmt;DEALLOCATE PREPARE stmt; ELSE SET @SQL = CONCAT("SELECT * FROM b2b_user_action_verification WHERE 1=1 ",wherecl," ",groupby ," ", orderby , " " , varlimit); PREPARE stmt FROM @SQL; EXECUTE stmt; DEALLOCATE PREPARE stmt; END IF; END;
+
+/* Procedure structure for procedure `GetSecurityManagerOrganisation` */
+
+DROP PROCEDURE IF EXISTS  `GetSecurityManagerOrganisation`;
+
+DELIMITER $$
+
+CREATE PROCEDURE `GetSecurityManagerOrganisation`(id int)
+BEGIN  SELECT  O.iUserID,CONCAT(O.vFirstName,' ',O.vLastName) as name, O.vUserName,O.ePermissionType,O.eUserType,D.* FROM b2b_organization_master D  LEFT JOIN b2b_organization_user O ON (O.iOrganizationID = D.iOrganizationID)  WHERE iASMID = id ORDER BY D.iOrganizationID ASC; END;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

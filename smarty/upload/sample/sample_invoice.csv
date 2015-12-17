@@ -1,0 +1,10 @@
+Buyer Company ID	,Buyer Company Name	,Buyer Code	,Suplier Company ID	,Suplier Company Name	,Supplier Contact Party	,Po Buyer Code	,PO Code	,Order date	,Order Description	,Opening Unit	,Supplier Order Num	,Carrier	,Line Item Tax	,VAT	,Other tax 1	,ShipToParty	,Ship To Address Line1	,Ship To Address Line 2	,Ship To City	,Ship To Country	,Ship To State	,Ship To Zip Code	,Ship To Contact Party	,Ship To Contact Telephone	,Bill To Party	,Bill To AddLine 1	,Bill To AddLine 2	,Bill To City	,Bill To Country	,Bill To State	,Bill To ZipCode	,Bill To Contact Party	,Bill To Contact Telephone	,Currency	,PO Total	,Prepayment	,tSourcingDocument	,tGlobalAgreement	,tPaymentTerms	,tFOB	,tDeliveryTerms	,tShippingControl	,tConditionsForPayment	,tPenalties	,tSpecialInstruction	,tNote
+61	,HBPHP	,00110081730001	,62	,HB.NET	,splcpt	,pocd-101	,001110708po1	,2011-07-08	,	,	,	,	,Yes	,3.00	,3.00	,shptp	,address	,	,city	,AL	,BR	,1111	,stcp	,123-1231231231	,btp	,address	,	,city	,AL	,BR	,1111	,btcp	,123-1231231231	,USD	,306.00	,10.00	,test text	,test text	,test text	,test text	,test text	,test text	,test text	,test text	,test text	,test text	,
+###items###
+Order Type	,Item Description	,Item Line No	,Quantity	,Unit Of Measure	,Price	,Amount	,VAT	,Other Tax	,Sub Item Type	,Sub Item Quantity	,Sub Item Rate	,Sub Item Amount	,Line Total
+Goods	,desc	,0000000001	,10	,m	,10.00	,100.00	,1.00	,1.00	,Discount	,10	,50.00	,-51.00	,102.00	,
+Services	,desc	,0000000001	,10	,m	,10.00	,100.00	,1.00	,1.00	,	,0	,0.00	,0.00	,102.00	,
+Discount	,desc	,0000000001	,10	,m	,10.00	,100.00	,1.00	,1.00	,	,0	,0.00	,0.00	,40.00	,
+Charge	,desc	,0000000001	,10	,m	,10.00	,100.00	,1.00	,1.00	,	,0	,0.00	,0.00	,40.00	,
+Services	,desc	,0000000001	,10	,m	,10.00	,100.00	,1.00	,1.00	,Charge	,10	,50.00	,51.00	,102.00	,
+

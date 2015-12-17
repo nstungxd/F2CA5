@@ -1,0 +1,148 @@
+﻿<apiresult>
+  <result_ok>1</result_ok>
+  <data>
+    <id>1</id>
+    <_type>SurveyPage</_type>
+    <title>
+      <English>Introduction</English>
+    </title>
+    <properties />
+    <description>
+      <English></English>
+    </description>
+    <questions>
+      <_0>
+        <id>11</id>
+        <_type>SurveyDecorative</_type>
+        <_subtype>instructions</_subtype>
+        <title>
+          <English>Thank you for taking the time out of your busy day to complete our survey about [our website]. We look forward to reviewing your responses!&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Thank you!&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;The Consumer Website Survey Team</English>
+        </title>
+        <shortname></shortname>
+        <varname></varname>
+        <description />
+        <has_showhide_deps></has_showhide_deps>
+        <comment></comment>
+        <properties>
+          <hidden></hidden>
+          <map_key>instructions</map_key>
+          <show_title></show_title>
+          <question_description_above></question_description_above>
+          <required></required>
+          <softrequired></softrequired>
+          <disabled></disabled>
+          <messages>
+            <inputmask />
+            <r_extreme_label />
+            <l_extreme_label />
+            <center_label />
+            <right_label />
+            <left_label />
+          </messages>
+          <labels_right></labels_right>
+          <hide_after_response></hide_after_response>
+          <custom_css></custom_css>
+          <break_after></break_after>
+        </properties>
+        <options />
+        <sub_question_skus></sub_question_skus>
+      </_0>
+      <_1>
+        <id>6</id>
+        <_type>SurveyQuestion</_type>
+        <_subtype>menu</_subtype>
+        <title>
+          <English>In the past month, how many times have you visited [our website]? &lt;br&gt;&lt;br&gt;I have visited [the website]....</English>
+        </title>
+        <shortname></shortname>
+        <varname></varname>
+        <description />
+        <has_showhide_deps></has_showhide_deps>
+        <comment></comment>
+        <properties>
+          <option_sort></option_sort>
+          <required>1</required>
+          <hidden></hidden>
+          <map_key>menu</map_key>
+          <show_title></show_title>
+          <question_description>
+            <English></English>
+          </question_description>
+          <question_description_above></question_description_above>
+          <softrequired></softrequired>
+          <disabled></disabled>
+          <messages>
+            <inputmask />
+            <r_extreme_label />
+            <l_extreme_label />
+            <center_label />
+            <right_label />
+            <left_label />
+          </messages>
+          <labels_right></labels_right>
+          <hide_after_response></hide_after_response>
+          <custom_css></custom_css>
+          <break_after></break_after>
+        </properties>
+        <options>
+          <_0>
+            <id>10017</id>
+            <_type>SurveyOption</_type>
+            <title>
+              <English>0 times in the last month</English>
+            </title>
+            <value>0</value>
+            <properties>
+              <explorer_color>1d2b40</explorer_color>
+            </properties>
+          </_0>
+          <_1>
+            <id>10018</id>
+            <_type>SurveyOption</_type>
+            <title>
+              <English>1 to 3 times in the last month</English>
+            </title>
+            <value>1-3</value>
+            <properties>
+              <explorer_color>f96bad</explorer_color>
+            </properties>
+          </_1>
+          <_2>
+            <id>10019</id>
+            <_type>SurveyOption</_type>
+            <title>
+              <English>4 to 6 times in the last month</English>
+            </title>
+            <value>4-6</value>
+            <properties>
+              <explorer_color>f74bff</explorer_color>
+            </properties>
+          </_2>
+          <_3>
+            <id>10020</id>
+            <_type>SurveyOption</_type>
+            <title>
+              <English>7 to 9 times in the last month</English>
+            </title>
+            <value>7-9</value>
+            <properties>
+              <explorer_color>b14a3b</explorer_color>
+            </properties>
+          </_3>
+          <_4>
+            <id>10021</id>
+            <_type>SurveyOption</_type>
+            <title>
+              <English>More than 10 times in the last month</English>
+            </title>
+            <value>10+</value>
+            <properties>
+              <explorer_color>ccca9e</explorer_color>
+            </properties>
+          </_4>
+        </options>
+        <sub_question_skus></sub_question_skus>
+      </_1>
+    </questions>
+  </data>
+</apiresult>

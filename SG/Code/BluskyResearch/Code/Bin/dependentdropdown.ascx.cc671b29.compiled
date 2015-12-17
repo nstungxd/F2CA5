@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CompiledUserControls/Controls/DependentDropdown.ascx" hash="a4f1d9d05" filehash="fa323f80aa6bcc5f" flags="100000" assembly="App_Web_dependentdropdown.ascx.cc671b29" type="ASP.DependentDropdown">
+    <filedeps>
+        <filedep name="/CompiledUserControls/Controls/DependentDropdown.ascx" />
+        <filedep name="/CompiledUserControls/Controls/DependentDropdown.ascx.vb" />
+    </filedeps>
+</preserve>

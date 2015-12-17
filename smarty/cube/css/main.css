@@ -1,0 +1,68 @@
+.row {
+	margin: 10px 0;
+}
+.label {
+	font-size: 13px !important;
+}
+.text-center {
+	text-align: center !important;
+}
+.margin-top-20 {
+	margin-top: 20px;	
+}
+.no-order:before, .no-order:after {
+	content: '' !important;
+}
+.dl-horizontal dt {
+	width: 200px !important;
+}
+dl{
+	margin-top: 30px;
+}
+dl.dl-horizontal dt:after {
+	content: ':';
+	padding: 0 10px;
+}
+#invoice-detail {
+	display: none;
+}
+.invoice-box-total {
+	margin: 20px 0;
+}
+.invoice-box-total-label {
+	font-weight: bold;
+}
+.invoice-box-total.detail{
+	border: none !important;
+	margin: 0;
+	padding: 10px 0;
+}
+.dropdown-menu button {
+	background: none;
+	border: none;
+}
+.checkbox-nice {
+	padding-top:0 !important;	
+}
+.bootstrap-timepicker {
+	margin-top: 10px;	
+}
+.invoice-box-total {
+	line-height: normal;
+}
+.search {
+	margin-top: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

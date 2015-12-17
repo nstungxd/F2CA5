@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CompiledUserControls/Controls/SMDDValueControl.ascx" hash="a4f1d9d05" filehash="b7c9f11a5d531fbc" flags="100000" assembly="App_Web_smddvaluecontrol.ascx.cc671b29" type="ASP.SMDDValueControl">
+    <filedeps>
+        <filedep name="/CompiledUserControls/Controls/SMDDValueControl.ascx" />
+        <filedep name="/CompiledUserControls/Controls/SMDDValueControl.ascx.vb" />
+    </filedeps>
+</preserve>

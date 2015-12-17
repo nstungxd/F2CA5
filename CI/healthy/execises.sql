@@ -1,0 +1,1 @@
+ALTER TABLE `exercise` ADD `CreateBy` INT NULL , ADD `DateModified` DATETIME NULL , ADD `WorkoutSeq` INT NULL ;

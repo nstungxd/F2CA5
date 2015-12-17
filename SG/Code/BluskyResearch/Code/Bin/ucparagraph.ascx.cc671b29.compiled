@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CompiledUserControls/Controls/UCParagraph.ascx" hash="a4f1d9d05" filehash="c5847baa8d0e8732" flags="100000" assembly="App_Web_ucparagraph.ascx.cc671b29" type="ASP.EditParagraph">
+    <filedeps>
+        <filedep name="/CompiledUserControls/Controls/RichTextEditor.ascx" />
+        <filedep name="/CompiledUserControls/Controls/RichTextEditor.ascx.vb" />
+        <filedep name="/CompiledUserControls/Controls/UCParagraph.ascx" />
+        <filedep name="/CompiledUserControls/Controls/UCParagraph.ascx.vb" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,2652 @@
+﻿<apiresult>
+  <result_ok>1</result_ok>
+ <data>
+    <id>1416845</id>
+    <team>497777</team>
+    <_type>Survey</_type>
+    <_subtype>Standard Survey</_subtype>
+    <status>Launched</status>
+    <created_on>2013-10-18 10:25:59</created_on>
+    <modified_on>2013-10-28 13:59:38</modified_on>
+    <forward_only />
+   <languages>
+      <_0>English</_0>
+    </languages>
+    <title>Sample Hotel Guest Experience Survey</title>
+    <internal_title>Sample Hotel Guest Experience Survey</internal_title>
+   <title_ml>
+      <English>Sample Hotel Guest Experience Survey</English>
+    </title_ml>
+    <theme>60527</theme>
+    <blockby>NONE</blockby>
+   <statistics>
+      <Partial>6</Partial>
+      <Complete>69</Complete>
+    </statistics>
+   <links>
+    </links>
+   <pages>
+     <_0>
+        <id>1</id>
+        <_type>SurveyPage</_type>
+       <title>
+          <English>Page One</English>
+        </title>
+       <properties>
+          <hidden />
+        </properties>
+        <description />
+       <questions>
+         <_0>
+            <id>2</id>
+            <_type>SurveyDecorative</_type>
+            <_subtype>instructions</_subtype>
+           <title>
+              <English>
+                We very much hope you enjoyed your recent experience at Hotel X<br /><br /> It is important to us that you love being here as much as we do and for that reason we ask if you could spare a couple of minutes to complete this short hotel guest experience survey.<br /><br /> Privacy is important to us and your comments will be kept confidential and will only be used in relation to this short survey.<br /><br /> We look forward to welcoming you back to Hotel X.<br /><br /> Yours sincerely<br /><br /> Joe Bloggs<br /> Director<br /> Hotel X<br /> www.hotelx.co.uk<br />
+              </English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <hidden />
+              <map_key>instructions</map_key>
+              <show_title />
+              <question_description_above />
+              <softrequired />
+              <required />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_0>
+        </questions>
+      </_0>
+     <_1>
+        <id>12</id>
+        <_type>SurveyPage</_type>
+       <title>
+          <English>New Page</English>
+        </title>
+        <properties />
+       <description>
+          <English />
+        </description>
+       <questions>
+         <_0>
+            <id>66</id>
+            <_type>SurveyDecorative</_type>
+            <_subtype>media</_subtype>
+           <title>
+              <English>Header</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <hidden />
+              <show_title />
+              <map_key>media</map_key>
+              <question_description_above />
+              <softrequired />
+              <required />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>//surveygizmolibrary.s3.amazonaws.com/library/230823/BluskywebbannerhgesV2.jpg</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_0>
+        </questions>
+      </_1>
+     <_2>
+        <id>3</id>
+        <_type>SurveyPage</_type>
+       <title>
+          <English>New Page</English>
+        </title>
+       <properties>
+          <hidden />
+        </properties>
+        <description />
+       <questions>
+         <_0>
+            <id>3</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>checkbox</_subtype>
+           <title>
+              <English>How did you hear about us?</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <option_sort />
+              <required />
+              <hidden />
+              <element_style>OS</element_style>
+              <orientation>VERT</orientation>
+              <minimum_response>0</minimum_response>
+              <labels_right>1</labels_right>
+              <map_key>checkbox</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10001</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Stayed previously</English>
+                </title>
+                <value>Stayed previously</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+             <_1>
+                <id>10002</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Recommendation</English>
+                </title>
+                <value>Recommendation</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_1>
+             <_2>
+                <id>10003</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Word of mouth</English>
+                </title>
+                <value>Word of mouth</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_2>
+             <_3>
+                <id>10004</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Advertisement/magazine article</English>
+                </title>
+                <value>Advertisement/magazine article</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_3>
+             <_4>
+                <id>10005</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Internet searches (e.g. Google, Yahoo, etc.)</English>
+                </title>
+                <value>Internet searches (e.g. Google, Yahoo, etc.)</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_4>
+             <_5>
+                <id>10006</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Trip advisor</English>
+                </title>
+                <value>Trip advisor</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_5>
+             <_6>
+                <id>10007</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Organisation booked</English>
+                </title>
+                <value>Organisation booked</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_6>
+             <_7>
+                <id>10008</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Social Media</English>
+                </title>
+                <value>Social Media</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_7>
+             <_8>
+                <id>10009</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>www.hotelx.co.uk</English>
+                </title>
+                <value>www.hotelx.co.uk</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_8>
+             <_9>
+                <id>10010</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Other (please specify)</English>
+                </title>
+                <value>Other (please specify)</value>
+               <properties>
+                  <disabled />
+                  <other>1</other>
+                </properties>
+              </_9>
+            </options>
+            <sub_question_skus />
+          </_0>
+         <_1>
+            <id>4</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>radio</_subtype>
+           <title>
+              <English>Why did you stay with us?</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <option_sort />
+              <required />
+              <hidden />
+              <orientation>HORZ</orientation>
+              <labels_right>1</labels_right>
+              <map_key>radio</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10011</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Leisure</English>
+                </title>
+                <value>Leisure</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+             <_1>
+                <id>10012</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Business</English>
+                </title>
+                <value>Business</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_1>
+             <_2>
+                <id>10013</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Wedding or Civil Partnership</English>
+                </title>
+                <value>Wedding or Civil Partnership</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_2>
+             <_3>
+                <id>10014</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Private Celebrations</English>
+                </title>
+                <value>Private Celebrations</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_3>
+             <_4>
+                <id>10092</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Other (please specify)</English>
+                </title>
+                <value>Other (please specify)</value>
+               <properties>
+                  <disabled />
+                  <other>1</other>
+                </properties>
+              </_4>
+            </options>
+            <sub_question_skus />
+          </_1>
+        </questions>
+      </_2>
+     <_3>
+        <id>4</id>
+        <_type>SurveyPage</_type>
+       <title>
+          <English>New Page</English>
+        </title>
+       <properties>
+          <hidden />
+        </properties>
+        <description />
+       <questions>
+         <_0>
+            <id>5</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>table</_subtype>
+           <title>
+              <English>How would you rate...</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <map_key>table-radio</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <option_sort />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10015</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Excellent</English>
+                </title>
+                <value>Excellent</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+             <_1>
+                <id>10016</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Good</English>
+                </title>
+                <value>Good</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_1>
+             <_2>
+                <id>10017</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Fair</English>
+                </title>
+                <value>Fair</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_2>
+             <_3>
+                <id>10018</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Poor</English>
+                </title>
+                <value>Poor</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_3>
+             <_4>
+                <id>10019</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Very Poor</English>
+                </title>
+                <value>Very Poor</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_4>
+            </options>
+           <sub_question_skus>
+              <_0>6</_0>
+            </sub_question_skus>
+          </_0>
+         <_1>
+            <id>7</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>table</_subtype>
+           <title>
+              <English>How likely are you to...</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <map_key>table-radio</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <option_sort />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10020</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Definitely Yes</English>
+                </title>
+                <value>Definitely Yes</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+             <_1>
+                <id>10021</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Yes</English>
+                </title>
+                <value>Yes</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_1>
+             <_2>
+                <id>10022</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Maybe</English>
+                </title>
+                <value>Maybe</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_2>
+             <_3>
+                <id>10023</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>No</English>
+                </title>
+                <value>No</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_3>
+             <_4>
+                <id>10024</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Definitely Not</English>
+                </title>
+                <value>Definitely Not</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_4>
+            </options>
+           <sub_question_skus>
+              <_0>8</_0>
+              <_1>9</_1>
+            </sub_question_skus>
+          </_1>
+        </questions>
+      </_3>
+     <_4>
+        <id>5</id>
+        <_type>SurveyPage</_type>
+       <title>
+          <English>New Page</English>
+        </title>
+       <properties>
+          <hidden />
+        </properties>
+        <description />
+       <questions>
+         <_0>
+            <id>10</id>
+            <_type>SurveyDecorative</_type>
+            <_subtype>instructions</_subtype>
+           <title>
+              <English>Please indicate your level of agreement or disagreement with the follow statements</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <hidden />
+              <map_key>instructions</map_key>
+              <show_title />
+              <question_description_above />
+              <softrequired />
+              <required />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_0>
+         <_1>
+            <id>11</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>table</_subtype>
+           <title>
+              <English>When you arrived</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <map_key>table-radio</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <option_sort />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10025</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Strongly Agree</English>
+                </title>
+                <value>Strongly Agree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+             <_1>
+                <id>10026</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Agree</English>
+                </title>
+                <value>Agree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_1>
+             <_2>
+                <id>10027</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Neither Agree Nor Disagree</English>
+                </title>
+                <value>Neither Agree Nor Disagree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_2>
+             <_3>
+                <id>10028</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Disagree</English>
+                </title>
+                <value>Disagree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_3>
+             <_4>
+                <id>10029</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Strongly Disagree</English>
+                </title>
+                <value>Strongly Disagree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_4>
+             <_5>
+                <id>10030</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>N/A</English>
+                </title>
+                <value>N/A</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_5>
+            </options>
+           <sub_question_skus>
+              <_0>12</_0>
+              <_1>13</_1>
+              <_2>14</_2>
+              <_3>15</_3>
+            </sub_question_skus>
+          </_1>
+         <_2>
+            <id>16</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>essay</_subtype>
+           <title>
+              <English>Do you have any other comments regarding your arrival?</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <map_key>essay</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_2>
+        </questions>
+      </_4>
+     <_5>
+        <id>6</id>
+        <_type>SurveyPage</_type>
+       <title>
+          <English>New Page</English>
+        </title>
+       <properties>
+          <hidden />
+        </properties>
+        <description />
+       <questions>
+         <_0>
+            <id>17</id>
+            <_type>SurveyDecorative</_type>
+            <_subtype>instructions</_subtype>
+           <title>
+              <English>Please indicate your level of agreement or disagreement with the follow statements</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <hidden />
+              <map_key>instructions</map_key>
+              <show_title />
+              <question_description_above />
+              <softrequired />
+              <required />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_0>
+         <_1>
+            <id>19</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>table</_subtype>
+           <title>
+              <English>In regards to your bedroom/suite</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <map_key>table-radio</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <option_sort />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10031</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Strongly Agree</English>
+                </title>
+                <value>Strongly Agree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+             <_1>
+                <id>10032</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Agree</English>
+                </title>
+                <value>Agree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_1>
+             <_2>
+                <id>10033</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Neither Agree Nor Disagree</English>
+                </title>
+                <value>Neither Agree Nor Disagree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_2>
+             <_3>
+                <id>10034</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Disagree</English>
+                </title>
+                <value>Disagree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_3>
+             <_4>
+                <id>10035</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Strongly Disagree</English>
+                </title>
+                <value>Strongly Disagree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_4>
+             <_5>
+                <id>10036</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>N/A</English>
+                </title>
+                <value>N/A</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_5>
+            </options>
+           <sub_question_skus>
+              <_0>20</_0>
+              <_1>21</_1>
+              <_2>22</_2>
+              <_3>23</_3>
+              <_4>24</_4>
+              <_5>25</_5>
+              <_6>26</_6>
+              <_7>27</_7>
+            </sub_question_skus>
+          </_1>
+         <_2>
+            <id>28</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>essay</_subtype>
+           <title>
+              <English>Do you have any other comments regarding your bedroom/suite?</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <map_key>essay</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_2>
+         <_3>
+            <id>29</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>radio</_subtype>
+           <title>
+              <English>Did you dine with us?</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <option_sort />
+              <required />
+              <hidden />
+              <orientation>HORZ</orientation>
+              <labels_right>1</labels_right>
+              <map_key>radio</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10037</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Yes</English>
+                </title>
+                <value>Yes</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+             <_1>
+                <id>10038</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>No</English>
+                </title>
+                <value>No</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_1>
+            </options>
+            <sub_question_skus />
+          </_3>
+        </questions>
+      </_5>
+     <_6>
+        <id>8</id>
+        <_type>SurveyPage</_type>
+       <title>
+          <English>New Page</English>
+        </title>
+       <properties>
+          <hidden />
+        </properties>
+        <description />
+       <questions>
+         <_0>
+            <id>30</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>checkbox</_subtype>
+           <title>
+              <English>Where did you dine?</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <option_sort />
+              <required />
+              <hidden />
+              <element_style>OS</element_style>
+              <orientation>HORZ</orientation>
+              <minimum_response>0</minimum_response>
+              <labels_right>1</labels_right>
+              <map_key>checkbox</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10039</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Restaurant A</English>
+                </title>
+                <value>Restaurant A</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+             <_1>
+                <id>10040</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Restaurant B</English>
+                </title>
+                <value>Restaurant B</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_1>
+             <_2>
+                <id>10041</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>The Garden</English>
+                </title>
+                <value>The Garden</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_2>
+             <_3>
+                <id>10042</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Private Dining</English>
+                </title>
+                <value>Private Dining</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_3>
+             <_4>
+                <id>10043</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Function Room</English>
+                </title>
+                <value>Function Room</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_4>
+             <_5>
+                <id>10044</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Wedding</English>
+                </title>
+                <value>Wedding</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_5>
+            </options>
+            <sub_question_skus />
+          </_0>
+         <_1>
+            <id>31</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>table</_subtype>
+           <title>
+              <English>How would you rate...</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <map_key>table-radio</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <option_sort />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10045</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Excellent</English>
+                </title>
+                <value>Excellent</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+             <_1>
+                <id>10046</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Good</English>
+                </title>
+                <value>Good</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_1>
+             <_2>
+                <id>10047</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Fair</English>
+                </title>
+                <value>Fair</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_2>
+             <_3>
+                <id>10048</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Poor</English>
+                </title>
+                <value>Poor</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_3>
+             <_4>
+                <id>10049</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Very Poor</English>
+                </title>
+                <value>Very Poor</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_4>
+            </options>
+           <sub_question_skus>
+              <_0>32</_0>
+              <_1>33</_1>
+              <_2>34</_2>
+              <_3>35</_3>
+            </sub_question_skus>
+          </_1>
+         <_2>
+            <id>36</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>essay</_subtype>
+           <title>
+              <English>Do you have any other comments regarding Hotel X as a dining venue?</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <map_key>essay</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_2>
+        </questions>
+      </_6>
+     <_7>
+        <id>9</id>
+        <_type>SurveyPage</_type>
+       <title>
+          <English>New Page</English>
+        </title>
+       <properties>
+          <hidden />
+        </properties>
+        <description />
+       <questions>
+         <_0>
+            <id>37</id>
+            <_type>SurveyDecorative</_type>
+            <_subtype>instructions</_subtype>
+           <title>
+              <English>Please indicate your level of agreement or disagreement with the follow statements</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <hidden />
+              <map_key>instructions</map_key>
+              <show_title />
+              <question_description_above />
+              <softrequired />
+              <required />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_0>
+         <_1>
+            <id>38</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>table</_subtype>
+           <title>
+              <English>As a conference and events venue</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <map_key>table-radio</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <option_sort />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10050</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Strongly Agree</English>
+                </title>
+                <value>Strongly Agree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+             <_1>
+                <id>10051</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Agree</English>
+                </title>
+                <value>Agree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_1>
+             <_2>
+                <id>10052</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Neither Agree Nor Disagree</English>
+                </title>
+                <value>Neither Agree Nor Disagree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_2>
+             <_3>
+                <id>10053</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Disagree</English>
+                </title>
+                <value>Disagree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_3>
+             <_4>
+                <id>10054</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Strongly Disagree</English>
+                </title>
+                <value>Strongly Disagree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_4>
+            </options>
+           <sub_question_skus>
+              <_0>39</_0>
+              <_1>40</_1>
+              <_2>41</_2>
+              <_3>42</_3>
+              <_4>43</_4>
+              <_5>44</_5>
+            </sub_question_skus>
+          </_1>
+         <_2>
+            <id>45</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>essay</_subtype>
+           <title>
+              <English>Do you have any other comments regarding Hotel X as a conference or events venue?</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <map_key>essay</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_2>
+        </questions>
+      </_7>
+     <_8>
+        <id>10</id>
+        <_type>SurveyPage</_type>
+       <title>
+          <English>New Page</English>
+        </title>
+       <properties>
+          <hidden />
+        </properties>
+        <description />
+       <questions>
+         <_0>
+            <id>46</id>
+            <_type>SurveyDecorative</_type>
+            <_subtype>instructions</_subtype>
+           <title>
+              <English>Please indicate your level of agreement or disagreement with the follow statements</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <hidden />
+              <map_key>instructions</map_key>
+              <show_title />
+              <question_description_above />
+              <softrequired />
+              <required />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_0>
+         <_1>
+            <id>47</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>table</_subtype>
+           <title>
+              <English>The members of the team</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <map_key>table-radio</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <option_sort />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10055</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Strongly Agree</English>
+                </title>
+                <value>Strongly Agree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+             <_1>
+                <id>10056</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Agree</English>
+                </title>
+                <value>Agree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_1>
+             <_2>
+                <id>10057</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Neither Agree Nor Disagree</English>
+                </title>
+                <value>Neither Agree Nor Disagree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_2>
+             <_3>
+                <id>10058</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Disagree</English>
+                </title>
+                <value>Disagree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_3>
+             <_4>
+                <id>10059</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Strongly Disagree</English>
+                </title>
+                <value>Strongly Disagree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_4>
+             <_5>
+                <id>10060</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>N/A</English>
+                </title>
+                <value>N/A</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_5>
+            </options>
+           <sub_question_skus>
+              <_0>48</_0>
+              <_1>49</_1>
+              <_2>50</_2>
+            </sub_question_skus>
+          </_1>
+         <_2>
+            <id>51</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>essay</_subtype>
+           <title>
+              <English>Was there any particular member of the team you would like to acknowledge and why?</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <map_key>essay</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_2>
+        </questions>
+      </_8>
+     <_9>
+        <id>7</id>
+        <_type>SurveyPage</_type>
+       <title>
+          <English>New Page</English>
+        </title>
+       <properties>
+          <hidden />
+        </properties>
+        <description />
+       <questions>
+         <_0>
+            <id>18</id>
+            <_type>SurveyDecorative</_type>
+            <_subtype>instructions</_subtype>
+           <title>
+              <English>Please indicate your level of agreement or disagreement with the follow statements</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <hidden />
+              <map_key>instructions</map_key>
+              <show_title />
+              <question_description_above />
+              <softrequired />
+              <required />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_0>
+         <_1>
+            <id>52</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>table</_subtype>
+           <title>
+              <English>When you were leaving</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <map_key>table-radio</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <option_sort />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10061</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Strongly Agree</English>
+                </title>
+                <value>Strongly Agree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+             <_1>
+                <id>10062</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Agree</English>
+                </title>
+                <value>Agree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_1>
+             <_2>
+                <id>10063</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Neither Agree Nor Disagree</English>
+                </title>
+                <value>Neither Agree Nor Disagree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_2>
+             <_3>
+                <id>10064</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Disagree</English>
+                </title>
+                <value>Disagree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_3>
+             <_4>
+                <id>10065</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Strongly Disagree</English>
+                </title>
+                <value>Strongly Disagree</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_4>
+             <_5>
+                <id>10066</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>N/A</English>
+                </title>
+                <value>N/A</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_5>
+            </options>
+           <sub_question_skus>
+              <_0>53</_0>
+              <_1>54</_1>
+              <_2>55</_2>
+            </sub_question_skus>
+          </_1>
+         <_2>
+            <id>56</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>radio</_subtype>
+           <title>
+              <English>How did your experience with us meet with your expectations?</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <option_sort />
+              <required />
+              <hidden />
+              <orientation>HORZ</orientation>
+              <labels_right>1</labels_right>
+              <map_key>radio</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10067</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Exceeded</English>
+                </title>
+                <value>Exceeded</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+             <_1>
+                <id>10068</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Met</English>
+                </title>
+                <value>Met</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_1>
+             <_2>
+                <id>10069</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Fell Below</English>
+                </title>
+                <value>Fell Below</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_2>
+            </options>
+            <sub_question_skus />
+          </_2>
+         <_3>
+            <id>57</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>essay</_subtype>
+           <title>
+              <English>Was there anything else that we could have done to enhance your overall experience?</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <map_key>essay</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_3>
+         <_4>
+            <id>58</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>essay</_subtype>
+           <title>
+              <English>Do you have any further comments?</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <map_key>essay</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_4>
+         <_5>
+            <id>59</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>essay</_subtype>
+           <title>
+              <English>It is very important to us to minimise our impact on the environment. Do you have any ideas or changes we could make so that we can be greener as a business?</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <map_key>essay</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_5>
+        </questions>
+      </_9>
+     <_10>
+        <id>11</id>
+        <_type>SurveyPage</_type>
+       <title>
+          <English>New Page</English>
+        </title>
+       <properties>
+          <hidden />
+        </properties>
+        <description />
+       <questions>
+         <_0>
+            <id>60</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>radio</_subtype>
+           <title>
+              <English>What is your gender?</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <option_sort />
+              <required />
+              <hidden />
+              <orientation>HORZ</orientation>
+              <labels_right>1</labels_right>
+              <map_key>radio</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10070</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Male</English>
+                </title>
+                <value>Male</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+             <_1>
+                <id>10071</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Female</English>
+                </title>
+                <value>Female</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_1>
+            </options>
+            <sub_question_skus />
+          </_0>
+         <_1>
+            <id>61</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>menu</_subtype>
+           <title>
+              <English>Which of the following ranges includes your age?</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <option_sort />
+              <required />
+              <hidden />
+              <map_key>menu</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10072</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Under 18</English>
+                </title>
+                <value>Under 18</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+             <_1>
+                <id>10073</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>18-24</English>
+                </title>
+                <value>18-24</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_1>
+             <_2>
+                <id>10074</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>25-34</English>
+                </title>
+                <value>25-34</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_2>
+             <_3>
+                <id>10075</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>35-44</English>
+                </title>
+                <value>35-44</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_3>
+             <_4>
+                <id>10076</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>45-54</English>
+                </title>
+                <value>45-54</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_4>
+             <_5>
+                <id>10077</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>55-64</English>
+                </title>
+                <value>55-64</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_5>
+             <_6>
+                <id>10078</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>65+</English>
+                </title>
+                <value>65+</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_6>
+            </options>
+            <sub_question_skus />
+          </_1>
+         <_2>
+            <id>62</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>multi_textbox</_subtype>
+           <title>
+              <English>Please complete the following (optional):</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <required />
+              <hidden />
+              <minimum_response>1</minimum_response>
+              <map_key>multitext</map_key>
+            </properties>
+           <options>
+             <_0>
+                <id>10079</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Guest name:</English>
+                </title>
+                <value>Guest name:</value>
+                <properties />
+              </_0>
+             <_1>
+                <id>10080</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Room number:</English>
+                </title>
+                <value>Room number:</value>
+                <properties />
+              </_1>
+             <_2>
+                <id>10081</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Arrival date:</English>
+                </title>
+                <value>Arrival date:</value>
+                <properties />
+              </_2>
+             <_3>
+                <id>10082</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Departure date:</English>
+                </title>
+                <value>Departure date:</value>
+                <properties />
+              </_3>
+             <_4>
+                <id>10083</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Mobile No:</English>
+                </title>
+                <value>Mobile No:</value>
+                <properties />
+              </_4>
+             <_5>
+                <id>10084</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Email address:</English>
+                </title>
+                <value>Email address:</value>
+                <properties />
+              </_5>
+             <_6>
+                <id>10085</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Email address (repeat):</English>
+                </title>
+                <value>Email address (repeat):</value>
+                <properties />
+              </_6>
+            </options>
+            <sub_question_skus />
+          </_2>
+         <_3>
+            <id>63</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>checkbox</_subtype>
+           <title>
+              <English>Would you like to receive any further information from Hotel X regarding?</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <option_sort />
+              <required />
+              <hidden />
+              <element_style>OS</element_style>
+              <orientation>HORZ</orientation>
+              <minimum_response>0</minimum_response>
+              <labels_right>1</labels_right>
+              <map_key>checkbox</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10086</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Accommodation</English>
+                </title>
+                <value>Accommodation</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+             <_1>
+                <id>10087</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Dining</English>
+                </title>
+                <value>Dining</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_1>
+             <_2>
+                <id>10088</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Business and Conferencing</English>
+                </title>
+                <value>Business and Conferencing</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_2>
+             <_3>
+                <id>10089</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Events</English>
+                </title>
+                <value>Events</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_3>
+             <_4>
+                <id>10090</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>Weddings</English>
+                </title>
+                <value>Weddings</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_4>
+            </options>
+            <sub_question_skus />
+          </_3>
+         <_4>
+            <id>64</id>
+            <_type>SurveyQuestion</_type>
+            <_subtype>radio</_subtype>
+           <title>
+              <English>If you do not want us to publish your review online...</English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <option_sort />
+              <required />
+              <hidden />
+              <orientation>VERT</orientation>
+              <labels_right>1</labels_right>
+              <map_key>radio</map_key>
+              <show_title />
+             <question_description>
+                <English />
+              </question_description>
+              <question_description_above />
+              <softrequired />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+           <options>
+             <_0>
+                <id>10091</id>
+                <_type>SurveyOption</_type>
+               <title>
+                  <English>... please select the box</English>
+                </title>
+                <value>... please select the box</value>
+               <properties>
+                  <disabled />
+                </properties>
+              </_0>
+            </options>
+            <sub_question_skus />
+          </_4>
+         <_5>
+            <id>65</id>
+            <_type>SurveyDecorative</_type>
+            <_subtype>instructions</_subtype>
+           <title>
+              <English>
+                <center>
+                  Thank you for your time and invaluable feedback.<br /> Please click on "Submit" to complete your response to this survey.
+                </center>
+              </English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <hidden />
+              <map_key>instructions</map_key>
+              <show_title />
+              <question_description_above />
+              <softrequired />
+              <required />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_5>
+        </questions>
+      </_10>
+     <_11>
+        <id>2</id>
+        <_type>SurveyPage</_type>
+       <title>
+          <English>Thank You!</English>
+        </title>
+       <properties>
+          <hidden />
+        </properties>
+        <description />
+       <questions>
+         <_0>
+            <id>1</id>
+            <_type>SurveyDecorative</_type>
+            <_subtype>instructions</_subtype>
+           <title>
+              <English>
+                Thank you for your time and assistance in completing this survey, your feedback is invaluable as we continually strive to improve our services.
+                  
+                    If we can be of any assistance in the future, please do not hesitate to contact us directly.
+                      
+                        If you would also like to share your recent Hotel X experience with the world please click here to submit to tripadvisor
+                          
+                            <A HREF="http://www.bluskymarketing.com/" target="_blank">
+                              <img border="0" src="http://www.bluskyresearch.com/uploaded_images/user/1_0_tripadvisor.gif" alt="Stapleford Park Trip Advisor" width="200" height="80" />
+                            </A>
+                            
+                              
+                                <div align="left" class="qbody">
+                                  Joe Bloggs
+                                    Director
+                                      Hotel X www.hotelx.co.uk</div>
+   
+              </English>
+            </title>
+            <shortname />
+            <varname />
+            <description />
+            <has_showhide_deps />
+            <comment />
+           <properties>
+              <hidden />
+              <map_key>instructions</map_key>
+              <show_title />
+              <question_description_above />
+              <softrequired />
+              <required />
+              <disabled />
+             <messages>
+                <inputmask />
+                <r_extreme_label />
+                <l_extreme_label />
+                <center_label />
+                <right_label />
+                <left_label />
+              </messages>
+              <labels_right />
+              <hide_after_response />
+              <custom_css />
+              <break_after />
+              <url>http://</url>
+            </properties>
+            <options />
+            <sub_question_skus />
+          </_0>
+        </questions>
+      </_11>
+    </pages>
+  </data>
+</apiresult>

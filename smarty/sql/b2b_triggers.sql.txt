@@ -1,0 +1,32 @@
+/*Trigger structure for table ``b2b_inovice_order_heading` */
+
+DELIMITER $$
+
+DROP TRIGGER IF EXISTS `delInvRelData`;
+
+CREATE TRIGGER `delInvRelData` AFTER DELETE ON `b2b_inovice_order_heading` FOR EACH ROW BEGIN DELETE FROM `b2b_invoice_detail_line` WHERE iInvoiceID = old.iInvoiceID;DELETE FROM `b2b_invoice_order_attachment` WHERE iInvoiceID = old.iInvoiceID; DELETE FROM `b2b_invoice_otherinformation` WHERE iInvoiceID = old.iInvoiceID;END;
+
+/*Trigger structure for table ``b2b_organization_master` */
+
+DELIMITER $$
+
+DROP TRIGGER IF EXISTS `delOrgRelData`;
+
+CREATE TRIGGER `delOrgRelData` AFTER DELETE ON `b2b_organization_master` FOR EACH ROW BEGIN DELETE FROM `b2b_organization_default_settings` WHERE iOrganizationID = old.iOrganizationID; DELETE FROM `b2b_organization_association` WHERE iBuyerOrganizationID = old.iOrganizationID; DELETE FROM `b2b_organization_user` WHERE iOrganizationID = old.iOrganizationID;END;
+
+/*Trigger structure for table ``b2b_organization_user` */
+
+DELIMITER $$
+
+DROP TRIGGER IF EXISTS `delUserRelData`;
+
+CREATE TRIGGER `delUserRelData` AFTER DELETE ON `b2b_organization_user` FOR EACH ROW BEGIN DELETE FROM `b2b_organization_user_permission` WHERE iUserID = old.iUserID;END;
+
+/*Trigger structure for table ``b2b_purchase_order_heading` */
+
+DELIMITER $$
+
+DROP TRIGGER IF EXISTS `delPORelData`;
+
+CREATE TRIGGER `delPORelData` AFTER DELETE ON `b2b_purchase_order_heading` FOR EACH ROW BEGIN DELETE FROM `b2b_purchase_order_line` WHERE iPurchaseOrderID = old.iPurchaseOrderID;DELETE FROM `b2b_purchase_order_attachment` WHERE iPurchaseOrderID = old.iPurchaseOrderID;DELETE FROM `b2b_purchase_order_otherinformation` WHERE iPurchaseOrderID = old.iPurchaseOrderID;END;
+

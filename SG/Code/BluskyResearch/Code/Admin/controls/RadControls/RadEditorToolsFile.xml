@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+
+    <tools name="Formatting" enabled="true" dockable="true">
+        <tool name="Bold" />
+        <tool name="Italic" />
+        <tool name="Underline" />
+        <tool name="LinkManager" ></tool>
+    </tools>
+
+    <tools name="MainToolbar" dockable="true" enabled="true"> 
+        <tool name="Undo" />
+        <tool name="Redo" />
+        <tool separator="true"/>
+        <tool name="Cut" />
+        <tool name="Copy" />
+        <tool name="Paste" shortcut="CTRL+!"/>
+        <tool name="InsertUnorderedList" />
+        <tool name="InsertOrderedList" />
+        <tool separator="true"/>
+        <tool name="JustifyLeft" />
+        <tool name="JustifyCenter" />
+        <tool name="JustifyRight" />
+    </tools>
+
+    <tools name="FileManager" dockable="true" enabled="true">
+        <tool name="ImageManager" enabled="true" />
+        <tool name="DocumentManager" enabled="true" />
+    </tools >
+
+    <tools name="SpellCheck" dockable="true" enabled="true">
+        <tool name="AjaxSpellCheck" />
+        <tool name="XhtmlValidator" />
+    </tools>
+
+    <!--<tools name="Styles" enabled="true" dockable="true" >
+        <tool name="ApplyClass"/>   
+    </tools>-->
+
+    <tools name="MainToolbar">
+        <tool name="FormatBlock" />
+        <tool name="ForeColor" />
+        <tool name="FontSize"/>
+      <tool separator="true"/>
+      <tool name="FormatStripper" />
+    </tools>
+  <paragraphs>
+    <paragraph name="&lt;p>Normal&lt;/p>" value="&lt;p>" />
+    <paragraph name="&lt;h1>Heading 1&lt;/h1>" value="&lt;h1>" />
+    <paragraph name="&lt;h2>Heading 2&lt;/h1>" value="&lt;h2>" />
+    <paragraph name="&lt;h3>Heading 3&lt;/h1>" value="&lt;h3>" />
+  </paragraphs>
+
+
+  <cssFiles>
+        <item name="~/Admin/Media/CSS/Content.css" /> 
+    </cssFiles>
+</root>

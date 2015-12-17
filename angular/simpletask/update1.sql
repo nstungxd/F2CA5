@@ -1,0 +1,1 @@
+UPDATE `user` SET `password` = 'e10adc3949ba59abbe56e057f20f883e' WHERE `user`.`email` ='admin@gmail.com';

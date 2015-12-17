@@ -1,0 +1,5 @@
+[1~status~~~~Deleted~0~<>]
+[6~istestdata~~~~0~0~=]
+[5~[question(3)]~How did you hear about us?~10001~Stayed previously~Stayed previously~1~=]
+[5~[question(30)]~Where did you dine?~10040~Restaurant B~Restaurant B~10~=]
+[5~[question(6)]~How would you rate... your overall experience at Hotel X?~10015~Excellent~Excellent~3~=]

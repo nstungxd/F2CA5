@@ -1,0 +1,43 @@
+#!/bin/bash
+
+start() {
+	bash /var/www/html/sadena/www/shell/automatch.sh &
+	bash /var/www/html/sadena/www/shell/autoproc.sh &
+	bash /var/www/html/sadena/www/shell/autopush.sh &
+	
+	echo "Daemon started."
+}
+ 
+stop() {
+	pkill -f "/sadena/www/shell/automatch.sh"
+	pkill -f "/sadena/www/shell/autoproc.sh"
+	pkill -f "/sadena/www/shell/autopush.sh"
+ 
+	echo -e "\nDaemon stopped."
+	return 1
+}
+ 
+restart() {
+	stop	
+	sleep 2 
+	start
+	return $?
+}
+ 
+case "$1" in
+	start)
+		start
+		;;
+	stop)
+		stop
+		;;
+  	restart)
+		stop
+		start
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 2
+esac
+ 
+exit $?

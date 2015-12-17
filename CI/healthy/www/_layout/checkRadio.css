@@ -1,0 +1,76 @@
+/* =====================================================================================================================
+// CheckRadio */
+
+.icr {
+    position: relative;
+    display: inline-block; vertical-align: top;
+    cursor: pointer;
+}
+.icr.disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+    .icr__text {
+        position: relative; display: block;
+    }
+    .icr__radio, .icr__checkbox {
+        position: absolute; display: block;
+        top: 0; left: 0;
+    }
+.icr__hidden {
+    position: relative;
+    display: block;
+    float: left;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    font-size: 0; line-height: 0;
+}
+
+.icr__radio, .icr__checkbox {
+    background: url(../img/icr-pink-skin.png) no-repeat;
+}
+
+.icr {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px; line-height: 19px;
+    margin: 0 25px 5px 0;
+    color: #555;
+}
+
+.icr__text {
+	padding: 2px 0 0 28px;
+}
+
+
+.icr__checkbox {
+	width: 20px; height: 20px;
+	background-position: 0 0;
+}
+.icr.enabled:hover .icr__checkbox {
+	background-position: -50px 0;
+}
+.icr.checked .icr__checkbox {
+	background-position: -100px 0;
+}
+.icr.enabled.checked:hover .icr__checkbox {
+	background-position: -150px 0;
+}
+
+
+.icr__radio {
+	width: 23px; height: 23px;
+	background-position: 1px -49px;
+}
+
+.icr.enabled:hover .icr__radio {
+	background-position: -49px -49px;
+}
+
+.icr.checked .icr__radio {
+	background-position: -99px -49px;;
+}
+
+.icr.enabled.checked:hover .icr__radio {
+	background-position: -149px -49px;;
+}

@@ -1,0 +1,509 @@
+-- MySQL dump 10.13  Distrib 5.5.42, for Linux (x86_64)
+--
+-- Host: localhost    Database: admin_workmeout
+-- ------------------------------------------------------
+-- Server version	5.5.42
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `achiveratio`
+--
+
+DROP TABLE IF EXISTS `achiveratio`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `achiveratio` (
+  `Seq` bigint(255) NOT NULL AUTO_INCREMENT,
+  `UserSeq` bigint(255) NOT NULL,
+  `Value` varchar(255) DEFAULT NULL COMMENT '목표달성률',
+  `AchiveMonth` varchar(255) DEFAULT NULL COMMENT '목표달성월',
+  `UpdateDt` date DEFAULT NULL COMMENT '목표달성률 최종 갱신날자',
+  PRIMARY KEY (`Seq`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `achiveratio`
+--
+
+LOCK TABLES `achiveratio` WRITE;
+/*!40000 ALTER TABLE `achiveratio` DISABLE KEYS */;
+INSERT INTO `achiveratio` VALUES (1,1,'20','2014-10','2014-10-24'),(2,1,'57','2014-11','2014-11-26'),(3,14,'25','2014-11','2014-11-14'),(4,14,'0','2014-10','2014-11-12'),(5,1,'1','2014-12','2014-12-10'),(6,1,'3','2015-01','2015-01-27'),(7,14,'26','2015-03','2015-03-30'),(8,15,'4','2015-03','2015-03-19'),(9,16,'19','2015-03','2015-03-26'),(10,16,'1','2015-04','2015-04-02'),(11,14,'4','2015-05','2015-05-27'),(12,14,'4','2015-06','2015-07-06'),(13,17,'1','2015-06','2015-06-23'),(14,14,'66','2015-07','2015-07-28'),(15,14,'0','2025-12','2015-07-08'),(16,18,'1','2015-07','2015-07-09'),(17,1,'17','2015-07','2015-07-13');
+/*!40000 ALTER TABLE `achiveratio` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `admin`
+--
+
+DROP TABLE IF EXISTS `admin`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `admin` (
+  `Seq` bigint(255) NOT NULL AUTO_INCREMENT,
+  `AdminID` varchar(255) DEFAULT NULL,
+  `AdminPW` varchar(255) DEFAULT NULL,
+  `Permission` int(255) DEFAULT '0' COMMENT '0: Admin, 1: CenterAdmin, 2: Trainer',
+  `CenterCode` varchar(255) DEFAULT NULL,
+  `AdminSeq` varchar(255) DEFAULT NULL COMMENT 'Permission별 Seq',
+  PRIMARY KEY (`Seq`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `admin`
+--
+
+LOCK TABLES `admin` WRITE;
+/*!40000 ALTER TABLE `admin` DISABLE KEYS */;
+INSERT INTO `admin` VALUES (1,'admin','admin123',0,NULL,NULL),(2,'trainer1223','123',2,'E0000001','1'),(3,'center1','aaa',1,'E0000001','5'),(4,'center2','123',1,'E0000002','6'),(5,'trainer22','aaa',2,'E0000001','2'),(6,'gtrainer','password',2,'E0000001','3'),(7,'cpara','crunchparra',1,'E0000003','7'),(8,'mtrainer','a',2,'E0000003','4');
+/*!40000 ALTER TABLE `admin` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `center`
+--
+
+DROP TABLE IF EXISTS `center`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `center` (
+  `CenterCode` varchar(255) NOT NULL,
+  `CenterNm` varchar(255) DEFAULT NULL,
+  `OpenDT` datetime DEFAULT NULL,
+  `Adress` varchar(255) DEFAULT NULL,
+  `Logo` text,
+  `Seq` bigint(255) NOT NULL AUTO_INCREMENT,
+  `WebSite` varchar(255) DEFAULT NULL,
+  `UserID` varchar(255) DEFAULT NULL,
+  `UserPW` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Seq`,`CenterCode`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `center`
+--
+
+LOCK TABLES `center` WRITE;
+/*!40000 ALTER TABLE `center` DISABLE KEYS */;
+INSERT INTO `center` VALUES ('E0000001','Center1','2014-11-02 05:27:44','addr','/www/upload/center/4959edc2c99575a8ba3c5d01fb45f0f6.png',5,'d','center1','aaa'),('E0000002','Center2','2014-11-02 05:27:22','aaa','/www/upload/center/52df3053572bae355c966649cdc2c947.png',6,'qq','center2','123'),('E0000003','Test - Par','2015-02-08 17:02:47','George Street','/www/upload/center/38ed6d86e4e3770e35b9dac76cffdcb7.png',7,'www.parramatta','cpara','crunchparra');
+/*!40000 ALTER TABLE `center` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `center_walkpoint`
+--
+
+DROP TABLE IF EXISTS `center_walkpoint`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `center_walkpoint` (
+  `CenterCode` varchar(255) NOT NULL,
+  `WalkPointID` int(11) NOT NULL,
+  `NFCCode` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`CenterCode`,`WalkPointID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `center_walkpoint`
+--
+
+LOCK TABLES `center_walkpoint` WRITE;
+/*!40000 ALTER TABLE `center_walkpoint` DISABLE KEYS */;
+/*!40000 ALTER TABLE `center_walkpoint` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `constant`
+--
+
+DROP TABLE IF EXISTS `constant`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `constant` (
+  `c_name` varchar(255) NOT NULL COMMENT '상수이름',
+  `c_value` text NOT NULL COMMENT '상수값',
+  `c_description` text COMMENT '상수설명',
+  PRIMARY KEY (`c_name`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='상수설정값';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `constant`
+--
+
+LOCK TABLES `constant` WRITE;
+/*!40000 ALTER TABLE `constant` DISABLE KEYS */;
+INSERT INTO `constant` VALUES ('warmup','http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4','This is a test for warmup'),('cooldown','http://download.wavetlan.com/SVV/Media/HTTP/H264/Talkinghead_Media/H264_test1_Talkinghead_mp4_480x360.mp4','This is a test for cooldown'),('policy','Test                                ','policy'),('agreement','Test','agreement');
+/*!40000 ALTER TABLE `constant` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dailyhealthgrade`
+--
+
+DROP TABLE IF EXISTS `dailyhealthgrade`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dailyhealthgrade` (
+  `Seq` bigint(255) NOT NULL AUTO_INCREMENT,
+  `UserSeq` bigint(255) NOT NULL,
+  `Grade1` varchar(255) DEFAULT NULL,
+  `Grade2` varchar(255) DEFAULT NULL,
+  `Grade3` varchar(255) DEFAULT NULL,
+  `Grade4` varchar(255) DEFAULT NULL,
+  `Grade5` varchar(255) DEFAULT NULL,
+  `Grade6` varchar(255) DEFAULT NULL,
+  `Grade7` varchar(255) DEFAULT NULL,
+  `Grade8` varchar(255) DEFAULT NULL,
+  `Grade9` varchar(255) DEFAULT NULL,
+  `TotalGrade` varchar(255) DEFAULT NULL,
+  `Date` date DEFAULT NULL,
+  PRIMARY KEY (`Seq`,`UserSeq`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dailyhealthgrade`
+--
+
+LOCK TABLES `dailyhealthgrade` WRITE;
+/*!40000 ALTER TABLE `dailyhealthgrade` DISABLE KEYS */;
+INSERT INTO `dailyhealthgrade` VALUES (1,1,'1','1','1','1','1','1','1','1','1','76.666666666667','2014-10-20'),(5,1,'1','3','2','1','0','2','1','6','0','84','2014-10-26'),(6,1,'0','0','0','0','0','0','1','5','1','78','2014-10-27'),(7,1,'1','2','2','1','0','1','1','5','0','88','2014-11-08'),(8,1,'0','3','0','0','0','0','0','0','0','78','2014-11-07'),(9,1,'1','1','1','1','1','1','0','4','1','97','2014-11-12'),(10,14,'1','2','2','2','1','0','0','6','1','94','2014-11-12'),(11,14,'0','0','0','0','0','0','0','0','0','77','2014-11-11'),(12,1,'0','0','0','0','0','0','0','0','0','77','2014-11-17'),(13,16,'0','1','2','1','1','1','0','8','0','90','2015-03-25'),(14,14,'1','1','2','1','1','0','0','7','1','97','2015-03-26'),(15,14,'1','2','1','2','1','0','0','6','1','96','2015-03-25'),(16,14,'0','0','0','0','0','0','0','5','0','77','2015-07-04'),(17,14,'1','2','3','2','1','2','1','8','1','91','2015-07-07'),(18,14,'1','1','2','1','0','1','0','12','1','93','2015-07-08');
+/*!40000 ALTER TABLE `dailyhealthgrade` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `equipment`
+--
+
+DROP TABLE IF EXISTS `equipment`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `equipment` (
+  `Seq` bigint(255) NOT NULL AUTO_INCREMENT,
+  `EqName` varchar(255) DEFAULT NULL,
+  `ExerciseSeq` bigint(255) DEFAULT NULL,
+  `NFCCode` varchar(255) DEFAULT NULL,
+  `USEYN` smallint(1) DEFAULT '1',
+  `EqNum` varchar(255) DEFAULT NULL,
+  `CenterCode` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Seq`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `equipment`
+--
+
+LOCK TABLES `equipment` WRITE;
+/*!40000 ALTER TABLE `equipment` DISABLE KEYS */;
+INSERT INTO `equipment` VALUES (1,'Test Eq',2,'04cb5b02843680',1,'1111111','E0000001'),(2,'Bike Machine',1,'1234',1,'12312321','E0000003'),(4,'Rowing 200m',9,'000123',1,'Concept2','E0000001'),(5,'Barbell NFC enabled',3,'04bd5c02843680',1,'12321','E0000001');
+/*!40000 ALTER TABLE `equipment` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `exercise`
+--
+
+DROP TABLE IF EXISTS `exercise`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `exercise` (
+  `Seq` bigint(255) NOT NULL AUTO_INCREMENT,
+  `Name` varchar(255) DEFAULT NULL,
+  `Type` smallint(255) DEFAULT NULL COMMENT 'Exercise type, 1: Running, 2: Bike, 3: Weight, 4: Rowing',
+  `KCal` varchar(255) DEFAULT NULL COMMENT '단위기준별 소비 칼로리',
+  `ExCode` smallint(255) DEFAULT NULL COMMENT '부위코드, 1: Abdominal, 2: Chest, 3: Arm, 4: Leg, 5: Shoulder',
+  PRIMARY KEY (`Seq`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `exercise`
+--
+
+LOCK TABLES `exercise` WRITE;
+/*!40000 ALTER TABLE `exercise` DISABLE KEYS */;
+INSERT INTO `exercise` VALUES (1,'Treadmill',1,'196',0),(2,'Bike',2,'1961',0),(3,'Barbell Bench Press',3,'12333',2),(4,'Dumbbell Bench Fly\'s',3,'100',4),(5,'Wrist Curls',3,'100',6),(7,'Rowing 2000m',4,'10',4),(8,'Rowing 500m',4,'0',4),(9,'Rowing 200m',4,'0',10),(10,'Mountain Climbers',3,'0',1),(11,'Situps',3,'0',1);
+/*!40000 ALTER TABLE `exercise` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `exercisetarget`
+--
+
+DROP TABLE IF EXISTS `exercisetarget`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `exercisetarget` (
+  `Seq` bigint(255) NOT NULL AUTO_INCREMENT,
+  `Name` varchar(255) DEFAULT NULL,
+  `Code` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Seq`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `exercisetarget`
+--
+
+LOCK TABLES `exercisetarget` WRITE;
+/*!40000 ALTER TABLE `exercisetarget` DISABLE KEYS */;
+INSERT INTO `exercisetarget` VALUES (1,'Abdominal','1'),(2,'Chest','2'),(3,'Arms','3'),(4,'Legs','4'),(5,'Shoulders','5'),(6,'Triceps','6'),(7,'Back','7'),(8,'Upper Body','8'),(9,'Lower Body','9'),(10,'Total Body','10');
+/*!40000 ALTER TABLE `exercisetarget` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `food`
+--
+
+DROP TABLE IF EXISTS `food`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `food` (
+  `Seq` bigint(255) NOT NULL AUTO_INCREMENT,
+  `FoodName` varchar(255) DEFAULT NULL,
+  `KCal` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Seq`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `food`
+--
+
+LOCK TABLES `food` WRITE;
+/*!40000 ALTER TABLE `food` DISABLE KEYS */;
+INSERT INTO `food` VALUES (1,'steak','110'),(2,'pizza','70'),(3,'duck','180'),(4,'Apple','80'),(5,'Veggie Burger','1245');
+/*!40000 ALTER TABLE `food` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `relation`
+--
+
+DROP TABLE IF EXISTS `relation`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `relation` (
+  `Seq` bigint(255) NOT NULL AUTO_INCREMENT,
+  `TrainerSeq` bigint(255) DEFAULT NULL,
+  `UserSeq` bigint(255) DEFAULT NULL,
+  `CenterCode` varchar(255) DEFAULT NULL,
+  `TrainerName` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Seq`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `relation`
+--
+
+LOCK TABLES `relation` WRITE;
+/*!40000 ALTER TABLE `relation` DISABLE KEYS */;
+/*!40000 ALTER TABLE `relation` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `trainer`
+--
+
+DROP TABLE IF EXISTS `trainer`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `trainer` (
+  `Seq` bigint(255) NOT NULL AUTO_INCREMENT,
+  `CenterCode` varchar(255) DEFAULT NULL,
+  `Name` varchar(255) DEFAULT NULL,
+  `RegDate` datetime DEFAULT NULL,
+  `Sex` smallint(1) DEFAULT NULL COMMENT '0: Man, 1: Woman',
+  `UserID` varchar(255) DEFAULT NULL,
+  `UserPW` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Seq`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `trainer`
+--
+
+LOCK TABLES `trainer` WRITE;
+/*!40000 ALTER TABLE `trainer` DISABLE KEYS */;
+INSERT INTO `trainer` VALUES (1,'E0000001','trainer','2014-11-02 05:26:20',1,'trainer1223','123'),(2,'E0000001','mytrainer','2014-11-02 05:26:05',1,'trainer22','aaa'),(3,'E0000001','G','2014-11-12 13:32:14',1,'gtrainer','password'),(4,'E0000003','mtrainer','2015-03-18 23:56:54',1,'mtrainer','a');
+/*!40000 ALTER TABLE `trainer` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user` (
+  `Seq` bigint(255) NOT NULL AUTO_INCREMENT,
+  `CenterCode` varchar(255) NOT NULL,
+  `UserID` varchar(255) DEFAULT NULL,
+  `UserPW` varchar(255) DEFAULT NULL,
+  `UserNm` varchar(255) DEFAULT NULL,
+  `BirthDt` date DEFAULT NULL,
+  `Sex` smallint(1) DEFAULT NULL COMMENT '1: Man, 2: Woman',
+  `Phone` varchar(255) DEFAULT NULL,
+  `Email` varchar(255) DEFAULT NULL,
+  `Height` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Seq`,`CenterCode`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user`
+--
+
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (1,'E0000001','mimi','984987cea0751a4a055ef0999c19ed6d','mimi','1990-01-01',1,'111-2222-3333','test@gmail.com','175'),(2,'E0000001','User1','827ccb0eea8a706c4c34a16891f84e7b','Name1','1990-01-01',1,'','',''),(3,'E0000001','User2','827ccb0eea8a706c4c34a16891f84e7b','Name2','1990-01-01',1,NULL,NULL,NULL),(4,'E0000001','User3','827ccb0eea8a706c4c34a16891f84e7b','Name3','1990-01-01',1,NULL,NULL,NULL),(5,'E0000001','User4','827ccb0eea8a706c4c34a16891f84e7b','Name4','1990-01-01',1,NULL,NULL,NULL),(6,'E0000001','User5','827ccb0eea8a706c4c34a16891f84e7b','Name5','1990-01-01',1,NULL,NULL,NULL),(7,'E0000001','User6','827ccb0eea8a706c4c34a16891f84e7b','Name6','1990-01-01',2,NULL,NULL,NULL),(8,'E0000001','User7','827ccb0eea8a706c4c34a16891f84e7b','Name7','1990-01-01',2,NULL,NULL,NULL),(9,'E0000001','User8','827ccb0eea8a706c4c34a16891f84e7b','Name8','1990-01-01',2,NULL,NULL,NULL),(10,'E0000001','User9','827ccb0eea8a706c4c34a16891f84e7b','Name9','1990-01-01',2,'qq','ww','123'),(11,'E0000001','User10','827ccb0eea8a706c4c34a16891f84e7b','Name10','1990-01-01',2,NULL,NULL,NULL),(12,'E0000001','User11','827ccb0eea8a706c4c34a16891f84e7b','Name11','1990-01-01',2,NULL,NULL,NULL),(13,'E0000002','user12','827ccb0eea8a706c4c34a16891f84e7b','name12','1990-02-24',1,'111-2234-4556','user12@gmail.com','178'),(14,'E0000001','Gmember','5f4dcc3b5aa765d61d8327deb882cf99','Gmember','1980-12-12',1,'0410123123','g@g.com','171'),(16,'E0000003','test','200820e3227815ed1756a6b531e7e0d2','test','1985-03-03',1,'1122111222','fgcf@cg.mk','186'),(17,'E0000001','yundy','a73d6b1b8e3cbeefd065cef396d86141','yundy','1985-08-23',1,'123456','yundy423@gmail.com','172'),(18,'E0000001','Gmember2','5f4dcc3b5aa765d61d8327deb882cf99','Gmember2','1991-05-01',1,'0297961534','test@gmail.com','192');
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `userattendhistory`
+--
+
+DROP TABLE IF EXISTS `userattendhistory`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `userattendhistory` (
+  `Seq` bigint(255) NOT NULL AUTO_INCREMENT,
+  `UserSeq` bigint(255) NOT NULL,
+  `UserID` varchar(255) DEFAULT NULL,
+  `UserNm` varchar(255) DEFAULT NULL,
+  `AttendDt` date DEFAULT NULL,
+  PRIMARY KEY (`Seq`)
+) ENGINE=InnoDB AUTO_INCREMENT=490 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `userattendhistory`
+--
+
+LOCK TABLES `userattendhistory` WRITE;
+/*!40000 ALTER TABLE `userattendhistory` DISABLE KEYS */;
+INSERT INTO `userattendhistory` VALUES (2,1,'mimi','testUser','2014-10-19'),(3,1,'mimi','testUser','2014-10-20'),(4,13,'user12','name12','2014-10-20'),(5,1,'mimi','testUser','2014-10-23'),(6,1,'mimi','testUser','2014-10-24'),(7,1,'mimi','testUser','2014-10-24'),(8,1,'mimi','testUser','2014-10-24'),(9,1,'mimi','testUser','2014-10-24'),(10,1,'mimi','testUser','2014-10-24'),(11,1,'mimi','testUser','2014-10-24'),(12,1,'mimi','testUser','2014-10-24'),(13,1,'mimi','testUser','2014-10-24'),(14,1,'mimi','testUser','2014-10-24'),(15,1,'mimi','testUser','2014-10-24'),(16,1,'mimi','testUser','2014-10-24'),(17,1,'mimi','testUser','2014-10-24'),(18,1,'mimi','testUser','2014-10-24'),(19,1,'mimi','testUser','2014-10-24'),(20,1,'mimi','testUser','2014-10-24'),(21,1,'mimi','testUser','2014-10-24'),(22,1,'mimi','testUser','2014-10-24'),(23,1,'mimi','testUser','2014-10-24'),(24,1,'mimi','testUser','2014-10-24'),(25,1,'mimi','testUser','2014-10-24'),(26,1,'mimi','testUser','2014-10-24'),(27,1,'mimi','testUser','2014-10-24'),(28,1,'mimi','testUser','2014-10-24'),(29,1,'mimi','testUser','2014-10-24'),(30,1,'mimi','testUser','2014-10-24'),(31,1,'mimi','testUser','2014-10-24'),(32,1,'mimi','testUser','2014-10-24'),(33,1,'mimi','testUser','2014-10-24'),(34,1,'mimi','testUser','2014-10-24'),(35,1,'mimi','testUser','2014-10-24'),(36,1,'mimi','testUser','2014-10-24'),(37,1,'mimi','testUser','2014-10-24'),(38,1,'mimi','testUser','2014-10-24'),(39,1,'mimi','testUser','2014-10-24'),(40,1,'mimi','testUser','2014-10-24'),(41,1,'mimi','testUser','2014-10-24'),(42,1,'mimi','testUser','2014-10-25'),(43,1,'mimi','testUser','2014-10-25'),(44,1,'mimi','testUser','2014-10-25'),(45,1,'mimi','testUser','2014-10-25'),(46,1,'mimi','testUser','2014-10-25'),(47,1,'mimi','testUser','2014-10-25'),(48,1,'mimi','testUser','2014-10-25'),(49,1,'mimi','testUser','2014-10-25'),(50,1,'mimi','testUser','2014-10-25'),(51,1,'mimi','testUser','2014-10-25'),(52,1,'mimi','testUser','2014-10-25'),(53,1,'mimi','testUser','2014-10-25'),(54,1,'mimi','testUser','2014-10-25'),(55,1,'mimi','testUser','2014-10-25'),(56,1,'mimi','testUser','2014-10-25'),(57,1,'mimi','testUser','2014-10-25'),(58,1,'mimi','testUser','2014-10-25'),(59,1,'mimi','testUser','2014-10-25'),(60,1,'mimi','testUser','2014-10-25'),(61,1,'mimi','testUser','2014-10-25'),(62,1,'mimi','testUser','2014-10-25'),(63,1,'mimi','testUser','2014-10-25'),(64,1,'mimi','testUser','2014-10-25'),(65,1,'mimi','testUser','2014-10-25'),(66,1,'mimi','testUser','2014-10-25'),(67,1,'mimi','testUser','2014-10-25'),(68,1,'mimi','testUser','2014-10-25'),(69,1,'mimi','testUser','2014-10-25'),(70,1,'mimi','testUser','2014-10-25'),(71,1,'mimi','testUser','2014-10-25'),(72,1,'mimi','testUser','2014-10-25'),(73,1,'mimi','testUser','2014-10-25'),(74,1,'mimi','testUser','2014-10-25'),(75,1,'mimi','testUser','2014-10-25'),(76,1,'mimi','testUser','2014-10-25'),(77,1,'mimi','testUser','2014-10-25'),(78,1,'mimi','testUser','2014-10-25'),(79,1,'mimi','testUser','2014-10-25'),(80,1,'mimi','testUser','2014-10-25'),(81,1,'mimi','testUser','2014-10-26'),(82,1,'mimi','testUser','2014-10-26'),(83,1,'mimi','testUser','2014-10-26'),(84,1,'mimi','testUser','2014-10-26'),(85,1,'mimi','testUser','2014-10-26'),(86,1,'mimi','testUser','2014-10-26'),(87,1,'mimi','testUser','2014-10-26'),(88,1,'mimi','testUser','2014-10-26'),(89,1,'mimi','testUser','2014-10-26'),(90,1,'mimi','testUser','2014-10-26'),(91,1,'mimi','testUser','2014-10-26'),(92,1,'mimi','testUser','2014-10-26'),(93,1,'mimi','testUser','2014-10-26'),(94,1,'mimi','testUser','2014-10-26'),(95,1,'mimi','testUser','2014-10-26'),(96,1,'mimi','testUser','2014-10-26'),(97,1,'mimi','testUser','2014-10-26'),(98,1,'mimi','testUser','2014-10-26'),(99,1,'mimi','testUser','2014-10-26'),(100,1,'mimi','testUser','2014-10-26'),(101,1,'mimi','testUser','2014-10-26'),(102,1,'mimi','testUser','2014-10-26'),(103,1,'mimi','testUser','2014-10-26'),(104,1,'mimi','testUser','2014-10-26'),(105,1,'mimi','testUser','2014-10-26'),(106,1,'mimi','testUser','2014-10-26'),(107,1,'mimi','testUser','2014-10-26'),(108,1,'mimi','testUser','2014-10-26'),(109,1,'mimi','testUser','2014-10-26'),(110,1,'mimi','testUser','2014-10-26'),(111,1,'mimi','testUser','2014-10-27'),(112,1,'mimi','testUser','2014-10-29'),(113,1,'mimi','testUser','2014-10-29'),(114,1,'mimi','testUser','2014-10-30'),(115,1,'mimi','testUser','2014-10-30'),(116,1,'mimi','testUser','2014-10-30'),(117,1,'mimi','testUser','2014-10-30'),(118,1,'mimi','testUser','2014-10-30'),(119,1,'mimi','testUser','2014-10-30'),(120,1,'mimi','testUser','2014-10-30'),(121,1,'mimi','testUser','2014-10-30'),(122,1,'mimi','testUser','2014-10-30'),(123,1,'mimi','testUser','2014-10-30'),(124,1,'mimi','testUser','2014-10-30'),(125,1,'mimi','testUser2','2014-11-01'),(126,1,'mimi','testUser2','2014-11-02'),(127,1,'mimi','testUser2','2014-11-02'),(128,1,'mimi','testUser2','2014-11-02'),(129,1,'mimi','testUser2','2014-11-05'),(130,1,'mimi','testUser2','2014-11-05'),(131,1,'mimi','testUser2','2014-11-05'),(132,1,'mimi','testUser2','2014-11-05'),(133,1,'mimi','testUser2','2014-11-06'),(134,1,'mimi','testUser2','2014-11-06'),(135,1,'mimi','testUser2','2014-11-06'),(136,1,'mimi','testUser2','2014-11-06'),(137,1,'mimi','testUser2','2014-11-06'),(138,1,'mimi','testUser2','2014-11-06'),(139,1,'mimi','testUser2','2014-11-06'),(140,1,'mimi','testUser2','2014-11-07'),(141,1,'mimi','testUser2','2014-11-07'),(142,1,'mimi','testUser2','2014-11-07'),(143,1,'mimi','testUser2','2014-11-07'),(144,1,'mimi','testUser2','2014-11-07'),(145,1,'mimi','testUser2','2014-11-07'),(146,1,'mimi','testUser2','2014-11-07'),(147,1,'mimi','testUser2','2014-11-07'),(148,1,'mimi','testUser2','2014-11-07'),(149,1,'mimi','testUser2','2014-11-07'),(150,1,'mimi','testUser2','2014-11-07'),(151,1,'mimi','testUser2','2014-11-07'),(152,1,'mimi','testUser2','2014-11-07'),(153,1,'mimi','testUser2','2014-11-07'),(154,1,'mimi','testUser2','2014-11-07'),(155,1,'mimi','testUser2','2014-11-07'),(156,1,'mimi','testUser2','2014-11-07'),(157,1,'mimi','testUser2','2014-11-07'),(158,1,'mimi','testUser2','2014-11-07'),(159,1,'mimi','testUser2','2014-11-07'),(160,1,'mimi','testUser2','2014-11-07'),(161,1,'mimi','testUser2','2014-11-07'),(162,1,'mimi','testUser2','2014-11-07'),(163,1,'mimi','testUser2','2014-11-07'),(164,1,'mimi','testUser2','2014-11-07'),(165,1,'mimi','testUser2','2014-11-07'),(166,1,'mimi','testUser2','2014-11-07'),(167,1,'mimi','testUser2','2014-11-07'),(168,1,'mimi','testUser2','2014-11-07'),(169,1,'mimi','testUser2','2014-11-07'),(170,1,'mimi','testUser2','2014-11-07'),(171,1,'mimi','testUser2','2014-11-07'),(172,1,'mimi','testUser2','2014-11-07'),(173,1,'mimi','testUser2','2014-11-07'),(174,1,'mimi','testUser2','2014-11-07'),(175,1,'mimi','testUser2','2014-11-07'),(176,1,'mimi','testUser2','2014-11-07'),(177,1,'mimi','testUser2','2014-11-07'),(178,1,'mimi','testUser2','2014-11-07'),(179,1,'mimi','testUser2','2014-11-07'),(180,1,'mimi','testUser2','2014-11-07'),(181,1,'mimi','testUser2','2014-11-08'),(182,1,'mimi','testUser2','2014-11-08'),(183,1,'mimi','testUser2','2014-11-08'),(184,1,'mimi','testUser2','2014-11-08'),(185,1,'mimi','testUser2','2014-11-08'),(186,1,'mimi','testUser2','2014-11-08'),(187,1,'mimi','testUser2','2014-11-08'),(188,1,'mimi','testUser2','2014-11-08'),(189,1,'mimi','testUser2','2014-11-08'),(190,1,'mimi','testUser2','2014-11-08'),(191,1,'mimi','testUser2','2014-11-08'),(192,1,'mimi','mimi','2014-11-08'),(193,1,'mimi','mimi','2014-11-08'),(194,1,'mimi','mimi','2014-11-09'),(195,1,'mimi','mimi','2014-11-10'),(196,1,'mimi','mimi','2014-11-10'),(197,1,'mimi','mimi','2014-11-10'),(198,1,'mimi','mimi','2014-11-10'),(199,1,'mimi','mimi','2014-11-11'),(200,1,'mimi','mimi','2014-11-11'),(201,1,'mimi','mimi','2014-11-11'),(202,1,'mimi','mimi','2014-11-11'),(203,1,'mimi','mimi','2014-11-11'),(204,1,'mimi','mimi','2014-11-11'),(205,1,'mimi','mimi','2014-11-12'),(206,1,'mimi','mimi','2014-11-12'),(207,14,'Gmember','Gmember','2014-11-12'),(208,14,'Gmember','Gmember','2014-11-12'),(209,14,'Gmember','Gmember','2014-11-12'),(210,14,'Gmember','Gmember','2014-11-12'),(211,1,'mimi','mimi','2014-11-12'),(212,1,'mimi','mimi','2014-11-13'),(213,1,'mimi','mimi','2014-11-13'),(214,1,'mimi','mimi','2014-11-13'),(215,1,'mimi','mimi','2014-11-13'),(216,1,'mimi','mimi','2014-11-13'),(217,1,'mimi','mimi','2014-11-13'),(218,14,'Gmember','Gmember','2014-11-13'),(219,1,'mimi','mimi','2014-11-14'),(220,1,'mimi','mimi','2014-11-14'),(221,1,'mimi','mimi','2014-11-14'),(222,14,'Gmember','Gmember','2014-11-14'),(223,1,'mimi','mimi','2014-11-17'),(224,1,'mimi','mimi','2014-11-17'),(225,1,'mimi','mimi','2014-11-17'),(226,1,'mimi','mimi','2014-11-18'),(227,1,'mimi','mimi','2014-11-18'),(228,1,'mimi','mimi','2014-11-26'),(229,1,'mimi','mimi','2014-11-26'),(230,1,'mimi','mimi','2014-12-10'),(231,1,'mimi','mimi','2015-01-27'),(232,1,'mimi','mimi','2015-01-27'),(233,14,'Gmember','Gmember','2015-03-09'),(234,14,'Gmember','Gmember','2015-03-12'),(235,14,'Gmember','Gmember','2015-03-13'),(236,14,'Gmember','Gmember','2015-03-13'),(237,15,'marco','marco','2015-03-18'),(238,15,'marco','marco','2015-03-18'),(239,15,'marco','marco','2015-03-19'),(240,14,'Gmember','Gmember','2015-03-24'),(241,16,'test','test','2015-03-26'),(242,16,'test','test','2015-04-02'),(243,14,'Gmember','Gmember','2015-05-14'),(244,14,'Gmember','Gmember','2015-05-25'),(245,14,'Gmember','Gmember','2015-05-27'),(246,14,'Gmember','Gmember','2015-06-01'),(247,14,'Gmember','Gmember','2015-06-09'),(248,17,'yundy','yundy','2015-06-23'),(249,14,'Gmember','Gmember','2015-06-24'),(250,14,'Gmember','Gmember','2015-07-02'),(251,14,'Gmember','Gmember','2015-07-02'),(252,14,'Gmember','Gmember','2015-07-03'),(253,14,'Gmember','Gmember','2015-07-03'),(254,14,'Gmember','Gmember','2015-07-03'),(255,14,'Gmember','Gmember','2015-07-03'),(256,14,'Gmember','Gmember','2015-07-03'),(257,14,'Gmember','Gmember','2015-07-03'),(258,14,'Gmember','Gmember','2015-07-03'),(259,14,'Gmember','Gmember','2015-07-03'),(260,14,'Gmember','Gmember','2015-07-03'),(261,14,'Gmember','Gmember','2015-07-03'),(262,14,'Gmember','Gmember','2015-07-03'),(263,14,'Gmember','Gmember','2015-07-03'),(264,14,'Gmember','Gmember','2015-07-03'),(265,14,'Gmember','Gmember','2015-07-03'),(266,14,'Gmember','Gmember','2015-07-03'),(267,14,'Gmember','Gmember','2015-07-03'),(268,14,'Gmember','Gmember','2015-07-03'),(269,14,'Gmember','Gmember','2015-07-03'),(270,14,'Gmember','Gmember','2015-07-03'),(271,14,'Gmember','Gmember','2015-07-03'),(272,14,'Gmember','Gmember','2015-07-03'),(273,14,'Gmember','Gmember','2015-07-03'),(274,14,'Gmember','Gmember','2015-07-03'),(275,14,'Gmember','Gmember','2015-07-03'),(276,14,'Gmember','Gmember','2015-07-03'),(277,14,'Gmember','Gmember','2015-07-03'),(278,14,'Gmember','Gmember','2015-07-03'),(279,14,'Gmember','Gmember','2015-07-03'),(280,14,'Gmember','Gmember','2015-07-03'),(281,14,'Gmember','Gmember','2015-07-03'),(282,14,'Gmember','Gmember','2015-07-03'),(283,14,'Gmember','Gmember','2015-07-03'),(284,14,'Gmember','Gmember','2015-07-03'),(285,14,'Gmember','Gmember','2015-07-03'),(286,14,'Gmember','Gmember','2015-07-03'),(287,14,'Gmember','Gmember','2015-07-03'),(288,14,'Gmember','Gmember','2015-07-03'),(289,14,'Gmember','Gmember','2015-07-03'),(290,14,'Gmember','Gmember','2015-07-03'),(291,14,'Gmember','Gmember','2015-07-03'),(292,14,'Gmember','Gmember','2015-07-03'),(293,14,'Gmember','Gmember','2015-07-03'),(294,14,'Gmember','Gmember','2015-07-03'),(295,14,'Gmember','Gmember','2015-07-03'),(296,14,'Gmember','Gmember','2015-07-03'),(297,14,'Gmember','Gmember','2015-07-03'),(298,14,'Gmember','Gmember','2015-07-03'),(299,14,'Gmember','Gmember','2015-07-03'),(300,14,'Gmember','Gmember','2015-07-03'),(301,14,'Gmember','Gmember','2015-07-03'),(302,14,'Gmember','Gmember','2015-07-03'),(303,14,'Gmember','Gmember','2015-07-03'),(304,14,'Gmember','Gmember','2015-07-03'),(305,14,'Gmember','Gmember','2015-07-03'),(306,14,'Gmember','Gmember','2015-07-03'),(307,14,'Gmember','Gmember','2015-07-03'),(308,14,'Gmember','Gmember','2015-07-03'),(309,14,'Gmember','Gmember','2015-07-04'),(310,14,'Gmember','Gmember','2015-07-04'),(311,14,'Gmember','Gmember','2015-07-04'),(312,14,'Gmember','Gmember','2015-07-04'),(313,14,'Gmember','Gmember','2015-07-04'),(314,14,'Gmember','Gmember','2015-07-04'),(315,14,'Gmember','Gmember','2015-07-04'),(316,14,'Gmember','Gmember','2015-07-04'),(317,14,'Gmember','Gmember','2015-07-04'),(318,14,'Gmember','Gmember','2015-07-04'),(319,14,'Gmember','Gmember','2015-07-04'),(320,14,'Gmember','Gmember','2015-07-04'),(321,14,'Gmember','Gmember','2015-07-04'),(322,14,'Gmember','Gmember','2015-07-04'),(323,14,'Gmember','Gmember','2015-07-04'),(324,14,'Gmember','Gmember','2015-07-04'),(325,14,'Gmember','Gmember','2015-07-04'),(326,14,'Gmember','Gmember','2015-07-04'),(327,14,'Gmember','Gmember','2015-07-04'),(328,14,'Gmember','Gmember','2015-07-04'),(329,14,'Gmember','Gmember','2015-07-04'),(330,14,'Gmember','Gmember','2015-07-04'),(331,14,'Gmember','Gmember','2015-07-05'),(332,14,'Gmember','Gmember','2015-07-05'),(333,14,'Gmember','Gmember','2015-07-05'),(334,14,'Gmember','Gmember','2015-07-05'),(335,14,'Gmember','Gmember','2015-07-05'),(336,14,'Gmember','Gmember','2015-07-05'),(337,14,'Gmember','Gmember','2015-07-05'),(338,14,'Gmember','Gmember','2015-07-05'),(339,14,'Gmember','Gmember','2015-07-05'),(340,14,'Gmember','Gmember','2015-07-05'),(341,14,'Gmember','Gmember','2015-07-05'),(342,14,'Gmember','Gmember','2015-07-05'),(343,14,'Gmember','Gmember','2015-07-05'),(344,14,'Gmember','Gmember','2015-07-05'),(345,14,'Gmember','Gmember','2015-07-05'),(346,14,'Gmember','Gmember','2015-07-06'),(347,14,'Gmember','Gmember','2015-07-06'),(348,14,'Gmember','Gmember','2015-07-06'),(349,14,'Gmember','Gmember','2015-07-06'),(350,14,'Gmember','Gmember','2015-07-06'),(351,14,'Gmember','Gmember','2015-07-06'),(352,14,'Gmember','Gmember','2015-07-06'),(353,14,'Gmember','Gmember','2015-07-06'),(354,14,'Gmember','Gmember','2015-07-06'),(355,14,'Gmember','Gmember','2015-07-06'),(356,14,'Gmember','Gmember','2015-07-06'),(357,14,'Gmember','Gmember','2015-07-06'),(358,14,'Gmember','Gmember','2015-07-06'),(359,14,'Gmember','Gmember','2015-07-06'),(360,14,'Gmember','Gmember','2015-07-06'),(361,14,'Gmember','Gmember','2015-07-06'),(362,14,'Gmember','Gmember','2015-07-06'),(363,14,'Gmember','Gmember','2015-07-06'),(364,14,'Gmember','Gmember','2015-07-06'),(365,14,'Gmember','Gmember','2015-07-06'),(366,14,'Gmember','Gmember','2015-07-06'),(367,14,'Gmember','Gmember','2015-07-06'),(368,14,'Gmember','Gmember','2015-07-06'),(369,14,'Gmember','Gmember','2015-07-06'),(370,14,'Gmember','Gmember','2015-07-06'),(371,14,'Gmember','Gmember','2015-07-06'),(372,14,'Gmember','Gmember','2015-07-06'),(373,14,'Gmember','Gmember','2015-07-06'),(374,14,'Gmember','Gmember','2015-07-06'),(375,14,'Gmember','Gmember','2015-07-06'),(376,14,'Gmember','Gmember','2015-07-06'),(377,14,'Gmember','Gmember','2015-07-06'),(378,14,'Gmember','Gmember','2015-07-07'),(379,14,'Gmember','Gmember','2015-07-07'),(380,14,'Gmember','Gmember','2015-07-07'),(381,14,'Gmember','Gmember','2015-07-07'),(382,14,'Gmember','Gmember','2015-07-07'),(383,14,'Gmember','Gmember','2015-07-07'),(384,14,'Gmember','Gmember','2015-07-07'),(385,14,'Gmember','Gmember','2015-07-07'),(386,14,'Gmember','Gmember','2015-07-07'),(387,14,'Gmember','Gmember','2015-07-07'),(388,14,'Gmember','Gmember','2015-07-07'),(389,14,'Gmember','Gmember','2015-07-07'),(390,14,'Gmember','Gmember','2015-07-07'),(391,14,'Gmember','Gmember','2015-07-07'),(392,14,'Gmember','Gmember','2015-07-07'),(393,14,'Gmember','Gmember','2015-07-07'),(394,14,'Gmember','Gmember','2015-07-07'),(395,14,'Gmember','Gmember','2015-07-07'),(396,14,'Gmember','Gmember','2015-07-07'),(397,14,'Gmember','Gmember','2015-07-07'),(398,14,'Gmember','Gmember','2015-07-07'),(399,14,'Gmember','Gmember','2015-07-07'),(400,14,'Gmember','Gmember','2015-07-08'),(401,14,'Gmember','Gmember','2015-07-08'),(402,14,'Gmember','Gmember','2015-07-08'),(403,14,'Gmember','Gmember','2015-07-08'),(404,14,'Gmember','Gmember','2015-07-08'),(405,14,'Gmember','Gmember','2015-07-08'),(406,14,'Gmember','Gmember','2015-07-08'),(407,14,'Gmember','Gmember','2015-07-08'),(408,14,'Gmember','Gmember','2015-07-08'),(409,14,'Gmember','Gmember','2015-07-08'),(410,14,'Gmember','Gmember','2015-07-08'),(411,14,'Gmember','Gmember','2015-07-08'),(412,14,'Gmember','Gmember','2015-07-08'),(413,14,'Gmember','Gmember','2015-07-08'),(414,14,'Gmember','Gmember','2015-07-08'),(415,14,'Gmember','Gmember','2015-07-08'),(416,14,'Gmember','Gmember','2015-07-08'),(417,14,'Gmember','Gmember','2015-07-08'),(418,14,'Gmember','Gmember','2015-07-08'),(419,14,'Gmember','Gmember','2015-07-08'),(420,14,'Gmember','Gmember','2015-07-08'),(421,14,'Gmember','Gmember','2015-07-08'),(422,14,'Gmember','Gmember','2015-07-08'),(423,14,'Gmember','Gmember','2015-07-08'),(424,14,'Gmember','Gmember','2015-07-08'),(425,14,'Gmember','Gmember','2015-07-08'),(426,18,'Gmember2','Gmember2','2015-07-09'),(427,14,'Gmember','Gmember','2015-07-09'),(428,14,'Gmember','Gmember','2015-07-09'),(429,14,'Gmember','Gmember','2015-07-09'),(430,1,'mimi','mimi','2015-07-09'),(431,1,'mimi','mimi','2015-07-09'),(432,14,'Gmember','Gmember','2015-07-09'),(433,1,'mimi','mimi','2015-07-09'),(434,1,'mimi','mimi','2015-07-10'),(435,1,'mimi','mimi','2015-07-10'),(436,1,'mimi','mimi','2015-07-10'),(437,1,'mimi','mimi','2015-07-10'),(438,1,'mimi','mimi','2015-07-11'),(439,1,'mimi','mimi','2015-07-11'),(440,14,'Gmember','Gmember','2015-07-11'),(441,14,'Gmember','Gmember','2015-07-11'),(442,14,'Gmember','Gmember','2015-07-11'),(443,14,'Gmember','Gmember','2015-07-11'),(444,14,'Gmember','Gmember','2015-07-13'),(445,14,'Gmember','Gmember','2015-07-13'),(446,1,'mimi','mimi','2015-07-13'),(447,1,'mimi','mimi','2015-07-13'),(448,14,'Gmember','Gmember','2015-07-13'),(449,14,'Gmember','Gmember','2015-07-13'),(450,14,'Gmember','Gmember','2015-07-13'),(451,14,'Gmember','Gmember','2015-07-13'),(452,1,'mimi','mimi','2015-07-13'),(453,14,'Gmember','Gmember','2015-07-13'),(454,14,'Gmember','Gmember','2015-07-13'),(455,1,'mimi','mimi','2015-07-13'),(456,14,'Gmember','Gmember','2015-07-13'),(457,14,'Gmember','Gmember','2015-07-14'),(458,14,'Gmember','Gmember','2015-07-14'),(459,14,'Gmember','Gmember','2015-07-14'),(460,14,'Gmember','Gmember','2015-07-14'),(461,14,'Gmember','Gmember','2015-07-14'),(462,14,'Gmember','Gmember','2015-07-14'),(463,14,'Gmember','Gmember','2015-07-14'),(464,14,'Gmember','Gmember','2015-07-14'),(465,14,'Gmember','Gmember','2015-07-14'),(466,14,'Gmember','Gmember','2015-07-14'),(467,14,'Gmember','Gmember','2015-07-14'),(468,14,'Gmember','Gmember','2015-07-14'),(469,14,'Gmember','Gmember','2015-07-14'),(470,14,'Gmember','Gmember','2015-07-14'),(471,14,'Gmember','Gmember','2015-07-14'),(472,14,'Gmember','Gmember','2015-07-14'),(473,14,'Gmember','Gmember','2015-07-14'),(474,14,'Gmember','Gmember','2015-07-14'),(475,14,'Gmember','Gmember','2015-07-14'),(476,14,'Gmember','Gmember','2015-07-14'),(477,14,'Gmember','Gmember','2015-07-14'),(478,14,'Gmember','Gmember','2015-07-14'),(479,14,'Gmember','Gmember','2015-07-14'),(480,14,'Gmember','Gmember','2015-07-14'),(481,14,'Gmember','Gmember','2015-07-14'),(482,14,'Gmember','Gmember','2015-07-14'),(483,14,'Gmember','Gmember','2015-07-14'),(484,14,'Gmember','Gmember','2015-07-14'),(485,14,'Gmember','Gmember','2015-07-15'),(486,14,'Gmember','Gmember','2015-07-16'),(487,14,'Gmember','Gmember','2015-07-16'),(488,14,'Gmember','Gmember','2015-07-20'),(489,14,'Gmember','Gmember','2015-07-28');
+/*!40000 ALTER TABLE `userattendhistory` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `userdailyexercise`
+--
+
+DROP TABLE IF EXISTS `userdailyexercise`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `userdailyexercise` (
+  `Seq` bigint(255) NOT NULL AUTO_INCREMENT,
+  `UserSeq` bigint(255) DEFAULT NULL,
+  `ExerciseSeq` bigint(255) DEFAULT NULL,
+  `ExPro1` varchar(255) DEFAULT NULL,
+  `ExPro2` varchar(255) DEFAULT NULL,
+  `ExPro3` varchar(255) DEFAULT NULL,
+  `ExDate` date DEFAULT '0000-00-00',
+  `UserExerciseSeq` bigint(255) DEFAULT NULL,
+  `Status` int(255) DEFAULT '0' COMMENT '진행상태, 0:미진행, 1: 진행중, 2: 완료',
+  `KCal` varchar(255) DEFAULT '0',
+  PRIMARY KEY (`Seq`)
+) ENGINE=InnoDB AUTO_INCREMENT=370 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `userdailyexercise`
+--
+
+LOCK TABLES `userdailyexercise` WRITE;
+/*!40000 ALTER TABLE `userdailyexercise` DISABLE KEYS */;
+INSERT INTO `userdailyexercise` VALUES (14,1,1,'0.4','38.4','7.3','2014-11-08',1,1,'38.4'),(15,1,2,'0','0','0','2014-11-08',2,0,'0'),(16,1,3,'0','0','0','2014-11-08',3,0,'0'),(17,1,4,'0','0','0','2014-11-08',4,0,'0'),(18,1,1,'1.0','33.0','23','2014-11-08',10,2,'33.0'),(19,1,1,'0','0','0','2014-11-07',1,0,'0'),(20,1,2,'0','0','0','2014-11-07',2,0,'0'),(21,1,3,'0','0','0','2014-11-07',3,0,'0'),(22,1,4,'0','0','0','2014-11-07',4,0,'0'),(23,1,1,'0','0','0','2014-11-07',10,0,'0'),(24,1,1,'0','0','0','2014-11-09',1,0,'0'),(25,1,2,'0','0','0','2014-11-09',2,0,'0'),(26,1,3,'0','0','0','2014-11-09',3,0,'0'),(27,1,4,'0','0','0','2014-11-09',4,0,'0'),(28,1,1,'0','0','0','2014-11-09',10,0,'0'),(29,1,1,'0','0','0','2014-11-10',1,0,'0'),(30,1,2,'0','0','0','2014-11-10',2,0,'0'),(31,1,3,'0','0','0','2014-11-10',3,0,'0'),(32,1,4,'0','0','0','2014-11-10',4,0,'0'),(33,1,1,'0','0','0','2014-11-10',10,0,'0'),(34,1,1,'0','0','0','2014-11-11',1,0,'0'),(35,1,2,'0','0','0','2014-11-11',2,0,'0'),(36,1,3,'0','0','0','2014-11-11',3,0,'0'),(37,1,4,'0','0','0','2014-11-11',4,0,'0'),(38,1,1,'0','0','0','2014-11-06',1,0,'0'),(39,1,2,'0','0','0','2014-11-06',2,0,'0'),(40,1,3,'0','0','0','2014-11-06',3,0,'0'),(41,1,4,'0','0','0','2014-11-06',4,0,'0'),(42,1,1,'0','0','0','2014-11-05',1,0,'0'),(43,1,2,'0','0','0','2014-11-05',2,0,'0'),(44,1,3,'0','0','0','2014-11-05',3,0,'0'),(45,1,4,'0','0','0','2014-11-05',4,0,'0'),(46,1,1,'0','0','0','2014-11-04',1,0,'0'),(47,1,2,'0','0','0','2014-11-04',2,0,'0'),(48,1,3,'0','0','0','2014-11-04',3,0,'0'),(49,1,4,'0','0','0','2014-11-04',4,0,'0'),(50,1,1,'0','0','0','2014-11-03',1,0,'0'),(51,1,2,'0','0','0','2014-11-03',2,0,'0'),(52,1,3,'0','0','0','2014-11-03',3,0,'0'),(53,1,4,'0','0','0','2014-11-03',4,0,'0'),(54,1,1,'0','0','0','2014-11-02',1,0,'0'),(55,1,2,'0','0','0','2014-11-02',2,0,'0'),(56,1,3,'0','0','0','2014-11-02',3,0,'0'),(57,1,4,'0','0','0','2014-11-02',4,0,'0'),(58,1,1,'0','0','0','2014-11-01',1,0,'0'),(59,1,2,'0','0','0','2014-11-01',2,0,'0'),(60,1,3,'0','0','0','2014-11-01',3,0,'0'),(61,1,4,'0','0','0','2014-11-01',4,0,'0'),(62,1,1,'0','0','0','2014-10-31',1,0,'0'),(63,1,2,'0','0','0','2014-10-31',2,0,'0'),(64,1,3,'0','0','0','2014-10-31',3,0,'0'),(65,1,4,'0','0','0','2014-10-31',4,0,'0'),(66,1,1,'0','0','0','2014-10-30',1,0,'0'),(67,1,2,'0','0','0','2014-10-30',2,0,'0'),(68,1,3,'0','0','0','2014-10-30',3,0,'0'),(69,1,4,'0','0','0','2014-10-30',4,0,'0'),(70,1,1,'0','0','0','2014-10-29',1,0,'0'),(71,1,2,'0','0','0','2014-10-29',2,0,'0'),(72,1,3,'0','0','0','2014-10-29',3,0,'0'),(73,1,4,'0','0','0','2014-10-29',4,0,'0'),(74,1,1,'0','0','0','2014-10-28',1,0,'0'),(75,1,2,'0','0','0','2014-10-28',2,0,'0'),(76,1,3,'0','0','0','2014-10-28',3,0,'0'),(77,1,4,'0','0','0','2014-10-28',4,0,'0'),(78,1,1,'0','0','0','2014-10-27',1,0,'0'),(79,1,2,'0','0','0','2014-10-27',2,0,'0'),(80,1,3,'0','0','0','2014-10-27',3,0,'0'),(81,1,4,'0','0','0','2014-10-27',4,0,'0'),(82,1,1,'0','0','0','2014-10-26',1,0,'0'),(83,1,2,'0','0','0','2014-10-26',2,0,'0'),(84,1,3,'0','0','0','2014-10-26',3,0,'0'),(85,1,4,'0','0','0','2014-10-26',4,0,'0'),(86,1,1,'0','0','0','2014-10-25',1,0,'0'),(87,1,2,'0','0','0','2014-10-25',2,0,'0'),(88,1,3,'0','0','0','2014-10-25',3,0,'0'),(89,1,4,'0','0','0','2014-10-25',4,0,'0'),(90,1,1,'0','0','0','2014-10-24',1,0,'0'),(91,1,2,'0','0','0','2014-10-24',2,0,'0'),(92,1,3,'0','0','0','2014-10-24',3,0,'0'),(93,1,4,'0','0','0','2014-10-24',4,0,'0'),(94,1,1,'0','0','0','2014-10-23',1,0,'0'),(95,1,2,'0','0','0','2014-10-23',2,0,'0'),(96,1,3,'0','0','0','2014-10-23',3,0,'0'),(97,1,4,'0','0','0','2014-10-23',4,0,'0'),(98,1,1,'0','0','0','2014-10-22',1,0,'0'),(99,1,2,'0','0','0','2014-10-22',2,0,'0'),(100,1,3,'0','0','0','2014-10-22',3,0,'0'),(101,1,4,'0','0','0','2014-10-22',4,0,'0'),(102,1,1,'0','0','0','2014-10-21',1,0,'0'),(103,1,2,'0','0','0','2014-10-21',2,0,'0'),(104,1,3,'0','0','0','2014-10-21',3,0,'0'),(105,1,4,'0','0','0','2014-10-21',4,0,'0'),(106,1,1,'0','0','0','2014-10-20',1,0,'0'),(107,1,2,'0','0','0','2014-10-20',2,0,'0'),(108,1,3,'0','0','0','2014-10-20',3,0,'0'),(109,1,4,'0','0','0','2014-10-20',4,0,'0'),(110,1,1,'0','0','0','2014-10-19',1,0,'0'),(111,1,2,'0','0','0','2014-10-19',2,0,'0'),(112,1,3,'0','0','0','2014-10-19',3,0,'0'),(113,1,4,'0','0','0','2014-10-19',4,0,'0'),(114,1,1,'0','0','0','2014-10-18',1,0,'0'),(115,1,2,'0','0','0','2014-10-18',2,0,'0'),(116,1,3,'0','0','0','2014-10-18',3,0,'0'),(117,1,4,'0','0','0','2014-10-18',4,0,'0'),(118,1,1,'0','0','0','2014-11-12',1,0,'0'),(119,1,2,'0','0','0','2014-11-12',2,0,'0'),(120,1,3,'0','0','0','2014-11-12',3,0,'0'),(121,1,4,'0','0','0','2014-11-12',4,0,'0'),(122,1,1,'0','0','0','2014-11-13',1,0,'0'),(123,1,2,'0','0','0','2014-11-13',2,0,'0'),(124,1,3,'0','0','0','2014-11-13',3,0,'0'),(125,1,4,'0','0','0','2014-11-13',4,0,'0'),(126,1,1,'0','0','0','2014-11-14',1,0,'0'),(127,1,2,'0','0','0','2014-11-14',2,0,'0'),(128,1,3,'0','0','0','2014-11-14',3,0,'0'),(129,1,4,'0','0','0','2014-11-14',4,0,'0'),(130,14,1,'0.7','7.1','12','2014-11-12',11,1,'7.1'),(131,14,2,'0.2','1.1','100','2014-11-12',12,1,'1.1'),(132,14,1,'7.0','90.0','15','2014-11-12',13,2,'90.0'),(133,14,1,'0','0','0','2014-11-13',11,0,'0'),(134,14,2,'0','0','0','2014-11-13',12,0,'0'),(135,14,1,'0','0','0','2014-11-13',13,0,'0'),(136,14,1,'0','0','0','2014-11-14',11,0,'0'),(137,14,2,'0','0','0','2014-11-14',12,0,'0'),(138,14,1,'0','0','0','2014-11-14',13,0,'0'),(139,1,1,'0','0','0','2014-11-17',1,0,'0'),(140,1,2,'0','0','0','2014-11-17',2,0,'0'),(141,1,3,'0','0','0','2014-11-17',3,0,'0'),(142,1,4,'0','0','0','2014-11-17',4,0,'0'),(143,1,1,'0','0','0','2014-11-18',1,0,'0'),(144,1,2,'0','0','0','2014-11-18',2,0,'0'),(145,1,3,'0','0','0','2014-11-18',3,0,'0'),(146,1,4,'0','0','0','2014-11-18',4,0,'0'),(147,1,1,'0','0','0','2014-11-26',1,0,'0'),(148,1,2,'0','0','0','2014-11-26',2,0,'0'),(149,1,3,'0','0','0','2014-11-26',3,0,'0'),(150,1,4,'0','0','0','2014-11-26',4,0,'0'),(151,1,1,'0','0','0','2014-12-10',1,0,'0'),(152,1,2,'0','0','0','2014-12-10',2,0,'0'),(153,1,3,'0','0','0','2014-12-10',3,0,'0'),(154,1,4,'0','0','0','2014-12-10',4,0,'0'),(155,1,1,'0','0','0','2015-01-27',1,0,'0'),(156,1,2,'0','0','0','2015-01-27',2,0,'0'),(157,1,3,'0','0','0','2015-01-27',3,0,'0'),(158,1,4,'0','0','0','2015-01-27',4,0,'0'),(159,14,1,'0','0','0','2015-03-09',11,0,'0'),(160,14,2,'0','0','0','2015-03-09',12,0,'0'),(161,14,1,'0','0','0','2015-03-09',13,0,'0'),(162,14,1,'0','0','0','2015-03-08',11,0,'0'),(163,14,2,'0','0','0','2015-03-08',12,0,'0'),(164,14,1,'0','0','0','2015-03-08',13,0,'0'),(165,14,1,'0','0','0','2015-03-07',11,0,'0'),(166,14,2,'0','0','0','2015-03-07',12,0,'0'),(167,14,1,'0','0','0','2015-03-07',13,0,'0'),(168,14,1,'0','0','0','2015-03-10',11,0,'0'),(169,14,2,'0','0','0','2015-03-10',12,0,'0'),(170,14,1,'0','0','0','2015-03-10',13,0,'0'),(171,14,1,'0','0','0','2015-03-12',11,0,'0'),(172,14,2,'0','0','0','2015-03-12',12,0,'0'),(173,14,1,'0','0','0','2015-03-12',13,0,'0'),(174,14,1,'0','0','0','2015-03-13',11,0,'0'),(175,14,2,'0','0','0','2015-03-13',12,0,'0'),(176,14,1,'0','0','0','2015-03-13',13,0,'0'),(177,15,2,'0','0','0','2015-03-18',14,0,'0'),(178,15,2,'0.1','0.1','10','2015-03-19',14,1,'0.1'),(179,15,2,'0','0','0','2015-03-20',14,0,'0'),(180,14,1,'0','0','0','2015-03-24',11,0,'0'),(181,14,2,'0','0','0','2015-03-24',12,0,'0'),(182,14,1,'0','0','0','2015-03-24',13,0,'0'),(183,14,1,'0','0','0','2015-03-25',11,0,'0'),(184,14,2,'0','0','0','2015-03-25',12,0,'0'),(185,14,1,'0','0','0','2015-03-25',13,0,'0'),(186,14,1,'10.0','100.0','12','2015-03-26',11,2,'100.0'),(187,14,2,'0','0','0','2015-03-26',12,0,'0'),(188,14,1,'0','0','0','2015-03-26',13,0,'0'),(189,14,1,'0','0','0','2015-03-27',11,0,'0'),(190,14,2,'0','0','0','2015-03-27',12,0,'0'),(191,14,1,'0','0','0','2015-03-27',13,0,'0'),(192,14,1,'0','0','0','2015-03-30',11,0,'0'),(193,14,2,'0','0','0','2015-03-30',12,0,'0'),(194,14,1,'0','0','0','2015-03-30',13,0,'0'),(195,14,1,'0','0','0','2015-05-14',11,0,'0'),(196,14,2,'0','0','0','2015-05-14',12,0,'0'),(197,14,1,'0','0','0','2015-05-14',13,0,'0'),(198,14,1,'0','0','0','2015-05-13',11,0,'0'),(199,14,2,'0','0','0','2015-05-13',12,0,'0'),(200,14,1,'0','0','0','2015-05-13',13,0,'0'),(201,14,7,'0','0','0','2015-05-13',15,0,'0'),(202,14,7,'0','0','0','2015-05-14',15,0,'0'),(203,14,3,'0','0','0','2015-05-14',16,0,'0'),(204,14,1,'0','0','0','2015-05-25',11,0,'0'),(205,14,2,'0','0','0','2015-05-25',12,0,'0'),(206,14,1,'0','0','0','2015-05-25',13,0,'0'),(207,14,7,'0','0','0','2015-05-25',15,0,'0'),(208,14,3,'0','0','0','2015-05-25',16,0,'0'),(209,14,1,'0','0','0','2015-05-27',11,0,'0'),(210,14,2,'0','0','0','2015-05-27',12,0,'0'),(211,14,1,'0','0','0','2015-05-27',13,0,'0'),(212,14,7,'0','0','0','2015-05-27',15,0,'0'),(213,14,3,'0','0','0','2015-05-27',16,0,'0'),(214,14,1,'0','0','0','2015-06-01',11,0,'0'),(215,14,2,'0','0','0','2015-06-01',12,0,'0'),(216,14,1,'0','0','0','2015-06-01',13,0,'0'),(217,14,7,'0','0','0','2015-06-01',15,0,'0'),(218,14,3,'0','0','0','2015-06-01',16,0,'0'),(219,14,1,'0','0','0','2015-06-09',11,0,'0'),(220,14,2,'0','0','0','2015-06-09',12,0,'0'),(221,14,1,'0','0','0','2015-06-09',13,0,'0'),(222,14,7,'0','0','0','2015-06-09',15,0,'0'),(223,14,3,'0','0','0','2015-06-09',16,0,'0'),(224,14,1,'0','0','0','2015-06-24',11,0,'0'),(225,14,2,'0','0','0','2015-06-24',12,0,'0'),(226,14,1,'0','0','0','2015-06-24',13,0,'0'),(227,14,7,'0','0','0','2015-06-24',15,0,'0'),(228,14,3,'0','0','0','2015-06-24',16,0,'0'),(229,14,1,'0','0','0','2015-06-26',11,0,'0'),(230,14,2,'0','0','0','2015-06-26',12,0,'0'),(231,14,1,'0','0','0','2015-06-26',13,0,'0'),(232,14,7,'0','0','0','2015-06-26',15,0,'0'),(233,14,3,'0','0','0','2015-06-26',16,0,'0'),(234,14,1,'0','0','0','2015-07-02',11,0,'0'),(235,14,2,'0','0','0','2015-07-02',12,0,'0'),(236,14,1,'0','0','0','2015-07-02',13,0,'0'),(237,14,7,'0','0','0','2015-07-02',15,0,'0'),(238,14,3,'0','0','0','2015-07-02',16,0,'0'),(239,14,1,'0.5','5.0','12','2015-07-03',11,1,'5.0'),(240,14,2,'0','0','0','2015-07-03',12,0,'0'),(241,14,1,'0','0','0','2015-07-03',13,0,'0'),(242,14,7,'0','0','0','2015-07-03',15,0,'0'),(243,14,3,'0','0','0','2015-07-03',16,0,'0'),(244,14,1,'0.3','3.1','12','2015-07-04',11,1,'3.1'),(245,14,2,'0.0','0.0','100','2015-07-04',12,0,'0.0'),(246,14,1,'0.0','0.0','15','2015-07-04',13,0,'0.0'),(247,14,7,'0','0','0','2015-07-04',15,0,'0'),(248,14,3,'0','0','0','2015-07-04',16,0,'0'),(249,14,1,'0','0','0','2015-07-05',11,0,'0'),(250,14,2,'0','0','0','2015-07-05',12,0,'0'),(251,14,1,'0','0','0','2015-07-05',13,0,'0'),(252,14,7,'0','0','0','2015-07-05',15,0,'0'),(253,14,3,'2','0','100','2015-07-05',16,1,'2466.6'),(254,14,1,'0.1','0.8','12','2015-07-06',11,1,'0.8'),(255,14,2,'0','0','0','2015-07-06',12,0,'0'),(256,14,1,'0','0','0','2015-07-06',13,0,'0'),(257,14,7,'0','0','0','2015-07-06',15,0,'0'),(258,14,3,'10','5','100','2015-07-06',16,2,'12333'),(259,14,6,'0','0','0','2015-07-06',17,0,'0'),(260,14,4,'0','0','0','2015-07-06',19,0,'0'),(261,14,9,'0','0','0','2015-07-06',20,0,'0'),(262,14,1,'0.2','1.8','12','2015-07-07',11,1,'1.8'),(263,14,2,'0','0','0','2015-07-07',12,0,'0'),(264,14,1,'0','0','0','2015-07-07',13,0,'0'),(265,14,7,'0','0','0','2015-07-07',15,0,'0'),(266,14,3,'0','0','0','2015-07-07',16,0,'0'),(267,14,6,'0','0','0','2015-07-07',17,0,'0'),(268,14,4,'0','0','0','2015-07-07',19,0,'0'),(269,14,9,'0','0','0','2015-07-07',20,0,'0'),(270,14,1,'0','0','0','2015-07-08',11,0,'0'),(271,14,2,'0','0','0','2015-07-08',12,0,'0'),(272,14,1,'0','0','0','2015-07-08',13,0,'0'),(273,14,7,'0','0','0','2015-07-08',15,0,'0'),(274,14,3,'0','0','0','2015-07-08',16,0,'0'),(275,14,6,'0','0','0','2015-07-08',17,0,'0'),(276,14,4,'0','0','0','2015-07-08',19,0,'0'),(277,14,9,'0','0','0','2015-07-08',20,0,'0'),(278,14,1,'0','0','0','2015-07-09',11,0,'0'),(279,14,2,'0','0','0','2015-07-09',12,0,'0'),(280,14,1,'0','0','0','2015-07-09',13,0,'0'),(281,14,7,'0','0','0','2015-07-09',15,0,'0'),(282,14,3,'0','0','0','2015-07-09',16,0,'0'),(283,14,6,'0','0','0','2015-07-09',17,0,'0'),(284,14,4,'0','0','0','2015-07-09',19,0,'0'),(285,14,9,'0','0','0','2015-07-09',20,0,'0'),(286,14,1,'0','0','0','2015-07-10',11,0,'0'),(287,14,2,'0','0','0','2015-07-10',12,0,'0'),(288,14,1,'0','0','0','2015-07-10',13,0,'0'),(289,14,7,'0','0','0','2015-07-10',15,0,'0'),(290,14,3,'0','0','0','2015-07-10',16,0,'0'),(291,14,6,'0','0','0','2015-07-10',17,0,'0'),(292,14,4,'0','0','0','2015-07-10',19,0,'0'),(293,14,9,'0','0','0','2015-07-10',20,0,'0'),(294,14,1,'0','0','0','2016-07-07',11,0,'0'),(295,14,2,'0','0','0','2016-07-07',12,0,'0'),(296,14,1,'0','0','0','2016-07-07',13,0,'0'),(297,14,7,'0','0','0','2016-07-07',15,0,'0'),(298,14,3,'0','0','0','2016-07-07',16,0,'0'),(299,14,6,'0','0','0','2016-07-07',17,0,'0'),(300,14,4,'0','0','0','2016-07-07',19,0,'0'),(301,14,9,'0','0','0','2016-07-07',20,0,'0'),(302,1,1,'0','0','0','2015-07-09',1,0,'0'),(303,1,2,'0','0','0','2015-07-09',2,0,'0'),(304,1,3,'0','0','0','2015-07-09',3,0,'0'),(305,1,4,'0','0','0','2015-07-09',4,0,'0'),(306,1,1,'0','0','0','2015-07-09',18,0,'0'),(307,1,1,'0','0','0','2015-07-10',1,0,'0'),(308,1,2,'0','0','0','2015-07-10',2,0,'0'),(309,1,3,'0','0','0','2015-07-10',3,0,'0'),(310,1,4,'0','0','0','2015-07-10',4,0,'0'),(311,1,1,'0','0','0','2015-07-10',18,0,'0'),(312,1,1,'0','0','0','2015-07-11',1,0,'0'),(313,1,2,'0','0','0','2015-07-11',2,0,'0'),(314,1,3,'0','0','0','2015-07-11',3,0,'0'),(315,1,4,'0','0','0','2015-07-11',4,0,'0'),(316,1,1,'0','0','0','2015-07-11',18,0,'0'),(317,14,1,'0','0','0','2015-07-11',11,0,'0'),(318,14,2,'0','0','0','2015-07-11',12,0,'0'),(319,14,1,'0','0','0','2015-07-11',13,0,'0'),(320,14,7,'0','0','0','2015-07-11',15,0,'0'),(321,14,3,'0','0','0','2015-07-11',16,0,'0'),(322,14,6,'0','0','0','2015-07-11',17,0,'0'),(323,14,4,'0','0','0','2015-07-11',19,0,'0'),(324,14,9,'0','0','0','2015-07-11',20,0,'0'),(325,14,1,'0','0','0','2015-07-13',11,0,'0'),(326,14,2,'0','0','0','2015-07-13',12,0,'0'),(327,14,1,'7.0','90.0','15','2015-07-13',13,2,'90.0'),(328,14,7,'0','0','0','2015-07-13',15,0,'0'),(329,14,3,'0','0','0','2015-07-13',16,0,'0'),(330,14,6,'0','0','0','2015-07-13',17,0,'0'),(331,14,4,'0','0','0','2015-07-13',19,0,'0'),(332,14,9,'7.0','1.0','1','2015-07-13',20,1,'0'),(333,14,1,'0','0','0','2015-07-14',11,0,'0'),(334,14,2,'0','0','0','2015-07-14',12,0,'0'),(335,14,1,'0','0','0','2015-07-14',13,0,'0'),(336,14,7,'0','0','0','2015-07-14',15,0,'0'),(337,14,3,'0','0','0','2015-07-14',16,0,'0'),(338,14,6,'0','0','0','2015-07-14',17,0,'0'),(339,14,4,'1','2','10','2015-07-14',19,1,'10'),(340,14,9,'0','0','0','2015-07-14',20,0,'0'),(341,14,1,'0','0','0','2015-07-12',11,0,'0'),(342,14,2,'0','0','0','2015-07-12',12,0,'0'),(343,14,3,'0','0','0','2015-07-12',16,0,'0'),(344,14,4,'0','0','0','2015-07-12',19,0,'0'),(345,1,1,'0','0','0','2015-07-13',1,0,'0'),(346,1,2,'0','0','0','2015-07-13',2,0,'0'),(347,1,3,'0','0','0','2015-07-13',3,0,'0'),(348,1,4,'0','0','0','2015-07-13',4,0,'0'),(349,14,1,'0','0','0','2015-07-15',11,0,'0'),(350,14,2,'0','0','0','2015-07-15',12,0,'0'),(351,14,4,'0','0','0','2015-07-15',19,0,'0'),(352,14,1,'0','0','0','2015-07-16',11,0,'0'),(353,14,2,'0','0','0','2015-07-16',12,0,'0'),(354,14,4,'0','0','0','2015-07-16',19,0,'0'),(355,14,1,'0','0','0','2015-07-20',11,0,'0'),(356,14,2,'0','0','0','2015-07-20',12,0,'0'),(357,14,4,'0','0','0','2015-07-20',19,0,'0'),(358,14,1,'0','0','0','2015-07-28',11,0,'0'),(359,14,2,'0','0','0','2015-07-28',12,0,'0'),(360,14,4,'0','0','0','2015-07-28',19,0,'0'),(361,14,1,'0','0','0','2015-07-29',11,0,'0'),(362,14,2,'0','0','0','2015-07-29',12,0,'0'),(363,14,4,'0','0','0','2015-07-29',19,0,'0'),(364,14,1,'0','0','0','2015-07-30',11,0,'0'),(365,14,2,'0','0','0','2015-07-30',12,0,'0'),(366,14,4,'0','0','0','2015-07-30',19,0,'0'),(367,14,1,'0','0','0','2015-07-31',11,0,'0'),(368,14,2,'0','0','0','2015-07-31',12,0,'0'),(369,14,4,'0','0','0','2015-07-31',19,0,'0');
+/*!40000 ALTER TABLE `userdailyexercise` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `userdailyfood`
+--
+
+DROP TABLE IF EXISTS `userdailyfood`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `userdailyfood` (
+  `Seq` bigint(255) NOT NULL AUTO_INCREMENT,
+  `UserSeq` bigint(255) DEFAULT NULL,
+  `FoodSeq` bigint(255) DEFAULT NULL,
+  `Ea` varchar(255) DEFAULT NULL COMMENT '50: 0.5man, 100: 1man, 150: 1.5man, 200: 2man',
+  `KCal` varchar(255) DEFAULT NULL,
+  `Date` date DEFAULT NULL,
+  `IntakeKind` smallint(10) DEFAULT NULL COMMENT '구분: 0: 아침, 2: 점심, 4: 저녁, 5: 간식',
+  `FoodName` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Seq`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `userdailyfood`
+--
+
+LOCK TABLES `userdailyfood` WRITE;
+/*!40000 ALTER TABLE `userdailyfood` DISABLE KEYS */;
+INSERT INTO `userdailyfood` VALUES (1,1,1,'0.5','110','2014-10-20',0,'steak'),(2,1,2,'1.5','105','2014-10-20',0,'pizza'),(5,1,2,'2','140','2014-10-26',4,'pizza'),(6,1,5,'1','1245','2014-11-11',0,'Veggie Burger'),(7,1,2,'1','70','2014-11-12',4,'pizza'),(9,16,5,'1','1245','2015-03-25',0,'Veggie Burger'),(10,16,2,'1','70','2015-03-25',0,'pizza'),(11,16,4,'1','80','2015-03-25',0,'Apple');
+/*!40000 ALTER TABLE `userdailyfood` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `userexercise`
+--
+
+DROP TABLE IF EXISTS `userexercise`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `userexercise` (
+  `Seq` bigint(255) NOT NULL AUTO_INCREMENT,
+  `UserSeq` bigint(255) NOT NULL,
+  `ExerciseSeq` bigint(255) NOT NULL,
+  `Pro1` varchar(255) DEFAULT NULL,
+  `Pro2` varchar(255) DEFAULT NULL,
+  `Pro3` varchar(255) DEFAULT NULL,
+  `TrainerName` varchar(255) DEFAULT NULL,
+  `TrainerSeq` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Seq`,`UserSeq`,`ExerciseSeq`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `userexercise`
+--
+
+LOCK TABLES `userexercise` WRITE;
+/*!40000 ALTER TABLE `userexercise` DISABLE KEYS */;
+INSERT INTO `userexercise` VALUES (1,1,1,'2','196','7.3','trainer','1'),(2,1,2,'30','196','93','trainer','1'),(3,1,3,'3','12','35.2','trainer','1'),(4,1,4,'3','12','3','trainer','1'),(5,2,1,'30','196','7.3','trainer','1'),(6,2,4,'30','196','93','trainer','1'),(7,2,3,'32','12','32.5','trainer','2'),(8,2,4,'3','12','3','trainer','1'),(11,14,1,'5','100','12',NULL,'3'),(12,14,2,'15','50','100',NULL,'3'),(14,15,2,'10','10','10',NULL,'4'),(19,14,4,'10','10','10',NULL,'3'),(20,1,1,'10','100','10',NULL,'3'),(21,2,10,'pro1','pro2','pro2',NULL,'3');
+/*!40000 ALTER TABLE `userexercise` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2015-07-28 18:12:49

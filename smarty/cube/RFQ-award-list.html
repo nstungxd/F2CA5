@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Cube - Bootstrap Admin Template</title>
+	
+	<!-- bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" />
+	
+	<!-- RTL support - for demo only -->
+	<script src="js/demo-rtl.js"></script>
+	<!-- 
+	If you need RTL support just include here RTL CSS file <link rel="stylesheet" type="text/css" href="css/libs/bootstrap-rtl.min.css" />
+	And add "rtl" class to <body> element - e.g. <body class="rtl"> 
+	-->
+	
+	<!-- libraries -->
+	<link rel="stylesheet" type="text/css" href="css/libs/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="css/libs/nanoscroller.css" />
+
+	<!-- global styles -->
+	<link rel="stylesheet" type="text/css" href="css/compiled/theme_styles.css" />
+
+	<!-- this page specific styles -->
+	<link rel="stylesheet" href="css/libs/daterangepicker.css" type="text/css" />
+	<link rel="stylesheet" href="css/libs/jquery-jvectormap-1.2.2.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/libs/dataTables.tableTools.css">
+	<link rel="stylesheet" type="text/css" href="css/libs/tablesaw.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- Favicon -->
+	<link type="image/x-icon" href="favicon.png" rel="shortcut icon" />
+
+	<!-- google font libraries -->
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="theme-wrapper">
+		<header class="navbar" id="header-navbar">
+			<div class="container">
+				<a href="index.html" id="logo" class="navbar-brand">
+					<img src="img/logo.png" alt="" class="normal-logo logo-white"/>
+					<img src="img/logo-black.png" alt="" class="normal-logo logo-black"/>
+					<img src="img/logo-small.png" alt="" class="small-logo hidden-xs hidden-sm hidden"/>
+				</a>
+				
+				<div class="clearfix">
+				<button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="fa fa-bars"></span>
+				</button>
+				
+				<div class="nav-no-collapse navbar-left pull-left hidden-sm hidden-xs">
+					<ul class="nav navbar-nav pull-left">
+						<li>
+							<a class="btn" id="make-small-nav">
+								<i class="fa fa-bars"></i>
+							</a>
+						</li>
+						<li class="dropdown hidden-xs">
+							<a class="btn dropdown-toggle" data-toggle="dropdown">
+								English
+								<i class="fa fa-caret-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="item">
+									<a href="#">
+										Spanish
+									</a>
+								</li>
+								<li class="item">
+									<a href="#">
+										German
+									</a>
+								</li>
+								<li class="item">
+									<a href="#">
+										Italian
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="nav-no-collapse pull-right" id="header-nav">
+					<ul class="nav navbar-nav pull-right">
+						<li class="mobile-search">
+							<a class="btn">
+								<i class="fa fa-search"></i>
+							</a>
+							
+							<div class="drowdown-search">
+								<form role="search">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Search...">
+										<i class="fa fa-search nav-search-icon"></i>
+									</div>
+								</form>
+							</div>
+							
+						</li>
+						<li class="dropdown profile-dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<img src="img/samples/scarlet-159.png" alt=""/>
+								<span class="hidden-xs">Scarlett Johansson</span> <b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="edit-profile.html"><i class="fa fa-user"></i>Edit Profile</a></li>
+								<li><a href="change-password.html"><i class="fa fa-cog"></i>Change Password</a></li>
+								<li><a href="#"><i class="fa fa-power-off"></i>Logout</a></li>
+							</ul>
+						</li>
+						<li class="hidden-xxs">
+							<a class="btn">
+								<i class="fa fa-power-off"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</header>
+		<div id="page-wrapper" class="container">
+			<div class="row">
+				<div id="nav-col">
+					<section id="col-left" class="col-left-nano">
+						<div id="col-left-inner" class="col-left-nano-content">
+							<div id="user-left-box" class="clearfix hidden-sm hidden-xs dropdown profile2-dropdown">
+								<img alt="" src="img/samples/scarlet-159.png" />
+								<div class="user-box">
+									<span class="name">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											Scarlett J. 
+											<i class="fa fa-angle-down"></i>
+										</a>
+										<ul class="dropdown-menu">
+											<li><a href="edit-profile.html"><i class="fa fa-user"></i>Edit Profile</a></li>
+											<li><a href="change-password.html"><i class="fa fa-cog"></i>Change Password</a></li>
+											<li><a href="#"><i class="fa fa-power-off"></i>Logout</a></li>
+										</ul>
+									</span>
+									<span class="status">
+										<i class="fa fa-circle"></i> Online
+									</span>
+								</div>
+							</div>
+							<div class="collapse navbar-collapse navbar-ex1-collapse" id="sidebar-nav">	
+								<ul class="nav nav-pills nav-stacked">
+									<li class="nav-header nav-header-first hidden-sm hidden-xs">
+										Navigation
+									</li>
+									<li>
+										<a href="index.html">
+											<i class="fa fa-dashboard"></i>
+											<span>Dashboard</span>
+											
+										</a>
+									</li>
+									
+									<!-- Anatoly -->
+									<li>
+										<a href="#" class="dropdown-toggle">
+											<i class="fa fa-inbox"></i>
+											<span>Invoice</span>
+											<i class="fa fa-angle-right drop-icon"></i>
+										</a>
+										<ul class="submenu">
+											<li>
+												<a href="invoice-list.html">
+													View
+												</a>
+											</li>
+											<li>
+												<a href="invoice-list.html">
+													Issue
+												</a>
+											</li>
+											<li>
+												<a href="invoice-list.html">
+													Issued
+												</a>
+											</li>
+											<li>
+												<a href="invoice-list.html">
+													Accepted
+												</a>
+											</li>
+											<li>
+												<a href="invoice-list.html">
+													Rejected
+												</a>
+											</li>											
+										</ul>
+									</li>	
+									<li>
+										<a href="#" class="dropdown-toggle">
+											<i class="fa fa-file-o"></i>
+											<span>PO Acceptance</span>
+											<i class="fa fa-angle-right drop-icon"></i>
+										</a>
+										<ul class="submenu">
+											<li>
+												<a href="po-list.html">
+													View
+												</a>
+											</li>
+											<li>
+												<a href="po-list.html">
+													Accepted
+												</a>
+											</li>
+											<li>
+												<a href="po-list.html">
+													Rejected
+												</a>
+											</li>											
+										</ul>
+									</li>	
+									<li class="active">
+										<a href="#" class="dropdown-toggle">
+											<i class="fa fa-file-o"></i>
+											<span>RFQ2</span>
+											<i class="fa fa-angle-right drop-icon"></i>
+										</a>
+										<ul class="submenu">
+											<li>
+												<a href="#" class="dropdown-toggle">
+													<span>RFQ2</span>
+													<i class="fa fa-angle-right drop-icon"></i>
+												</a>
+												<ul class="submenu">
+													<li><a href="RFQ-list.html">RFQ2 List</a></li>
+													<li><a href="RFQ-verify-list.html">Verify RFQ2</a></li>
+													<li><a href="RFQ-rejected-list.html">Rejected RFQ2</a></li>	
+												</ul>
+											</li>
+											<li>
+												<a href="RFQ-bid-list.html">
+													RFQ2 Bids
+												</a>											
+											</li>
+											<li class="active">
+												<a class="active" href="RFQ-award-list.html">
+													RFQ2 Award
+												</a>
+											</li>											
+										</ul>
+									</li>									
+									<li>
+										<a href="Reports.html">
+											<i class="fa fa-file-o"></i>
+											<span>Reports</span>
+										</a>								
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<div id="nav-col-submenu"></div>
+				</div>
+				<div id="content-wrapper">
+					<div class="row">
+						<div class="col-lg-12">
+							<div id="content-header" class="clearfix">
+								<div class="pull-left">
+									<ol class="breadcrumb">
+										<li><a href="#">Home</a></li>
+										<li class="active"><span>RFQ2</span></li>
+									</ol>
+									
+									<h1>RFQ2 Award List</h1>
+								</div>
+							</div>
+						</div>
+					</div>				
+					<div class="row">
+						<div class="col-md-6">
+							<form role="form">
+								<div class="form-group">
+									<label for="exampleInputEmail1">RFQ2 Code</label>
+									<input type="number" class="form-control" id="exampleInputEmail1" placeholder="Enter RFQ2 Code">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputEmail1">Amount</label>
+									<input type="number" class="form-control" id="exampleInputEmail1" placeholder="Amount">
+								</div>								
+								<div class="form-group">
+									<label for="exampleInputPassword1">Buyer</label>
+									<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Buyer">
+								</div>								
+								<div class="form-group">
+									<label for="datepickerDate">Start Date</label>
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										<input type="text" class="form-control" id="datepickerDate">
+									</div>
+									<span class="help-block">format mm-dd-yyyy</span>
+								</div>								
+								<div class="form-group">
+									<label for="exampleInputPassword1">Type</label>
+									<select class="form-control" name="rfq-type">
+										<option>Auction</option>
+										<option>Tender</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Bid Criteria</label>
+									<select class="form-control" name="bid-criteria">
+										<option>Advanced</option>
+										<option>Price</option>
+										<option>Both</option>
+									</select>
+								</div>								
+							</form>							
+						</div>
+						<div class="col-md-6">
+							<form role="form">
+								<div class="form-group">
+									<label for="exampleInputEmail1">Invoice/PO Code</label>
+									<input type="number" class="form-control" id="exampleInputEmail1" placeholder="Enter Invoice/PO Code">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Product</label>
+									<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Product">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputEmail1">Supplier</label>
+									<input type="number" class="form-control" id="exampleInputEmail1" placeholder="Supplier">
+								</div>
+								<div class="form-group">
+									<label for="datepickerDate">End Date</label>
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										<input type="text" class="form-control" id="datepickerDate1">
+									</div>
+									<span class="help-block">format mm-dd-yyyy</span>
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Status</label>
+									<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Status">
+								</div>	
+								<div class="form-group">
+									<label for="exampleInputPassword1">Buyer2</label>
+									<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Buyer2">
+								</div>																
+								<div class="form-group">
+									<label></label>
+									<div class="input-group">
+										<button class="btn btn-success" type="submit">Search</button>
+									</div>	
+								</div>								
+							</form>							
+						</div>
+					</div>
+
+					<div class="row margin-top-20">
+						<div class="col-lg-12">
+							<div class="main-box clearfix">
+								<header class="main-box-header clearfix">
+									<h2></h2>
+								</header>
+								
+								<div class="main-box-body clearfix">
+									<div class="table-responsive">
+										<table id="table-example" class="table table-hover tablesaw" data-tablesaw-mode="columntoggle" data-click-to-select="true" data-tablesaw-minimap>
+											<thead>
+												<tr>
+													<th scope="col" data-tablesaw-priority="persist" class="text-center">RFQ2 Code</th>
+													<th scope="col" data-tablesaw-priority="1" class="text-center">Invoice Code</th>
+													<th scope="col" data-tablesaw-priority="2" class="text-center">Amount</th>
+													<th scope="col" data-tablesaw-priority="3" class="text-center">Product</th>
+													<th scope="col" data-tablesaw-priority="4" class="text-center">Buyer</th>
+													<th scope="col" data-tablesaw-priority="5" class="text-center">Supplier</th>
+													<th scope="col" data-tablesaw-priority="6" class="text-center">Buyer2</th>
+													<th scope="col" data-tablesaw-priority="7" class="text-center">Type</th>
+													<th scope="col" data-tablesaw-priority="8" class="text-center">Criteria</th>
+													<th scope="col" data-tablesaw-priority="9" class="text-center">Bid Date</th>
+													<th scope="col" data-tablesaw-priority="10" class="text-center">Bid Amount/th>
+													<th scope="col" data-tablesaw-priority="11" class="text-center">Status</th>
+													<th class="no-order text-center">Action</th>																																			
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="text-center">43</td>
+													<td class="text-center">34</td>
+													<td class="text-center">sfd</td>
+													<td class="text-center">sdf</td>
+													<td class="text-center">Demo</td>
+													<td class="text-center">sdfo</td>
+													<td class="text-center">sfd</td>
+													<td class="text-center">sdf</td>
+													<td class="text-center">Demo</td>
+													<td class="text-center">sdfo</td>	
+													<td class="text-center">sdfo</td>												
+													<td class="text-center"><span class="label label-success">Active</span></td>
+													<td class="text-center">
+														<a class="table-link" href="#">
+															<span class="fa-stack">
+																<i class="fa fa-eye"></i>
+															</span>
+														</a>
+														<a class="table-link" href="#">
+															<span class="fa-stack">
+																<i class="fa fa-print"></i>
+															</span>
+														</a>	
+														<a class="table-link" href="#">
+															<span class="fa-stack">
+																<i class="fa fa-trash-o"></i>
+															</span>
+														</a>															
+													</td>
+												</tr>																																																																																																
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>					
+					
+					
+					
+				</div>
+			</div>	
+		</div>
+	</div>												
+
+	<!-- global scripts -->
+	<script src="js/demo-skin-changer.js"></script> <!-- only for demo -->
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.nanoscroller.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/demo.js"></script> <!-- only for demo -->
+	
+	<!-- this page specific scripts -->
+	<script src="js/jquery.dataTables.js"></script>
+	<script src="js/dataTables.fixedHeader.js"></script>
+	<script src="js/dataTables.tableTools.js"></script>
+	<script src="js/jquery.dataTables.bootstrap.js"></script>	
+	<!-- theme scripts -->
+	<script src="js/scripts.js"></script>
+	<script src="js/pace.min.js"></script>
+	<script src="js/tablesaw.js"></script>
+	<!-- this page specific inline scripts -->
+	<script>
+	$(document).ready(function() {
+		var table = $('#table-example').dataTable({
+			'info': false,
+			'filter': false,
+			'columnDefs': [ { "targets": 0, "orderable": false } ],
+			'sDom': 'lf<"clearfix">tip',
+			'TableTools': false
+		});
+		
+		$('#checkall').change(function(){
+			if ($('#checkall:checked').length > 0) {
+				//alert('checked');
+				$('tbody tr').each(function(event){
+					//event.preventDefault();
+					$(this).children('td.bs-checkbox').children('.btSelectItem').removeAttr('checked').attr('checked','checked');
+					//alert($(this).children('td.bs-checkbox').html());
+				});
+			} else {
+				//alert('unchecked');
+				$('tbody tr').each(function(event){
+					//event.preventDefault();
+					$(this).children('td.bs-checkbox').children('.btSelectItem').removeAttr('checked');
+					//alert($(this).children('td.bs-checkbox').html());
+				});
+			}
+		});
+    	//datepicker
+		$('#datepickerDate').datepicker({
+		  format: 'mm-dd-yyyy'
+		});
+		$('#datepickerDate1').datepicker({
+			  format: 'mm-dd-yyyy'
+			});
+		$('#datepickerDateComponent').datepicker();
+
+	});
+	</script>
+	
+</body>
+</html>

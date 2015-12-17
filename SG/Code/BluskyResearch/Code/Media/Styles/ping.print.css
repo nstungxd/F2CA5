@@ -1,0 +1,97 @@
+﻿
+/*----------------------------------------------------------------------------- 
+Print Stylesheet
+Author: Ping Media (www.ping-media.co.uk)
+Desc:   Styles for print
+-----------------------------------------------------------------------------*/
+
+.header-container,
+.main article .surveydetails_select .sd_form_wrapper,
+.surveydetails_opts,
+.srquestion_nav,
+.footer-container,
+.srquestion_print,
+.main article .survey_select .ss_form_wrapper,
+.main article .survey_select,
+.survey_summary .ssum_fig .ssum_f_opt,
+.survey_qfilter .s_qf_store .s_qf_load .s_qf_dd,
+.survey_qfilter .s_qf_store .s_qf_load .selector,
+.survey_qfilter .s_qf_store .s_qf_save .qfs_form .qfs_row .btn_site,
+.survey_qfilter .s_qf_store .s_qf_save .qfs_form .qfs_row span,
+.survey_qfilter .s_qf_list tr .s_qf_l_c_delete,
+.survey_qfilter .s_qf_list tr .s_qf_l_c_active,
+.survey_qfilter .s_qf_list tr .s_qf_l_c_filter .btn_site,
+.s_modal_view,
+.survey_item .si_data .si_row_header .si_row_header_graph,
+.survey_item .si_data .si_row_total_graph,
+a.btn_graph_full,
+.survey_item .si_data .si_row_view,
+.graph_summary .gsum_opt,
+.survey_summary .ssum_info,
+.graph_select,
+.g_link,
+.s_modal_close,
+.s_modal_print,
+footer{display:none; visibility:hidden; height:0; width:0;}
+
+body,
+.main article header{background-color:#FFF; color:#000 !important;}
+
+.bold{font-weight:bold;}
+
+.wrapper{}
+.main {border-left:0 none; border-right:0 none; padding:0;}
+.main article header{border-bottom:1px solid #000;}
+.main article .hotel_title{width:600px;}
+.main article .hotel_title .ht_fullimg{width:600px;}
+.main article .hotel_title .ht_fullimg img{width:600px;}
+.main article .surveydetails_select .sd_title {text-align:center;}
+.srdetails_summary {border-bottom:0 none; padding:10px 0;}
+.survey_item {border-top:0 none; padding: 30px 0;}
+.survey_summary{border-bottom:1px solid #000;}
+.survey_summary .ssum_info{float:none; width:100%;}
+.survey_summary .ssum_info h3{width:100%;}
+.survey_summary .ssum_fig{float:none; width:100%;}
+.survey_summary .ssum_fig .ssum_f_col {width: 165px; margin: 0 20px 0 0;}
+.survey_qfilter{border-bottom:0 none; padding:20px 0;}
+.survey_qfilter .s_qf_store .s_qf_load .title{font-size:1em;}
+.survey_qfilter .s_qf_store .s_qf_load{float:none; width:100%;}
+.survey_qfilter .s_qf_store .s_qf_save{float:none; width:100%; padding:0;}
+.survey_qfilter .s_qf_store .s_qf_save .qfs_form .sf_row_text{margin:0; border:1px solid #FFF;}
+.survey_qfilter .s_qf_list tr .s_qf_l_c_filter{padding:5px 0;}
+
+.survey_item .si_data .si_values_hidden{display:block; visibility:visible; width:100%;}
+.survey_item .si_data .si_values .si_other_hidden{display:block; visibility:visible; width:100%;}
+
+.survey_item .si_data .si_row {width: 100%;}    
+.survey_item .si_data .si_row .si_row_item {font-size:0.9em !important; width:300px;}
+.survey_item .si_data .si_row .si_row_data { width:200px;}
+.survey_item .si_data .si_row .si_item_right{width:200px;}
+
+.survey_item .si_data .si_row_totals .si_row_item{font-size:1em;}
+.survey_item .si_graph .blgraph{width:495px; height:275px;}
+.survey_item .si_data .si_row_header .si_row_header_wrapper {padding:0 5px 0 150px; float:left; width:248px;}
+.survey_item .si_data .si_row_header .si_row_header_item {width:56px; height:60px; padding: 0 0 0 2px; float: left; text-align:center; font-size:0.75em;}
+.survey_item .si_data .si_row_data_wrapper {padding:4px 5px 4px 0; float:left; width:248px;}
+.survey_item .si_data .si_row_data_wrapper .si_row_data .si_row_data_count {text-align:center; float:none;}
+.survey_item .si_data .si_row_total {width:56px; height:60px; padding:4px 0 4px 2px; float: left; text-align:center; font-size:0.75em;}
+.survey_item .si_data .si_row_total .btn_graph {margin:0 auto;}
+.si_data_parent .survey_item {border-bottom:0 none; padding:10px 0;}
+.survey_item .si_data_parent .si_row {padding:2px 6px; background:0 none;}
+.survey_item .si_data_parent .si_data .si_row_data .si_row_item {padding:4px 0;}
+.survey_item .si_data_parent .si_row .si_row_item { font-size:0.75em !important; width:150px; word-wrap: normal;}
+.survey_item .si_data .si_row_header .si_row_header_item_start{border:0 none;}
+.survey_item .si_data_parent .si_row_header {}
+.survey_item .si_data .si_row_data_wrapper .si_row_data {width:50px; padding:0 0 0 8px; text-align:center; clear:none; }
+
+.si_modal_textvalues .s_modal_inner .title{padding:20px 10px 20px 10px; width:610px;}
+.si_modal_textvalues .s_modal_inner .s_modal_body{overflow:visible;}
+
+.circ{width:auto; height:auto; text-align:left; color:#000;}
+.circ span {padding:0; font-size:1.4em; display: block; margin:0; float:left;}
+
+#content{border-top:1px solid #000;}
+#od_printfooter{display:block; border-top:1px solid #000; padding:15px 0 0; font-size:0.8em;}
+.od_printstatus{display:inline;}
+
+

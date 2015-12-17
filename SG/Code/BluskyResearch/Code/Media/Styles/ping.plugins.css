@@ -1,0 +1,35 @@
+﻿
+/*----------------------------------------------------------------------------- 
+Plugins Stylesheet
+Author: Ping Media (www.ping-media.co.uk)
+Desc:   Styles for drop-in controls - requires Styles.css
+-----------------------------------------------------------------------------*/
+
+/* Twitter Feed
+-----------------------------------------------------------------------------*/
+#rssfeed{list-style:none outside none; margin:0 0 8px 0; width:264px;}
+#rssfeed li{margin:18px 0 0; padding:5px; width:202px; padding:0 0 0 62px; background: transparent url(/Media/Images/twitter_logo.png) no-repeat 0 center;}
+#rssfeed li .rssfeedtitle{font-size:85%; width:202px;}
+#rssfeed li .rssfeedtitle a{font-weight:bold;}
+#rssfeed li .rssfeeddate{font-size:0.9em; margin:3px 0 0;}
+
+/* Sign-up form
+-----------------------------------------------------------------------------*/
+#newsletter h3{margin:0 0 8px 0;}
+#newsletter .fail{color:Red;}
+#newsletter .success{font-size:1.4em;}
+#newsletter .note{font-size:1.4em;}
+#newsletter input{font-size:1.4em; margin:0 7px 0 0; border:solid 4px #fff;}
+#newsletter input.box{border-color:#999; font-style:italic; color:#2e2e2e; padding:3px;}
+#newsletter input.btn{background-color:#393E3C; color:#fff; cursor:pointer; padding:2px 6px;}
+
+/* Contact Form
+-----------------------------------------------------------------------------*/
+#contactform .fail{clear:both; color:Red; display:block; float:left; margin:3px 0;}
+#contactform .success{font-size:1.4em;}
+#contactform .note{font-size:1.4em;}
+#contactform input, #contactform textarea{font-size:1.4em; margin:0; border:solid 4px #fff;}
+#contactform textarea{font-family:Arial,Times New Roman;}
+#contactform .box{border-color:#999; font-style:italic; color:#2e2e2e; padding:3px; float:left; clear:both; margin:0 0 8px 0; width:250px;}
+#contactform textarea.box{width:285px;}
+#contactform input.btn{background-color:#393E3C; color:#fff; cursor:pointer; padding:2px 6px; float:right; clear:both;}

@@ -1,0 +1,6 @@
+#box{
+    height:300px;
+    width: 300px;
+    border:1px solid #000;
+    background: url(http://www.deepakgems.com/images/new/loading.gif) no-repeat center;
+}

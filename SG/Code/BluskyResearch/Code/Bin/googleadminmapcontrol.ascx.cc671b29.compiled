@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CompiledUserControls/Controls/GoogleAdminMapControl.ascx" hash="a4f1d9d05" filehash="f9240a603617a4c7" flags="100000" assembly="App_Web_googleadminmapcontrol.ascx.cc671b29" type="ASP.GoogleAdminMapControl">
+    <filedeps>
+        <filedep name="/CompiledUserControls/Controls/GoogleAdminMapControl.ascx" />
+        <filedep name="/CompiledUserControls/Controls/GoogleAdminMapControl.ascx.vb" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CompiledUserControls/Controls/MenuControl.ascx" hash="a4f1d9d05" filehash="da9212b4e483b597" flags="100000" assembly="App_Web_menucontrol.ascx.cc671b29" type="ASP.MenuControl">
+    <filedeps>
+        <filedep name="/CompiledUserControls/Controls/MenuControl.ascx" />
+        <filedep name="/CompiledUserControls/Controls/MenuControl.ascx.vb" />
+    </filedeps>
+</preserve>

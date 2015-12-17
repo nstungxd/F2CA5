@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CompiledUserControls/Controls/SMDDSearchControl.ascx" hash="a4f1d9d05" filehash="74d647253ec8167b" flags="100000" assembly="App_Web_smddsearchcontrol.ascx.cc671b29" type="ASP.SMDDSearchControl">
+    <filedeps>
+        <filedep name="/CompiledUserControls/Controls/SMDDSearchControl.ascx" />
+        <filedep name="/CompiledUserControls/Controls/SMDDSearchControl.ascx.vb" />
+    </filedeps>
+</preserve>
