@@ -137,6 +137,7 @@ else
                     <h2>
                         <div id="clockbox"></div>
                     </h2>
+                    <br/>
                     <h1>
                         <div id="timebox"></div>
                     </h1>

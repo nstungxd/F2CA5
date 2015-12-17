@@ -1,14 +1,82 @@
 @media (max-width: 768px) {
-
+.date_time {
+  padding: 20px 0;
+  text-align: center;
+}
+.date_time::after {
+  width: 0px;
+}
+.date_time h1 {
+  float: none;
+}
+.broadway_gp{margin-top:20px;}
+.am_logo img {
+  float: none;
+  padding-top:15px;
+}
+.footer{text-align:center;}
 }
 
 @media (min-width: 768px) {
+.date_time h1 {
+  font-size: 30px;
+}
+.date_time h2 {
+  font-size: 24px;
+}
+.single_dictionary p {
+  font-size: 18px;
+}
+.broadway_gp h2 {
+  padding-bottom: 30px;
+}
+.broadway_gp p {
+  font-size: 20px;
+}
+.broadway_gp {
+  padding: 40px 40px 40px 30px;
+}
 }
 
 @media (min-width: 992px) {
+.container{width:1170px;}
+.date_time h2 {
+  font-size: 25px;
+  float:right;
+}
+.date_time h1 {
+  font-size: 45px;
+}
+.single_dictionary p {
+  font-size: 25px;
+}
+.broadway_gp h2 {
+  padding-bottom: 40px;
+}
+.broadway_gp p {
+  font-size: 22px;
+}
+.broadway_gp {
+  padding: 40px 40px 80px 30px;
+}
 }
 
 @media (min-width: 1200px) {
 .container{width:1920px;}
-
+.date_time h2 {
+  font-size: 40px;
+  float:right;
+}
+.date_time h1 {
+  font-size: 70px;
+}
+.single_dictionary p {
+  font-size: 40px;
+}
+.broadway_gp h2 {
+  padding-bottom: 50px;
+}
+.broadway_gp p {
+  font-size: 36px;
+}
 }

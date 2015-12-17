@@ -309,7 +309,7 @@ img {
 }
 h1, h2, h3, h4, h5, h6, p{margin:0px;}
 
-body{font-family: 'Open Sans', sans-serif;height:1080px;}
+body{font-family: 'Open Sans', sans-serif;}
 .header_area {
     padding-top: 25px;
     padding-bottom: 30px;
@@ -319,16 +319,16 @@ body{font-family: 'Open Sans', sans-serif;height:1080px;}
 .date_time { float:right;}
 .date_time::after {
     background: #000000 none repeat scroll 0 0;
-	content: "";
-	height: 110px;
-	left: 260px;
-	position: absolute;
-	top: 0;
-	width: 1px;
+    content: "";
+    height: 80px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1px;
 }
 .date_time h2 {
     color: #6c6c74;
-    font-size: 48px;
+    font-size: 40px;
 }
 .date_time h1 {
     float: right;
@@ -341,11 +341,11 @@ body{font-family: 'Open Sans', sans-serif;height:1080px;}
     width: 70%;
     color: #6c6c74;
     float: left;
-    font-size: 40px;
+    font-size: 25px;
     padding-bottom: 5px;
 }
 .single_dictionary > img { float: right }
-.dictionary_img > img { padding-bottom: 8px }
+.dictionary_img > img { padding-bottom: 5px }
 .left_content h2 {
     color: #006cb7;
     font-size: 44px;
@@ -380,7 +380,7 @@ body{font-family: 'Open Sans', sans-serif;height:1080px;}
 }
 .broadway_gp p {
     color: #6c6c74;
-    font-size: 36px;
+    font-size: 22px;
     font-weight: 600;
 }
 .footer_area {
