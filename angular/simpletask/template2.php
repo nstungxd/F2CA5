@@ -149,7 +149,7 @@ else
 <div class="content_area">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                 <div class="row">
                     <div class="left_content">
                         <h2>Doctors Directory</h2>
@@ -167,9 +167,9 @@ else
                                 </div>
                                 <div class="dictionary_img">
                                     <?php if ($r1['now1'] == 0) { ?>
-                                    <img src="img/not_in.jpg" alt=""/>
+                                    <img src="img/not_in.jpg" alt="" width="65px" height="65px"/>
                                     <?php } else { ?>
-                                    <img src="img/in.jpg" alt=""/>
+                                    <img src="img/in.jpg" alt="" width="65px" height="65px"/>
                                     <?php } ?>
                                 </div>
                             </div>
@@ -204,9 +204,9 @@ else
                                 </div>
                                 <div class="dictionary_img">
                                     <?php if ($r1['now1'] == 0) { ?>
-                                    <img src="img/not_in.jpg" alt=""/>
+                                    <img src="img/not_in.jpg" alt="" width="65px" height="65px"/>
                                     <?php } else { ?>
-                                    <img src="img/in.jpg" alt=""/>
+                                    <img src="img/in.jpg" alt="" width="65px" height="65px"/>
                                     <?php } ?>
                                 </div>
                             </div>
@@ -232,9 +232,9 @@ else
 						background:linear-gradient(
                                   rgba(255, 255, 255, 0.7),
                                   rgba(255, 255, 255, 0.7)
-                                ),url('upload/<?php echo $r1['image_logo'] ?>') no-repeat scroll 0 0 / 807.405px; auto;
-                        width: 100%;
-                        padding: 40px 40px 80px 30px; height: 807.405px;">
+                                ),url('upload/<?php echo $r1['image_logo'] ?>') no-repeat scroll 0 0 / 700.405px; auto;
+                        width: 98%;
+                        padding: 40px 40px 80px 30px; height: 700.405px;">
 							<?php echo $r1['description'] ?>
 						</div>
                     <?php $i++; } ?>
@@ -275,8 +275,7 @@ else
         if(cpage > 1)
         {
             $('#slideshow').slidesjs({
-                width: 940,
-                height: 840,
+                height: 700,
                 play: {
                     active: false,
                     auto: true,
