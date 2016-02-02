@@ -128,7 +128,7 @@ else
             <div class="col-lg-6">
                 <div class="logo">
                     <?php if ($e_logo != null && isset( $e_logo) && !empty( $e_logo) && file_exists("upload/".$e_logo)) { ?>
-                    <a href="#"><img class="img-thumbnail" src="upload/<?php echo $e_logo ?>" height="93px" width="497px" alt=""/></a>
+                    <a href="#"><img class="img-thumbnail" src="upload/<?php echo $e_logo ?>" alt=""/></a>
                     <?php }?>
                 </div>
             </div>
@@ -157,7 +157,15 @@ else
 <?php
                                 $rs_query = getDoctorRoster($_GET['id'], 'display');
                         $rowCount = mysql_num_rows($rs_query);
-                        $break = (int)($rowCount / 2) + 1;
+                        $div = ($rowCount % 2);
+                        if($div == 0)
+                        {
+                            $break = (int)($rowCount / 2);
+                        }
+                        else
+                        {
+                            $break = (int)($rowCount / 2) + 1;
+                        }
                         $i = 0;
                         while ($r1 = mysql_fetch_array($rs_query)) {
                             $i++?>
@@ -191,10 +199,18 @@ else
                     <div class="left_content_bottom">
                         <h2>Allied Health Services</h2>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-<?php
+                <?php
                                 $rs_query = getDoctorRoster($_GET['id'], 'allied');
                         $rowCount = mysql_num_rows($rs_query);
-                        $break = (int)($rowCount / 2) + 1;
+                        $div = ($rowCount % 2);
+                        if($div == 0)
+                        {
+                            $break = (int)($rowCount / 2);
+                        }
+                        else
+                        {
+                            $break = (int)($rowCount / 2) + 1;
+                        }
                         $i = 0;
                         while ($r1 = mysql_fetch_array($rs_query)) {
                             $i++?>
@@ -211,7 +227,7 @@ else
                                 </div>
                             </div>
                             <?php
-                                                                if ($i == $break) {
+                                if ($i == $break) {
                                 ?>
                                 </div>
 							    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -232,8 +248,8 @@ else
 						background:linear-gradient(
                                   rgba(255, 255, 255, 0.7),
                                   rgba(255, 255, 255, 0.7)
-                                ),url('upload/<?php echo $r1['image_logo'] ?>') no-repeat scroll 0 0 / 700.405px; auto;
-                        width: 98%;
+                                ),url('upload/<?php echo $r1['image_logo'] ?>') no-repeat scroll 0 0 ; auto;
+                        
                         padding: 40px 40px 80px 30px; height: 700.405px;">
 							<?php echo $r1['description'] ?>
 						</div>

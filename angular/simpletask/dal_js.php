@@ -69,7 +69,7 @@ if (isset($_POST['typeChange'])){
                 $query1="select * from doctor where id_practice='".$_POST['practiceid']."' and Isdisplay=1";
                 $rs1 = mysql_query($query1);
                 $rowCount = mysql_num_rows($rs1);
-                if($rowCount < 10)
+                if($rowCount < 12)
                 {
                     $query = "update doctor set Isdisplay=1 where id='".$_POST['id']."'";
                     $rs2 = mysql_query($query);
