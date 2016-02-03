@@ -20,19 +20,19 @@ else
             $e_footer = $r1['footer'];
         }
     }
-    $stt = getStatus();
+    $stt = getStatus($_GET["id"]);
     $rowCountStt = mysql_num_rows($stt);
     if ($rowCountStt > 0) {
         while ($r1 = mysql_fetch_array($stt)) {
-            $currentID = $r1['modified'];
+            $currentdate = $r1['modified'];
         }
     }
     else
     {
-        insertFirstStatus();
-        $stt = getStatus();
+        insertFirstStatus($_GET["id"]);
+        $stt = getStatus($_GET["id"]);
         while ($r1 = mysql_fetch_array($stt)) {
-            $currentID = $r1['modified'];
+            $currentdate = $r1['modified'];
         }
     }
 
@@ -96,12 +96,13 @@ else
     <script type="text/javascript">
         var auto_refresh = setInterval(
                 function () {
-                    var curent = $('#currentID').val();
+                    var curentdate = $('#currentdate').val();
+                    var curentid = $('#currentID').val();
                     $.ajax
                             ({
                                 type: "POST",
                                 url: "dal_js.php",
-                                data: "typeC=" + curent,
+                                data: "typeC=" + curentdate + "&currentid=" + curentid,
                                 dataType: "json",
                                 success: function (msg) {
                                     if (msg == 0) {
@@ -117,7 +118,8 @@ else
     </script>
 </head>
 <body>
-<input type="hidden" name="currentID" id="currentID" value="<?php echo $currentID ?>">
+<input type="hidden" name="currentdate" id="currentdate" value="<?php echo $currentdate ?>">
+<input type="hidden" name="currentID" id="currentID" value="<?php echo $_GET["id"] ?>">
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>

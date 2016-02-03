@@ -11,7 +11,7 @@ if (isset($_GET["id"])) {
     $rowCount = mysql_num_rows($dr);
     if($rowCount > 0)
     {
-        deleteImageSlide($_GET["id"]);
+        deleteImageSlide($_SESSION['id'],$_GET["id"]);
         echo '<script type="text/javascript">'
         , 'window.location.href="practice.php";'
         , '</script>';

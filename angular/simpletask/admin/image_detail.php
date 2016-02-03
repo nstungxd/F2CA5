@@ -73,7 +73,7 @@ if($_POST)
             $logo = $uniqid.basename($_FILES["txtLogo"]["name"]);
             $des = '';
             if (isset($_POST['content'])) $des = ($_POST['content']);
-            $update_img = updateImageSlide($id, $logo, $des);
+            $update_img = updateImageSlide($_SESSION['id'],$id, $logo, $des);
             if ($update_img == '0') {
                 echo '<script type="text/javascript">'
                 , 'window.location.href="practice.php";'

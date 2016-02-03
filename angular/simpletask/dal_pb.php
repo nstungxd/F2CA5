@@ -61,9 +61,9 @@ function updateDoctor($id_prac,$id,$name,$occu,$title,$image_logo)
         $rs1 = mysql_query($query);
         return $rs1;
     }
-function getStatus()
+function getStatus($id_practice)
 {
-    $query = "select * from status limit 1";
+    $query = "select * from status where id_practice = '".$id_practice."' limit 1";
     $rs1 = mysql_query($query);
     return $rs1;
 }
@@ -128,9 +128,7 @@ function updatePractice($id,$email,$password,$name,$address,$title,$image_logo,$
         if (!$output) {
             return '1';
         }
-        $dateNow = date('Y-m-d H:i:s');
-        $query = "update status set modified='".$dateNow."'";
-        $rs1 = mysql_query($query);
+        updateStatus($id);
         return '0';
     }
 function updatePracticeFooter($id,$footer,$image_logo)
@@ -142,9 +140,7 @@ function updatePracticeFooter($id,$footer,$image_logo)
         if (!$output) {
             return '1';
         }
-        $dateNow = date('Y-m-d H:i:s');
-        $query = "update status set modified='".$dateNow."'";
-        $rs1 = mysql_query($query);
+        updateStatus($id);
         return '0';
     }
 function getRoster($id_practice)
@@ -203,7 +199,7 @@ function getSlideByPractice($id_practice)
     $rs1 = mysql_query($query);
     return $rs1;
 }
-function updateImageSlide($id,$image_logo,$des)
+function updateImageSlide($id_practice,$id,$image_logo,$des)
     {
         if($image_logo != '') $query_img = ", image_logo='".$image_logo."'";
         $date1 = date('Y-m-d H:i:s');
@@ -212,8 +208,7 @@ function updateImageSlide($id,$image_logo,$des)
         if (!$output) {
             return '1';
         }
-        $query1= "update status set modified='".$date1."'";
-        $rs1 = mysql_query($query1);
+        updateStatus($id_practice);
         return '0';
     }
 function insertImageSlide($id_practice,$image_logo,$des)
@@ -225,12 +220,11 @@ function insertImageSlide($id_practice,$image_logo,$des)
             //not sucess
             return '1';
         }
-        $query1= "update status set modified='".$date1."'";
-        $rs1 = mysql_query($query1);
+        updateStatus($id_practice);
         //sucess
         return '0';
     }
-function deleteImageSlide($id)
+function deleteImageSlide($id_practice,$id)
     {
         $query = "delete from slide where id='".$id."'";
         $output = mysql_query($query);
@@ -239,9 +233,7 @@ function deleteImageSlide($id)
             return '1';
         }
         //sucess
-        $dateNow = date('Y-m-d H:i:s');
-        $query1= "update status set modified='".$dateNow."'";
-        $rs1 = mysql_query($query1);
+        updateStatus($id_practice);
         return '0';
     }
 ?>

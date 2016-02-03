@@ -313,14 +313,14 @@ if (!isset($_SESSION['acc_type']) || !isset($_SESSION['id']) || $_SESSION['acc_t
 <script type="text/javascript">
     function changeColor(id, rownum, cellnum, days, month, year) {
         var a = $("tr:eq(" + rownum + ") > td:eq(" + cellnum + ")");
-
+        var paractice = '<?php echo $_SESSION['id'] ?>'
         if (a.attr("class") == 'warning') {
 
             $.ajax
                     ({
                         type: "POST",
                         url: "../dal_js.php",
-                        data: "type=" + id + "&date=" + days + "&month=" + month + "&year=" + year,
+                        data: "type=" + id + "&date=" + days + "&month=" + month + "&year=" + year+ "&practice=" + paractice,
                         dataType: "json",
                         success: function (msg) {
                             if (msg == 0) {
@@ -343,7 +343,7 @@ if (!isset($_SESSION['acc_type']) || !isset($_SESSION['id']) || $_SESSION['acc_t
                     ({
                         type: "POST",
                         url: "../dal_js.php",
-                        data: "typer=" + id + "&date=" + days + "&month=" + month + "&year=" + year,
+                        data: "typer=" + id + "&date=" + days + "&month=" + month + "&year=" + year+ "&practice=" + paractice,
                         dataType: "json",
                         success: function (msg) {
                             if (msg == 0) {

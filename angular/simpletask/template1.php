@@ -20,20 +20,20 @@ else
             $e_logo = $r1['image_logo'];
         }
     }
-    $stt = getStatus();
+    $stt = getStatus($_GET["id"]);
     $rowCountStt = mysql_num_rows($stt);
     if($rowCountStt > 0)
     {
         while ($r1 = mysql_fetch_array($stt)) {
-            $currentID = $r1['modified'];
+            $currentdate = $r1['modified'];
         }
     }
     else
     {
-        insertFirstStatus();
-        $stt = getStatus();
+        insertFirstStatus($_GET["id"]);
+        $stt = getStatus($_GET["id"]);
         while ($r1 = mysql_fetch_array($stt)) {
-            $currentID =$r1['modified'];
+            $currentdate =$r1['modified'];
         }
     }
 
@@ -92,12 +92,13 @@ else
         var auto_refresh = setInterval(
                 function ()
                 {
-                    var curent = $('#currentID').val();
+                    var curentdate = $('#currentdate').val();
+                    var curentid = $('#currentID').val();
                     $.ajax
                             ({
                                 type: "POST",
                                 url: "dal_js.php",
-                                data: "typeC="+ curent,
+                                data: "typeC=" + curentdate + "&currentid=" + curentid,
                                 dataType: "json",
                                 success: function (msg) {
                                     if(msg==0)
@@ -125,7 +126,8 @@ else
 
             </div>
             <h1><?php echo $e_title; ?></h1>
-            <input type="hidden" name="currentID" id="currentID" value="<?php echo $currentID ?>">
+            <input type="hidden" name="currentdate" id="currentdate" value="<?php echo $currentdate ?>">
+            <input type="hidden" name="currentID" id="currentID" value="<?php echo $_GET["id"] ?>">
         </div>
         <div class="row">
             <div class="col-md-12">
