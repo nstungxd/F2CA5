@@ -81,6 +81,10 @@ if ($_POST)
   </div>
   </div>
 </div>
+<!-- Powered By Footer -->
+<div>
+<img src="/portal/admin/images/AM-tv-black-Logo.png">
+</div>
     </form>
 	<!-- script references -->
 		<script src="../js/jquery.min.js"></script>

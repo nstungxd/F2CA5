@@ -75,7 +75,7 @@ if (!isset($_SESSION['acc_type']) || !isset($_SESSION['id']) || $_SESSION['acc_t
             $txt_Occu = trim($_POST['txtOccu']);
             $logo = $uniqid . basename($_FILES["txtLogo"]["name"]);
             if (isset($_POST["doctorid"]) && $_POST["doctorid"] != '') {
-                $insert_practice = updateDoctor($_POST["doctorid"], $txt_name, $txt_Occu, $txt_Title, $logo);
+                $insert_practice = updateDoctor($_SESSION['id'],$_POST["doctorid"], $txt_name, $txt_Occu, $txt_Title, $logo);
                 if ($insert_practice == '0') {
                     echo '<script type="text/javascript">'
                     , 'window.location.href="practice.php";'
