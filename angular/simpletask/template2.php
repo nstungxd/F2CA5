@@ -291,11 +291,11 @@ else
         if(cpage > 1)
         {
             $('#slideshow').slidesjs({
-                height: 700,
+                height: 800,
                 play: {
                     active: false,
                     auto: true,
-                    interval: 4000,
+                    interval: 10000,
                     swap: true
                 },
                 pagination: {

@@ -40,12 +40,10 @@ function insertDoctor($id_prac,$name,$occu,$title,$image_logo)
             return '1';
         }
         //sucess
-        $dateNow = date('Y-m-d H:i:s');
-        $query = "update status set modified='".$dateNow."'";
-        $rs1 = mysql_query($query);
+        updateStatus($id_prac);
         return '0';
     }
-function updateDoctor($id,$name,$occu,$title,$image_logo)
+function updateDoctor($id_prac,$id,$name,$occu,$title,$image_logo)
 {
     $query_img='';
     if($image_logo != '') $query_img = ", image_logo='".$image_logo."'";
@@ -54,9 +52,7 @@ function updateDoctor($id,$name,$occu,$title,$image_logo)
     if (!$output) {
         return '1';
     }
-    $dateNow = date('Y-m-d H:i:s');
-    $query = "update status set modified='".$dateNow."'";
-    $rs1 = mysql_query($query);
+    updateStatus($id_prac);
     return '0';
 }
     function getPracticeById($id)
@@ -71,18 +67,31 @@ function getStatus()
     $rs1 = mysql_query($query);
     return $rs1;
 }
-function insertFirstStatus()
+function insertFirstStatus($id_practice)
 {
     $dateNow = date('Y-m-d H:i:s');
-    $query = "insert into status(id_practice,modified) values (0,'".$dateNow."')";
+    $query = "insert into status(id_practice,modified) values ('".$id_practice."','".$dateNow."')";
     $rs1 = mysql_query($query);
     return $rs1;
 }
-function updateStatus()
+function updateStatus($id_practice)
 {
-    $dateNow = date('Y-m-d H:i:s');
-    $query = "update status set modified='".$dateNow."'";
-    $rs1 = mysql_query($query);
+        $query = "select id_practice,modified from status where id_practice='".$id_practice."' limit 1";
+        $rs1 = mysql_query($query);
+        $rowCount = mysql_num_rows($rs1);
+        if($rowCount > 0)
+        {
+            $dateNow = date('Y-m-d H:i:s');
+            $query = "update status set modified='".$dateNow."' where id_practice = '".$id_practice."'";
+            $rs1 = mysql_query($query);
+        }
+    else{
+        $dateNow = date('Y-m-d H:i:s');
+        $query = "insert into status(id_practice,modified) values ('".$id_practice."','".$dateNow."')";
+        $rs1 = mysql_query($query);
+        return $rs1;
+    }
+
     return $rs1;
 }
 function getDoctorById($id)

@@ -3,7 +3,7 @@ date_default_timezone_set('Australia/Canberra');
 require("dal_pb.php");
 if (!isset($_GET["id"])) {
      echo '<script type="text/javascript">'
-            , 'window.location.href="index.php?id=2";'
+            , 'window.location.href="admin/";'
             , '</script>';
 }
 $e_template= "1";
