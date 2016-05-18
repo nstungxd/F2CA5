@@ -1,0 +1,37 @@
+﻿@using FX.Utils.MVCMessage
+<div id="messagewrapper" style="display: none">
+    @{
+        var messageData = (MessageViewData)ViewData["Messages"];
+    }
+    @if (messageData != null)
+    {
+        var messages = messageData.Messages;
+        foreach (string messageType in MessageType.GetTypes())
+        {
+            if (messages.Count > 0 && messages[messageType].Count > 0)
+            {
+                <message type="@messageType">
+                    @string.Join("<br />", messages[messageType])
+                </message>
+            }
+
+        }
+        messageData.Messages.Clear();
+    }
+
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ($("message").length > 0) {
+            var duration = 0;
+            $("message").each(function (index, el) {
+                setTimeout(function () {
+                    var type = $(el).attr("type");
+                    var content = $(el).html();
+                    messageUtil.ShowAlert(type, content);
+                }, duration);
+                duration += 700;
+            });
+        }
+    });
+</script>

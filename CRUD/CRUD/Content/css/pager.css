@@ -1,0 +1,48 @@
+﻿/* paging
+-----------------------------------------------------------*/
+.pagination {
+    margin: 5px 0;
+}
+
+    .pagination .a {
+        cursor: default;
+    }
+
+.paging {
+    height: 40px;
+    border-top: 1px solid #CCCCCC;
+    background-color: #EEEEEE;
+}
+
+    .paging #pager {
+        position: absolute;
+        left: 100px;
+        bottom: 7px;
+        font-size: 15px;
+    }
+
+.divtotalrecord {
+    color: #285881;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+.pager_link {
+    color: #285881;
+    text-decoration: none;
+}
+
+    .pager_link:hover {
+        color: #000099;
+    }
+
+.txtPageIndex {
+    background-color: #66A2D0;
+    border: 1px solid #66A2D0;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 14.2px;
+    height: 15px;
+    text-align: center;
+    width: 35px;
+}

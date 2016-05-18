@@ -1,0 +1,344 @@
+/* layout genenal.css */
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+.popover {
+    border: 1px solid #428BCA;
+}
+
+    .popover.right > .arrow, .popover.right > .arrow:after {
+        border-right-color: #428BCA;
+    }
+
+    .popover.left > .arrow, .popover.left > .arrow:after {
+        border-left-color: #428BCA;
+    }
+
+    .popover.top > .arrow, .popover.top > .arrow:after {
+        border-top-color: #428BCA;
+    }
+
+    .popover.bottom > .arrow, .popover.bottom > .arrow:after {
+        border-bottom-color: #428BCA;
+    }
+
+.popover-content input {
+    line-height: 1.5;
+    border-radius: 3px;
+    box-shadow: none;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+}
+
+.ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    display: none;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 2px 0;
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 5px 3px 5px 3px;
+    width: 350px;
+}
+
+.ui-menu-item {
+    line-height: 24px;
+    padding: 3px 0;
+}
+
+    .ui-menu-item > a.ui-corner-all {
+        display: block;
+        padding: 3px 15px;
+        clear: both;
+        font-weight: normal;
+        color: #555555;
+        white-space: nowrap;
+    }
+
+.ui-state-hover, .ui-state-active, .ui-state-focus {
+    background-color: #0097cf;
+    color: #fff !important;
+    font-weight: bold !important;
+    cursor: pointer;
+}
+
+
+
+.has-error {
+    border-color: #a94442;
+}
+
+.pagination a {
+    cursor: default;
+}
+
+.list-group-item img {
+    float: left;
+    margin-right: 10px;
+}
+
+.bg-tb {
+    background-color: #f7f7f7;
+}
+
+.ml30 {
+    margin-left: 40px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.padding-r15 {
+    padding-right: 15px;
+}
+
+.icon-collapse {
+    color: rgba(255,255,255,0.8);
+    padding: 6px 9px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: normal;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background-color: #389b38;
+}
+
+.icon-collapse-yl {
+    color: rgba(255,255,255,0.8);
+    padding: 6px 9px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: normal;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background-color: #d09d12;
+}
+
+.pt5 {
+    padding-top: 5px;
+}
+
+.t1 {
+    text-transform: uppercase;
+}
+
+.footer {
+    background: #f7f7f7;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    line-height: 30px;
+    color: #000;
+    padding-left: 10px;
+    border-top: 1px solid #dfdcdc;
+    z-index: 99;
+    bottom: 0px;
+}
+
+    .footer .logo {
+        float: left;
+        padding: 5px 20px;
+    }
+
+    .footer .copyright {
+        color: #000;
+    }
+
+.border-b {
+    border-bottom: 1px solid #dddddd;
+}
+
+.border-t {
+    border-top: none;
+}
+/* <<  layout genenal.css */
+
+/* typeahead*/
+.typeahead,
+.tt-query,
+.tt-hint {
+    /*padding: 8px 12px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    outline: none;*/
+}
+
+.tt-menu {
+    overflow-y: auto;
+    max-height: 300px;
+    overflow-x: hidden;
+    width: 350px;
+    margin: 2px 0;
+    padding: 5px 3px 5px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+    padding: 3px 20px;
+    line-height: 24px;
+}
+
+    .tt-suggestion:hover {
+        cursor: pointer;
+        color: #fff;
+        background-color: #0097cf;
+    }
+
+    .tt-suggestion.tt-cursor {
+        color: #fff;
+        background-color: #0097cf;
+    }
+
+    .tt-suggestion p {
+        margin: 0;
+    }
+
+.gist {
+    font-size: 14px;
+}
+
+.scrollable .tt-menu {
+    max-height: 300px;
+    overflow-y: auto;
+}
+/* typeahead*/
+
+.mainpanel .breadcrumb {
+    border-radius: 0px;
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e7e7e7;
+    /*height: 32px;*/
+    padding: 10px 0 5px 10px;
+    margin: 0;
+}
+
+    .mainpanel .breadcrumb > ul {
+        margin-bottom: 5px;
+        margin-top: 4px;
+        padding: 0;
+        list-style-type: none;
+        /*list-style: '>';*/
+        list-style: none;
+    }
+
+        .mainpanel .breadcrumb > ul li {
+            /*margin-left: 10px;*/
+            padding: 5px;
+            /*padding-bottom:5px;*/
+            /*float: left;*/
+            display: inline;
+        }
+
+            .mainpanel .breadcrumb > ul li:nth-child(1) {
+                margin-left: 0px;
+                list-style-type: none;
+            }
+
+            .mainpanel .breadcrumb > ul li a {
+                font-weight: bold;
+                text-decoration: none;
+                color: #999;
+                #428bca;
+            }
+
+            .mainpanel .breadcrumb > ul li:first-child a {
+                color: #428bca;
+            }
+
+            .mainpanel .breadcrumb > ul li:last-child a {
+                text-decoration: none;
+                cursor: default;
+                color: #999;
+            }
+
+.toolbar .btn-group {
+    margin-bottom: 0px !important;
+}
+
+.toolbar .btn-default {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.tk-info input, .tk-info select {
+    padding: 0px 5px;
+    height: 25px;
+}
+
+.tk-info .input-group-addon {
+    padding: 5px;
+}
+
+.row .danhsach .list {
+    list-style-type: decimal;
+    margin: 5px 0;
+}
+
+    .row .danhsach .list li {
+        margin: 5px 0;
+        font-size: 1.2em;
+    }
+
+.breadcrumb ul > li:first-child span {
+    display: none;
+}
+
+.breadcrumb ul > li span {
+    padding-right: 5px;
+}
+
+.pd10 {
+    padding: 10px !important;
+}
+
+/* center modal */
+.vertical-alignment-helper {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width: inherit;
+    height: inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    box-shadow:none;
+}

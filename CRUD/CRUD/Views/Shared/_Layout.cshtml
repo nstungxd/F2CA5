@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Import dữ liệu nhân sự - VNPT BHXH</title>
+
+        <link href="~/Content/css/style.default.css" rel="stylesheet">
+        <link href="~/Content/css/morris.css" rel="stylesheet">
+        <link href="~/Content/css/select2.css" rel="stylesheet" />
+        <link href="~/Content/css/_defaults.css" rel="stylesheet" />
+
+        <link href="~/Content/css/uploadfile.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="~/Content/js/jquery.uploadfile.js"></script>
+    </head>
+
+</head>
+
+
+<body>
+
+    <header>
+        <div class="headerwrapper">
+            <div class="header-left">
+                <a href="~/Default/Index" class="logo">
+                    <img src="~/Content/images/logo.png" alt="" />
+                </a>
+                <div class="pull-right">
+                    <a href="#" class="menu-collapse">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div><!-- header-left -->
+
+            <div class="header-right">
+
+                <div class="pull-right">
+
+                    <form class="form form-search" action="#">
+                        <input type="search" class="form-control" placeholder="Search" />
+                    </form>
+
+
+                </div><!-- pull-right -->
+
+            </div><!-- header-right -->
+
+        </div><!-- headerwrapper -->
+    </header>
+
+    <section>
+        <div class="mainwrapper">
+            <div class="leftpanel">
+                <div class="media profile-left">
+                    <a class="pull-left profile-thumb" href="#">
+                        <img class="img" src="~/Content/images/vnpt_logo.png" alt="" width="60px" height="60px">
+                    </a>
+                    <div class="media-body">
+                        @*<h4 class="media-heading">@iCMS.Common.CurrentContext.ThongTinChung.TenDangNhap</h4>*@
+                        <small class="text-muted"><a href="@Url.Action("LogOut","Account")">Đăng xuất</a></small>
+                    </div>
+                </div><!-- media -->
+
+                <h5 class="leftpanel-title">Navigation</h5>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="~/Default/Index"><i class="fa fa-home"></i> <span>Import dữ liệu</span></a></li>
+                    <li><a href="~/Default/History"><i class="fa fa-cloud-upload"></i> <span>Dữ liệu đã import</span></a></li>
+                    <li><a href="~/Content/Resources/Export_nhan_su_sms.pdf" target="_blank"><i class="fa fa-question-circle"></i> <span>Hưỡng dẫn sử dụng</span></a></li>
+
+                </ul>
+
+            </div><!-- leftpanel -->
+
+            <div class="mainpanel">
+                @RenderBody()
+            </div><!-- mainpanel -->
+        </div><!-- mainwrapper -->
+        <div class="footer">
+            <a class="logo"><img src="~/Content/images/logo_bt.png" alt="logo"></a>
+            <p class="copyright mt5">
+                2016 © TỔNG CÔNG TY DỊCH VỤ VIỄN THÔNG
+            </p>
+        </div>
+    </section>
+
+
+
+    <script src="~/Content/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/modernizr.min.js"></script>
+    <script src="~/Content/js/pace.min.js"></script>
+    <script src="~/Content/js/retina.min.js"></script>
+    <script src="~/Content/js/jquery.cookies.js"></script>
+
+    <script src="~/Content/js/flot/jquery.flot.min.js"></script>
+    <script src="~/Content/js/flot/jquery.flot.resize.min.js"></script>
+    <script src="~/Content/js/flot/jquery.flot.spline.min.js"></script>
+    <script src="~/Content/js/jquery.sparkline.min.js"></script>
+    <script src="~/Content/js/morris.min.js"></script>
+    <script src="~/Content/js/raphael-2.1.0.min.js"></script>
+    <script src="~/Content/js/bootstrap-wizard.min.js"></script>
+    <script src="~/Content/js/select2.min.js"></script>
+
+    <script src="~/Content/js/custom.js"></script>
+ 
+    
+</body>
+
+</html>
