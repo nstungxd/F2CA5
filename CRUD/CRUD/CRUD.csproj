@@ -108,6 +108,19 @@
     <Content Include="Content\css\pager.css" />
     <Content Include="Content\css\site.css" />
     <Content Include="Content\css\style.default.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\fontawesome-webfont862f.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts\weathericons-regular-webfont.svg" />
+    <Content Include="Content\images\icon_e.jpg" />
+    <Content Include="Content\images\icon_h.png" />
+    <Content Include="Content\images\icon_w.jpg" />
+    <Content Include="Content\images\logo-primary.png" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\logo_bt.png" />
+    <Content Include="Content\images\photos\profile-big.jpg" />
+    <Content Include="Content\images\photos\profile.png" />
+    <Content Include="Content\images\thutuc\103.png" />
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\js\custom.js" />
     <Content Include="Content\js\html5shiv-printshiv.min.js" />
@@ -120,6 +133,18 @@
     <Content Include="Content\js\respond.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\Coviet.common.js" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot%40" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot%40" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\weathericons-regular-webfont.eot" />
+    <Content Include="Content\fonts\weathericons-regular-webfont.eot%40" />
+    <Content Include="Content\fonts\weathericons-regular-webfont.ttf" />
+    <Content Include="Content\fonts\weathericons-regular-webfont.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -152,7 +177,9 @@
     <Compile Include="Models\AccountModel.cs" />
     <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Models\ProductViewModel.cs" />
+    <Compile Include="Models\ResultModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

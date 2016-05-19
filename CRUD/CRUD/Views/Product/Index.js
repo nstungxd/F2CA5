@@ -9,7 +9,7 @@
 
     self.activeList = function (refresh) {
         if (refresh)
-            //self.List.fetchData();
+            self.List.fetchData();
         self.switchMode(LIST_MODE);
     }
 
