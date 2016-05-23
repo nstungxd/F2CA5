@@ -33,9 +33,6 @@
 .broadway_gp p {
   font-size: 20px;
 }
-.broadway_gp {
-  padding: 40px 40px 40px 30px;
-}
 }
 
 @media (min-width: 992px) {
@@ -57,7 +54,6 @@
   font-size: 22px;
 }
 .broadway_gp {
-  padding: 40px 40px 80px 30px;
 }
 }
 

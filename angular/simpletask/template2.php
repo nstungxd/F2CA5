@@ -250,9 +250,7 @@ else
 						background:linear-gradient(
                                   rgba(255, 255, 255, 0.7),
                                   rgba(255, 255, 255, 0.7)
-                                ),url('upload/<?php echo $r1['image_logo'] ?>') no-repeat scroll 0 0 ; auto;
-                        
-                        padding: 40px 40px 80px 30px; height: 700.405px;">
+                                ),url('upload/<?php echo $r1['image_logo'] ?>') no-repeat scroll 0 0 ; auto; height: 700.405px;">
 							<?php echo $r1['description'] ?>
 						</div>
                     <?php $i++; } ?>
