@@ -17,5 +17,5 @@ $pr = getPracticeById($_GET["id"]);
     }
 if($e_template == '1')
     include("template1.php");
-else include("template2.php");
+else include("template3.php");
 ?>
