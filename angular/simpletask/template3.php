@@ -135,12 +135,24 @@ else
         }
     });
 </script>
-<script type="text/javascript" src="admin/ckeditor/ckeditor.js"></script>
+<script src="//cdn.ckeditor.com/4.5.9/standard/ckeditor.js"></script>
     <script type="text/javascript">
         CKEDITOR_BASEPATH = 'ckeditor';
         var editor = CKEDITOR.replace('content', {
-            filebrowserBrowseUrl: "kcfinder/browse.php?type=files"
+            on: {
+                change: function( evt ) {
+                    Save(this.getData());
+
+                }
+            }
         });
+
+        function Save(data)
+        {
+            alert(data);
+        }
+
+        
     </script>
 
 </body>
