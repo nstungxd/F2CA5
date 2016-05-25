@@ -142,6 +142,7 @@ else
           <li role="presentation"><a href="logout.php">Logout</a></li>
         </ul>
         </div>
+        <?php if (isset($template) && ($template == '1' || $template == '2')) { ?>
         <div class="col-md-12">
             <div class="page-header">
                 <h1>Doctors Directory</h1>
@@ -184,7 +185,7 @@ else
                     <?php }?>
                 </tbody>
             </table>
-            <?php } else { ?>
+            <?php } else if($template == '2') { ?>
             <table class="table table-bordered">
                 <thead>
                 <tr>
@@ -221,6 +222,7 @@ else
             </table>
             <?php }?>
         </div>
+        <?php } ?>
         <div class="col-md-12">
             <div class="page-header">
                 <section id="Footer">
@@ -254,7 +256,7 @@ else
 
                 <tbody>
 <?php
-                            $lstSLide = getSlideByPractice($_SESSION['id']);
+$lstSLide = getSlideByPractice($_SESSION['id']);
 while ($r1 = mysql_fetch_array($lstSLide)) {
     ?>
 <tr>

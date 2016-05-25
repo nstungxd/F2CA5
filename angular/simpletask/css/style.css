@@ -316,6 +316,10 @@ body{font-family: 'Open Sans', sans-serif;}
 }
 .logo { }
 .logo img { }
+.fixheight {
+    display: inline-block;
+    height: 300px;
+    max-width: 100%;}
 .date_time { float:right;}
 .date_time::after {
     background: #000000 none repeat scroll 0 0;

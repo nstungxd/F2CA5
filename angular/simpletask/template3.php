@@ -67,21 +67,16 @@ else
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-<div class="header_area">
-    <div class="container">
+<div class="container" style="height: 300px">
         <div class="row">
             <div class="col-lg-12">
-                <div class="logo">
-                    <?php if ($e_logo != null && isset( $e_logo) && !empty( $e_logo) && file_exists("upload/".$e_logo)) { ?>
-                    <a href="#"><img class="img-thumbnail" src="upload/<?php echo $e_logo ?>" alt=""/></a>
+                <?php if ($e_logo != null && isset( $e_logo) && !empty( $e_logo) && file_exists("upload/".$e_logo)) { ?>
+                    <a href="#"><img class="fixheight" src="upload/<?php echo $e_logo ?>" alt="" height="300px"/></a>
                     <?php }?>
-                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="content_area">
-    <div class="container">
+<div class="container" style="height: 630px">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div id="slideshow" style="background-size: 100%;border: 4px solid #196eb5;width: 100%;">
@@ -94,7 +89,7 @@ else
 						background:linear-gradient(
                                   rgba(255, 255, 255, 0.7),
                                   rgba(255, 255, 255, 0.7)
-                                ),url('upload/<?php echo $r1['image_logo'] ?>') no-repeat scroll 0 0 ; auto; height: 700.405px;">
+                                ),url('upload/<?php echo $r1['image_logo'] ?>') no-repeat scroll 0 0 ; auto; height: 629.669px;">
 							<?php echo $r1['description'] ?>
 						</div>
                     <?php $i++; } ?>
@@ -102,18 +97,15 @@ else
             </div>
         </div>
     </div>
-</div>
-<div class="footer_area">
-    <div class="container">
+<div class="container" style="height: 150px">
         <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <textarea name="content" id="content">
-                        
+
                     </textarea>
                 </div>
         </div>
     </div>
-</div>
 <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 <script src="js/bootstrap.min.js"></script>
@@ -128,7 +120,7 @@ else
         if(cpage > 1)
         {
             $('#slideshow').slidesjs({
-                height: 800,
+                height: 314.5,
                 play: {
                     active: false,
                     auto: true,

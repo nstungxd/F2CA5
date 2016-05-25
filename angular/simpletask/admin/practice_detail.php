@@ -141,6 +141,7 @@ if (isset($_GET["id"])) {
                 <select id="template" name="template" class="form-control">
                                 <option value="1">Doctor Directory - Portrait</option>
                                 <option value="2">Doctor Direcrory - Landscape</option>
+                                <option value="3">Doctor Direcrory - Template 3</option>
                 </select>
             </div>
             <div class="form-group">
