@@ -201,6 +201,7 @@ function getSlideByPractice($id_practice)
 }
 function updateImageSlide($id_practice,$id,$image_logo,$des)
     {
+        $query_img='';
         if($image_logo != '') $query_img = ", image_logo='".$image_logo."'";
         $date1 = date('Y-m-d H:i:s');
         $rs = "update slide set modified = '".$date1."', description = '".$des."'".$query_img." where id='".$id."' ";

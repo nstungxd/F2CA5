@@ -112,6 +112,14 @@ if (isset($_POST['typeChange'])) {
     }
     echo json_encode($rs);
 }
+if (isset($_POST['footer'])) {
+    $query = "update user set footer='" . $_POST['data'] . "' where id='" . $_POST['id'] . "'";
+        $rs1 = mysql_query($query);
+        if (!$rs1) {
+            $rs = 1;
+        }
+    echo json_encode($_POST['data']);
+}
 
 
  

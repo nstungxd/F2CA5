@@ -97,11 +97,11 @@ else
             </div>
         </div>
     </div>
-<div class="container" style="height: 150px">
+<div class="container" style="height: 150px" id="editor">
         <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <textarea name="content" id="content">
-
+                            <?php echo $e_footer ?>
                     </textarea>
                 </div>
         </div>
@@ -135,21 +135,37 @@ else
         }
     });
 </script>
-<script src="//cdn.ckeditor.com/4.5.9/standard/ckeditor.js"></script>
+<script src="admin/ckeditor/ckeditor.js"></script>
     <script type="text/javascript">
-        CKEDITOR_BASEPATH = 'ckeditor';
-        var editor = CKEDITOR.replace('content', {
-            on: {
-                change: function( evt ) {
-                    Save(this.getData());
+        $(document).ready(function(){   
+            CKEDITOR_BASEPATH = 'ckeditor';
+            var editor = CKEDITOR.replace('content', {
+                on: {
+                    change: function( evt ) {
+                        Save(this.getData());
 
-                }
-            }
+                    }
+                },
+                height:'100px'
+
+            });
         });
-
         function Save(data)
         {
-            alert(data);
+            var id = $('#currentID').val();
+            $.ajax
+                    ({
+                        type: "POST",
+                        url: "dal_js.php",
+                        data: "footer=footer&id=" + id + "&data=" + data,
+                        dataType: "json",
+                        success: function (msg) {
+                            
+                        },
+                        error: function () {
+
+                        }
+                    });
         }
 
         
