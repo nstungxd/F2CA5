@@ -137,7 +137,9 @@ else
         <div class="col-md-12">
         <ul class="nav nav-pills">
           <li role="presentation" class="active"><a href="practice.php">Home</a></li>
+          <?php if (isset($template) && ($template == '1' || $template == '2')) { ?>
           <li role="presentation"><a href="doctor_detail.php">Add Doctor</a></li>
+          <?php }?>
           <li role="presentation"><a href="image_detail.php">Add Slide</a></li>
           <li role="presentation"><a href="logout.php">Logout</a></li>
         </ul>
@@ -232,7 +234,7 @@ else
             <form action="" method="post" enctype="multipart/form-data">
                 <div class="col-md-12">
                     <input type="text" placeholder="Enter Footer Text" name="txtfooter" id="txtfooter"
-                           class="form-control" value="<?php echo $footer; ?>">
+                           class="form-control" value="<?php echo $footer; ?>" <?php if (isset($template) && ($template != '1' && $template != '2')) { ?> style="visibility: hidden;" <?php }?> >
                 </div>
                 <div class="col-md-12">
                     <label>Logo</label>
