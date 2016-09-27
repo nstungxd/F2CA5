@@ -7,6 +7,11 @@
     self.List = new ListModel(self);
     self.Detail = new DetailModel(self);
 
+    self.UploadFileModel = new UploadFileModel('/nhansu/NapDulieu',
+                              function () {
+                                  self.List.refresh();
+                              });
+
     self.activeList = function (refresh) {
         if (refresh)
             self.List.fetchData();
@@ -37,4 +42,5 @@
 $(document).ready(function () {
     // active list view
     model.activeList(true);
+    model.UploadFileModel.init();
 });
