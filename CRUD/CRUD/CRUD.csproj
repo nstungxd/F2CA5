@@ -39,6 +39,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\packages\AutoMapper.4.1.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="FX.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\FX.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Fx.Data, Version=2.0.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\Fx.Data.dll</HintPath>
+    </Reference>
     <Reference Include="FX.Utils">
       <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\FX.Utils.dll</HintPath>
     </Reference>
@@ -49,6 +60,15 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\NPOI.OpenXml4Net.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -93,6 +113,9 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="vnConvert">
+      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\vnConvert.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
     </Reference>
@@ -152,6 +175,7 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.11.1.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -161,7 +185,7 @@
     <Content Include="Views\Product\Index.js" />
     <Content Include="Views\Product\product_detail.js" />
     <Content Include="Views\Product\product_list.js" />
-    <Content Include="Views\Product\upload_file.js" />
+    <Content Include="Views\Shared\Uploads\upload_file.js" />
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\_ViewStart.cshtml" />
@@ -180,11 +204,18 @@
     </Compile>
     <Compile Include="Models\AccountModel.cs" />
     <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\Excel\CellExcel.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\mNhanSu.cs" />
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Models\ProductViewModel.cs" />
     <Compile Include="Models\ResultModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ultils\DataTableUtils.cs" />
+    <Compile Include="Ultils\ExcelProcess.cs" />
+    <Compile Include="Ultils\LogFile.cs" />
+    <Compile Include="Ultils\MappingUtil.cs" />
+    <Compile Include="Ultils\StringUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -195,7 +226,7 @@
     <Content Include="Views\Shared\Messages.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
-    <Content Include="Views\Product\uploadFile.cshtml" />
+    <Content Include="Views\Shared\Uploads\uploadFile.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -206,6 +237,12 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CRUD.Core\CRUD.Core.csproj">
+      <Project>{f88f77bb-e019-4f5b-a038-db99f3b0454f}</Project>
+      <Name>CRUD.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -7,7 +7,7 @@
     self.List = new ListModel(self);
     self.Detail = new DetailModel(self);
 
-    self.UploadFileModel = new UploadFileModel('/nhansu/NapDulieu',
+    self.UploadFileModel = new UploadFileModel('/product/NapDulieu',
                               function () {
                                   self.List.refresh();
                               });

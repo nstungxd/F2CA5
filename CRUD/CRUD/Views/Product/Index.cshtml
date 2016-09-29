@@ -8,55 +8,21 @@
 <script src="~/Views/Product/product_list.js"></script>
 <script src="~/Views/Product/Index.js"></script>
 
-<div class="pageheader">
-    <div class="media">
-        <div class="pageicon pull-left">
-            <i class="fa fa-home"></i>
-        </div>
-        <div class="media-body">
-            <h4>History</h4>
-        </div>
-    </div><!-- media -->
-</div><!-- pageheader -->
-
-@*<div class="contentpanel">
+<div class="breadcrumb">
+    <ul>
+        <li>
+            <a href="/"><i class="glyphicon glyphicon-home"></i></a>
+        </li>
+    </ul>
+</div>
+<div class="contentpanel">
     <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-success-head widget-todo">
-                <div class="panel-heading">
-                    <h3 class="panel-title t1 ml30">Dữ liệu đã import</h3>
-                </div>
-                <div class="panel-body">
-                    <button class="btn btn-success btn-xs" onclick="model.activeDetail()">
-                        <i class="glyphicon glyphicon-plus"></i>
-                        <span>Thêm</span>
-                    </button>
-
-                    
-
-
-
-                </div>
-            </div><!-- panel -->
+        <div id="product-list">
+            @Html.Partial("/Views/Product/product_list.cshtml", Model)
         </div>
-
-        
-    </div><!-- row -->
-
-    <div class="row row-dashboard"><!-- col-md-6 --></div><!-- row -->
-
-    
-
-    
-</div>*@<!-- contentpanel -->  
-
-<div id="product-list" class="row">
-    @Html.Partial("/Views/Product/product_list.cshtml", Model)
+        <div id="product-detail" class="row" style="display:none;">
+            @Html.Partial("/Views/Product/product_detail.cshtml", Model)
+        </div>
+    </div>
 </div>
-
-
-<!-- detail -->
-<div id="product-detail" class="row" style="display:none;">
-    @Html.Partial("/Views/Product/product_detail.cshtml", Model)
-</div>
-
+@Html.Partial("/Views/Shared/Uploads/uploadFile.cshtml")
