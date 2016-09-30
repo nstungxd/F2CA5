@@ -9,7 +9,7 @@ using System.Security.Policy;
 using System.Text;
 
 
-namespace BHXH.Services.Implements
+namespace CRUD.Core.Implements
 {
     class nsQuaTrinhDongService : FX.Data.BaseService<nsQuaTrinhDong, string>, CRUD.Core.Interfaces.InsQuaTrinhDongService
     {

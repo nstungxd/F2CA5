@@ -8,24 +8,24 @@ using CRUD.Core.Domain;
 
 namespace CRUD.Core.Implements
 {
-    public class dmQuanHuyenService : FX.Data.BaseService<dmQuanHuyen, string>, CRUD.Core.Interfaces.IdmQuanHuyenService
+    public class dmBenhVienService : FX.Data.BaseService<dmBenhVien, string>, CRUD.Core.Interfaces.IdmBenhVienService
     {
-        public dmQuanHuyenService(string sessionFactoryConfigPath)
+        public dmBenhVienService(string sessionFactoryConfigPath)
             : base(sessionFactoryConfigPath)
         { }
 
 
-        public List<dmQuanHuyen> LayTheoTen(string ten)
+        public List<dmBenhVien> LayTheoTen(string ten)
         {
             return Query.Where(x => x.ten.Contains(ten) == true).ToList();
         }
 
-        public dmQuanHuyen LayTheoMa(string maTinhThanh, string maQuanHuyen)
+        public dmBenhVien LayTheoMa(string maTinhThanh, string maBenhVien)
         {
-            return Query.Where(x => x.ma_tinh_thanh == maTinhThanh && x.ma == maQuanHuyen).FirstOrDefault();
+            return Query.Where(x => x.ma_tinh_thanh == maTinhThanh && x.ma == maBenhVien).FirstOrDefault();
         }
 
-        public List<dmQuanHuyen> LayTheoMaTinhThanh(string maTinhThanh)
+        public List<dmBenhVien> LayTheoMaTinhThanh(string maTinhThanh)
         {
             return Query.Where(x => x.ma_tinh_thanh == maTinhThanh).ToList();
         }

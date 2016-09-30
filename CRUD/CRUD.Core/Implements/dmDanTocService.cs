@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using NHibernate.Linq;
 using CRUD.Core.Domain;
 
-namespace BHXH.Services.Implements
+namespace CRUD.Core.Implements
 {
     public class dmDanTocService : FX.Data.BaseService<dmDanToc, string>, CRUD.Core.Interfaces.IdmDanTocService
     {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using NHibernate.Linq;
 using CRUD.Core.Domain;
 
-namespace BHXH.Services.Implements
+namespace CRUD.Core.Implements
 {
     public class dmQuocTichService : FX.Data.BaseService<dmQuocTich, string>, CRUD.Core.Interfaces.IdmQuocTichService
     {

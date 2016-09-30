@@ -12,7 +12,7 @@ using NHibernate;
 using NHibernate.Criterion;
 using CRUD.Utils;
 
-namespace BHXH.Services.Implements
+namespace CRUD.Core.Implements
 {
     public class nsNhanSuService : FX.Data.BaseService<nsNhanSu, string>, CRUD.Core.Interfaces.InsNhanSuService
     {

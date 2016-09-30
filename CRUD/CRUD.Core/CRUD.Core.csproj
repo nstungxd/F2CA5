@@ -30,10 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\FluentNHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="FX.Core">
       <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\FX.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Fx.Data">
+    <Reference Include="Fx.Data, Version=2.0.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\Fx.Data.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate">
@@ -67,6 +71,8 @@
     <Compile Include="Domain\nsNhanSu.cs" />
     <Compile Include="Domain\nsQuaTrinhDong.cs" />
     <Compile Include="Enums.cs" />
+    <Compile Include="Implements\dmBenhVienService.cs" />
+    <Compile Include="Implements\dmCQBHXHService.cs" />
     <Compile Include="Implements\dmDanTocService.cs" />
     <Compile Include="Implements\dmPhuongXaService.cs" />
     <Compile Include="Implements\dmQuanHuyenService.cs" />
@@ -75,6 +81,7 @@
     <Compile Include="Implements\nsNhanSuService.cs" />
     <Compile Include="Implements\nsQuaTrinhDongService.cs" />
     <Compile Include="Interfaces\IdmBenhVienService.cs" />
+    <Compile Include="Interfaces\IdmCQBHXHService.cs" />
     <Compile Include="Interfaces\IdmDanTocService.cs" />
     <Compile Include="Interfaces\IdmPhuongXaService.cs" />
     <Compile Include="Interfaces\IdmQuanHuyenService.cs" />
@@ -82,11 +89,18 @@
     <Compile Include="Interfaces\IdmTinhThanhService.cs" />
     <Compile Include="Interfaces\InsNhanSuService.cs" />
     <Compile Include="Interfaces\InsQuaTrinhDongService.cs" />
+    <Compile Include="Mapping\dmBenhVienMap.cs" />
+    <Compile Include="Mapping\dmCQBHXHMap.cs" />
+    <Compile Include="Mapping\dmDanTocMap.cs" />
+    <Compile Include="Mapping\dmPhuongXaMap.cs" />
+    <Compile Include="Mapping\dmQuanHuyenMap.cs" />
+    <Compile Include="Mapping\dmQuocTichMap.cs" />
+    <Compile Include="Mapping\dmTinhThanhMap.cs" />
+    <Compile Include="Mapping\nsNhanSuMap.cs" />
+    <Compile Include="Mapping\nsQuaTrinhDongMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Mapping\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\CRUD.Utils\CRUD.Utils.csproj">
       <Project>{f12631ce-111e-4bbf-befe-ace09047a1e9}</Project>
