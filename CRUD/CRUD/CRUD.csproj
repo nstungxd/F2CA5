@@ -42,6 +42,18 @@
     <Reference Include="AutoMapper">
       <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\packages\AutoMapper.4.1.1\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
+    <Reference Include="Castle.Core, Version=2.5.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=2.5.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\FluentNHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="FX.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\FX.Core.dll</HintPath>
@@ -60,6 +72,16 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.SysCache">
+      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\NHibernate.Caches.SysCache.dll</HintPath>
     </Reference>
     <Reference Include="NPOI">
       <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\NPOI.dll</HintPath>
@@ -152,6 +174,9 @@
     <Content Include="Content\js\jquery.ui.touch-punch.min.js" />
     <Content Include="Content\js\respond.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="Resources\img\loading.gif" />
+    <Content Include="Resources\img\wait16.gif" />
+    <Content Include="Scripts\bootstrap-paginator.min.js" />
     <Content Include="Scripts\Coviet.common.js" />
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\fonts\fontawesome-webfont.eot%40" />
@@ -165,6 +190,15 @@
     <Content Include="Content\fonts\weathericons-regular-webfont.eot%40" />
     <Content Include="Content\fonts\weathericons-regular-webfont.ttf" />
     <Content Include="Content\fonts\weathericons-regular-webfont.woff" />
+    <Content Include="Config\bhxh.config" />
+    <Content Include="Config\bhxh_const.config" />
+    <Content Include="Config\services.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\HoSoNhanSu.xlsx" />
+    <Content Include="Resources\NhanSuConfig\sms6mapproperty.json" />
+    <Content Include="Resources\NhanSuConfig\smsBDmapproperty.json" />
+    <Content Include="Resources\NhanSuConfig\smsmapproperty.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\file-upload\jquery.fileupload-process.js" />
     <Content Include="Scripts\file-upload\jquery.fileupload-ui.css" />
@@ -196,6 +230,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Bootstrapper.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
@@ -207,6 +242,7 @@
     <Compile Include="Models\Excel\CellExcel.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\mNhanSu.cs" />
+    <Compile Include="Models\NhanSuListViewModel.cs" />
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Models\ProductViewModel.cs" />
     <Compile Include="Models\ResultModel.cs" />
@@ -236,7 +272,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CRUD.Core\CRUD.Core.csproj">

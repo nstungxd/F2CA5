@@ -29,6 +29,30 @@
                         <th style="width: 50px; text-align: center;"></th>
                     </tr>
                 </thead>
+                <script id="nhansu-list-empty-template" type="text/x-handlebars-template">
+                    <tr role="row" class="even">
+                        <td colspan="6">Chưa có bản ghi nào</td>
+                    </tr>
+                </script>
+                <script id="nhansu-list-template" type="text/x-handlebars-template">
+                    {{#each this.items}}
+                    <tr role="row" class="{{row_class @@index}}">
+                        <td align="center">
+                            <input class="cbo-item" name="cbid" type="checkbox" style="cursor: pointer" value="{{ID}}" onclick="model.List.toggleCheck(this)" />
+                        </td>
+                        <td style="text-align:center;">{{stt_pager @@index ../page ../size}}</td>
+                        <td>{{ho_ten}}</td>
+                        <td>{{so_so_bhxh}}</td>
+                        <td>{{so_the_bhyt}}</td>
+                        <td style="text-align: center;">
+                            <button class="btn btn-xs btn-default" type="button" onclick="model.activeDetail('{{ID}}')">
+                                <i class="glyphicon glyphicon-pencil"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </script>
+                <tbody id="nhansu-list"></tbody>
             </table>
         </div>
     </div>

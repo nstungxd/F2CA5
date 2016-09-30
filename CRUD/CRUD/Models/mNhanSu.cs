@@ -1,4 +1,5 @@
-﻿using CRUD.Core;
+﻿using AutoMapper;
+using CRUD.Core;
 using CRUD.Core.CacheLayer;
 using CRUD.Core.Domain;
 using CRUD.Core.Interfaces;
@@ -12,9 +13,21 @@ using System.Web;
 
 namespace CRUD.Models
 {
-    public class mNhanSu
+    public class NhanSuModel : nsNhanSu
     {
-        public static bool NapDuLieu(string path, string phongBanId,
+        public static void CreateMapping()
+        {
+            Mapper.Reset();
+            Mapper.CreateMap<NhanSuModel, nsNhanSu>()
+                .ForMember(x => x.amnd_date, opt => opt.Ignore())
+                .ForMember(x => x.amnd_officer, opt => opt.Ignore())
+                .ForMember(x => x.amnd_state, opt => opt.Ignore())
+                .ForMember(x => x.amnd_type, opt => opt.Ignore())
+                .ForMember(x => x.to_chuc_id, opt => opt.Ignore());
+            Mapper.CreateMap<nsNhanSu, NhanSuModel>();
+
+        }
+        public static bool NapDuLieu(string path,
             string resultStatus, 
             out string message)
         {
@@ -22,7 +35,7 @@ namespace CRUD.Models
             try
             {
                 // var result = DocExcel(path, phongBanId, importType, resultStatus, out message);
-                var result = Import(path, phongBanId, resultStatus, out message);
+                var result = Import(path, resultStatus, out message);
                 if (result)
                 {
                     message = "Thêm mới dữ liệu thành công!";
@@ -37,7 +50,7 @@ namespace CRUD.Models
             }
         }
 
-        private static bool Import(string path, string phongbanId, 
+        private static bool Import(string path, 
             string resultStatus, 
             out string message)
         {
@@ -95,7 +108,7 @@ namespace CRUD.Models
                     //    service.InActiveTheoPhongBan(phongbanId, CurrentContext.ThongTinChung.IdDonVi, CurrentContext.ThongTinChung.TenDangNhap);
 
                     // convert data
-                    var dsConverted = ConvertFromDataTable(ImportMapping, table, phongbanId);
+                    var dsConverted = ConvertFromDataTable(ImportMapping, table);
                     foreach (var ns in dsConverted.Keys)
                     {
                         // save
@@ -169,7 +182,7 @@ namespace CRUD.Models
             return "";
         }
 
-        private static Dictionary<nsNhanSu, nsQuaTrinhDong> ConvertFromDataTable(Dictionary<string, MappingItem> colMap, DataTable table, string phongBanId)
+        private static Dictionary<nsNhanSu, nsQuaTrinhDong> ConvertFromDataTable(Dictionary<string, MappingItem> colMap, DataTable table)
         {
             Dictionary<nsNhanSu, nsQuaTrinhDong> dic = new Dictionary<nsNhanSu, nsQuaTrinhDong>();
             int index = 0;
@@ -188,7 +201,7 @@ namespace CRUD.Models
                         item.amnd_type = CRUD.Core.amnd_type.Insert;
                         item.to_chuc_id = string.Empty;
                         item.ID = Guid.NewGuid().ToString();
-                        item.phong_ban_id = phongBanId;
+                        item.phong_ban_id = string.Empty;
                     });
 
                     // bo qua dong ko có họ tên

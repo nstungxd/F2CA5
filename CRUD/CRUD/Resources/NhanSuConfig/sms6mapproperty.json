@@ -1,0 +1,140 @@
+﻿[
+	{
+		"source":"sobhxh",
+		"destination":"so_so_bhxh",
+		"dataType":"string",
+		"title":"Số sổ BHXH"				
+	},
+	{
+		"source":"hoten",
+		"destination":"ho_ten",
+		"dataType":"string",
+		"title":"Họ Tên"			
+	},	
+	{
+		"source":"ngaysinh",
+		"destination":"ngay_sinh",
+		"dataType":"string",
+		"title":"Ngày sinh"			
+	},
+    {
+        "source": "gioitinh",
+        "destination": "gioi_tinh_",
+        "dataType": "string",
+        "title": "Giới tính"
+    },
+    {
+		"source":"noikhai",
+		"destination":"que_quan_ten_phuong_xa",
+		"dataType":"string",
+		"title":"Nơi sinh/ Quê quán"			
+	},
+	{
+		"source":"sokcb",
+		"destination":"so_the_bhyt",
+		"dataType":"string",
+		"title":"Số thẻ BHYT"			
+	},
+	{
+		"source":"socmnd",
+		"destination":"cmnd_so",
+		"dataType":"string",
+		"title":"Số CMND"			
+	},
+	{
+		"source":"ngaycmnd",
+		"destination":"cmnd_ngay_cap",
+		"dataType":"string",
+		"title":"Ngày cấp"			
+	},
+	{
+		"source":"noicap",
+		"destination":"cmnd_ma_noi_cap",
+		"dataType":"string",
+		"title":"Nơi cấp"			
+	},
+	{
+		"source":"diachi",
+		"destination":"dia_chi_chi_tiet",
+		"dataType":"string",
+		"title":"Địa chỉ"			
+	},
+	{
+		"source":"diachihk",
+		"destination":"ho_khau_chi_tiet",
+		"dataType":"string",
+		"title":"Địa chỉ hộ khẩu"			
+	},
+	{
+		"source":"dantoc",
+		"destination":"dan_toc",
+		"dataType":"string",
+		"title":"Dân tộc"			
+	},
+	{
+		"source":"quoctich",
+		"destination":"quoc_tich",
+		"dataType":"string",
+		"title":"Quốc tịch"			
+	},
+	{
+		"source":"ma_tinh",
+		"destination":"kcb_ma_tinh_thanh",
+		"dataType":"string",
+		"title":"Mã tỉnh"			
+	},
+	{
+		"source":"ma_bv",
+		"destination":"kcb_ma_benh_vien",
+		"dataType":"string",
+		"title":"Nơi khám/chữa bệnh"			
+	},
+	{
+		"source":"ml",
+		"destination":"muc_luong",
+		"dataType":"string",
+		"title":"Mức lương"			
+	},
+	{
+		"source":"hsl",
+		"destination":"he_so_luong",
+		"dataType":"string",
+		"title":"Hệ số lương"			
+	},
+	{
+		"source":"pc1",
+		"destination":"phu_cap_chuc_vu",
+		"dataType":"string",
+		"title":"Phụ cấp chức vụ"			
+	},
+	{
+		"source":"pc2",
+		"destination":"phu_cap_vuot_khung",
+		"dataType":"string",
+		"title":"Phụ cấp Thu nhập vượt khung"			
+	},
+	{
+		"source":"pc3",
+		"destination":"phu_cap_thu_nhap_nghe",
+		"dataType":"string",
+		"title":"Phụ cấp thu nhập nghề"			
+	},
+	{
+		"source":"pc4",
+		"destination":"phu_cap_khac",
+		"dataType":"string",
+		"title":"Phụ cấp lương"			
+	},
+	{
+		"source":"pc5",
+		"destination":"cac_khoan_bo_sung",
+		"dataType":"string",
+		"title":"Các khoản bổ sung"			
+	},
+	{
+		"source":"macv",
+		"destination":"chuc_vu",
+		"dataType":"string",
+		"title":"Chức vụ"			
+	}
+]

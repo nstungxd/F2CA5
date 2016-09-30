@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using CRUD.Utils;
 
 namespace CRUD.Controllers
 {
@@ -18,16 +19,19 @@ namespace CRUD.Controllers
         }
         public ActionResult GetList(int pageIndex = 1, int pageSize = 0)
         {
+            string tt = string.Empty;
+            string keyword = string.Empty;
             ResultModel model = new ResultModel();
-            string message = "";
             try
             {
-                model.data = new ProductModel().GetList(pageIndex, pageSize, out message);
+                var datas = NhanSuListViewModel.LayDuLieuTheoTrangThai(tt, keyword, pageIndex, pageSize);
+                model.data = datas;
+                model.success = 1;
             }
             catch (Exception ex)
             {
                 model.success = 0;
-                model.message = ex.Message;
+                model.message = ex.ShowException();
             }
             return Json(model);
         }
@@ -65,8 +69,7 @@ namespace CRUD.Controllers
 
                             files.SaveAs(path);
                             #endregion
-                            message = "okie";
-                            var success = true;// mNhanSu.NapDuLieu(path, phongbanId, resultStatus, out message);
+                            var success = NhanSuModel.NapDuLieu(path, resultStatus, out message);
                             if (success == true)
                                 model.success = 1;
                             else

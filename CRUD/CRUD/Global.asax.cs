@@ -13,6 +13,9 @@ namespace CRUD
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            Bootstrapper.InitializeContainer();
+            Bootstrapper.InitializeNhibernate();
         }
     }
 }

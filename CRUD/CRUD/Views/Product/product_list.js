@@ -30,14 +30,14 @@
             },
             success: function (result) {
                 messageUtil.HideAlert();
-                //if (result.success != 0) {
-                //    self.setPaging(result.data.pageIndex, result.data.pageSize, result.data.total);
-                //    self.parent.Info.setData(result.data.Info);
-                //    self.setData(result.data.Items);
-                //}
-                //else {
-                //    messageUtil.ShowAlert(-1, "Lỗi truy vấn");
-                //}
+                if (result.success != 0) {
+                    self.setPaging(result.data.pageIndex, result.data.pageSize, result.data.total);
+                    //self.parent.Info.setData(result.data.Info);
+                    self.setData(result.data.Items);
+                }
+                else {
+                    messageUtil.ShowAlert(-1, "Lỗi truy vấn");
+                }
             },
             error: function (x, y, z) {
                 if (y != "abort")
@@ -63,5 +63,28 @@
             self.paging_options.totalPages = 1;
             $("#paging").bootstrapPaginator(self.paging_options);
         }
+    }
+    // lam moi danh sach
+    self.refresh = function () {
+        self.fetchData(self.paging_options.currentPage, self.pageSize);
+    }
+
+    self.render = function () {
+        var source = null;
+        if (self.items == null || self.items.length == 0) {
+            source = $("#nhansu-list-empty-template").html();
+        }
+        else {
+            source = $("#nhansu-list-template").html();
+        }
+
+        var template = Handlebars.compile(source);
+        $('#nhansu-list').html('').append(template({ items: self.items, page: self.paging_options.currentPage, size: self.pageSize }));
+    }
+
+    self.setData = function (items) {
+
+        self.items = items;
+        self.render();
     }
 }
