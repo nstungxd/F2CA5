@@ -10,7 +10,7 @@ namespace CRUD.Utils.Utils
 {
 
     /// <summary>
-    /// linhpn: util to convert utf-8
+    /// util to convert utf-8
     /// </summary>
     public class UnicodeConverter
     {
