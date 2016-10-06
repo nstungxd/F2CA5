@@ -28,7 +28,7 @@ namespace CRUD.Models
 
         }
         public static bool NapDuLieu(string path,
-            string resultStatus, 
+            string resultStatus,
             out string message)
         {
             message = "";
@@ -50,8 +50,8 @@ namespace CRUD.Models
             }
         }
 
-        private static bool Import(string path, 
-            string resultStatus, 
+        private static bool Import(string path,
+            string resultStatus,
             out string message)
         {
             message = "";
@@ -100,23 +100,33 @@ namespace CRUD.Models
 
                 var service = IoC.Resolve<InsNhanSuService>();
                 var serviceQuaTrinhDong = IoC.Resolve<InsQuaTrinhDongService>();
+
+                 nsNhanSu ns1 = new nsNhanSu();
+                ns1.ho_ten = "tugnns";
+                nsQuaTrinhDong newchild = new nsQuaTrinhDong() { nhan_su = ns1 };
+                ns1.qua_trinh_dong = new List<nsQuaTrinhDong>()
+                {
+                    newchild
+                };
+
                 var tran = service.BeginTran();
                 try
                 {
+                    //service.CreateNew(ns1);
+                    
                     //if (importType == data_import_type.REPLACE && resultStatus == "0")
                     //    // xoa du lieu trong dot dich, nếu chưa có lần nào xóa thành công trong cùng 1 lúc Nạp dữ liệu                        
                     //    service.InActiveTheoPhongBan(phongbanId, CurrentContext.ThongTinChung.IdDonVi, CurrentContext.ThongTinChung.TenDangNhap);
 
                     // convert data
                     var dsConverted = ConvertFromDataTable(ImportMapping, table);
-                    foreach (var ns in dsConverted.Keys)
+                    foreach (var ns in dsConverted)
                     {
                         // save
+                        //var quaTrinhDong = dsConverted[ns];
+                        //if (ns.qua_trinh_dong.muc_luong != null || ns.qua_trinh_dong.he_so_luong != null)
+                        //serviceQuaTrinhDong.CreateNew(quaTrinhDong);
                         service.CreateNew(ns);
-
-                        var quaTrinhDong = dsConverted[ns];
-                        if (quaTrinhDong.muc_luong != null || quaTrinhDong.he_so_luong != null)
-                            serviceQuaTrinhDong.CreateNew(quaTrinhDong);
                     }
 
                     service.CommitTran(tran);
@@ -182,9 +192,9 @@ namespace CRUD.Models
             return "";
         }
 
-        private static Dictionary<nsNhanSu, nsQuaTrinhDong> ConvertFromDataTable(Dictionary<string, MappingItem> colMap, DataTable table)
+        private static List<nsNhanSu> ConvertFromDataTable(Dictionary<string, MappingItem> colMap, DataTable table)
         {
-            Dictionary<nsNhanSu, nsQuaTrinhDong> dic = new Dictionary<nsNhanSu, nsQuaTrinhDong>();
+            List<nsNhanSu> dic = new List<nsNhanSu>();
             int index = 0;
 
             try
@@ -200,7 +210,7 @@ namespace CRUD.Models
                         item.amnd_state = amnd_state_type.A;
                         item.amnd_type = CRUD.Core.amnd_type.Insert;
                         item.to_chuc_id = string.Empty;
-                        item.ID = Guid.NewGuid().ToString();
+                        //item.ID = Guid.NewGuid().ToString();
                         item.phong_ban_id = string.Empty;
                     });
 
@@ -214,19 +224,24 @@ namespace CRUD.Models
                     XuLyDuLieu(ref nhanSu);
 
                     // convert to qua trinh dong
-                    var qtDong = row.CreateItemFromRow<nsQuaTrinhDong>(mappings, (item) =>
+                    IList<nsQuaTrinhDong> rs = new List<nsQuaTrinhDong>()
                     {
-                        item.amnd_date = DateTime.Now;
-                        item.amnd_officer = string.Empty;
-                        item.amnd_state = amnd_state_type.A;
-                        item.amnd_type = CRUD.Core.amnd_type.Insert;
-                        item.to_chuc_id = string.Empty;
-                        item.ID = Guid.NewGuid().ToString();
-                        item.nhan_su_id = nhanSu.ID;
-                        item.ngay_bat_dau = DateTime.Now;
-                    });
+                        row.CreateItemFromRow<nsQuaTrinhDong>(mappings, (item) =>
+                        {
+                            item.amnd_date = DateTime.Now;
+                            item.amnd_officer = string.Empty;
+                            item.amnd_state = amnd_state_type.A;
+                            item.amnd_type = CRUD.Core.amnd_type.Insert;
+                            item.to_chuc_id = string.Empty;
+                            //item.ID = Guid.NewGuid().ToString();
+                            //item.nhan_su_id = nhanSu.ID;
+                            item.ngay_bat_dau = DateTime.Now;
+                            item.nhan_su = nhanSu;
+                        })
+                    };
 
-                    dic.Add(nhanSu, qtDong);
+                    nhanSu.qua_trinh_dong = rs;
+                    dic.Add(nhanSu);
 
                     index++;
                 }

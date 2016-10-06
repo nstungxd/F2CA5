@@ -6,10 +6,13 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using CRUD.Utils;
+using Newtonsoft.Json;
 
 namespace CRUD.Controllers
 {
-    public class ProductController : Controller
+    //[Validate]
+    //[Authorize]
+    public class ProductController : BaseController
     {
         //
         // GET: /Product/
@@ -33,7 +36,15 @@ namespace CRUD.Controllers
                 model.success = 0;
                 model.message = ex.ShowException();
             }
-            return Json(model);
+
+            var list = JsonConvert.SerializeObject(model,
+                Formatting.None,
+                new JsonSerializerSettings()
+                {
+                    ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+                });
+            return Content(list, "application/json");
+            //return Json(model, JsonRequestBehavior.AllowGet);
         }
 
         #region Xu ly ImportExcel Nhan su
@@ -99,5 +110,5 @@ namespace CRUD.Controllers
         }
 
         #endregion
-	}
+    }
 }

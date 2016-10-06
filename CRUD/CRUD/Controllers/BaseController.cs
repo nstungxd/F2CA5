@@ -8,7 +8,6 @@ using System.Web.Mvc;
 
 namespace CRUD.Controllers
 {
-    [Authorize]
     [MessagesFilter]
     public class BaseController : Controller
     {
