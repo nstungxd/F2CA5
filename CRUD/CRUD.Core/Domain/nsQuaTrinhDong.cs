@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -20,6 +21,7 @@ namespace CRUD.Core.Domain
         public virtual double? cac_khoan_bo_sung { get; set; }
 
         public virtual double? phu_cap_luong { get; set; }
+        public virtual nsNhanSu nhan_su { get; set; }
 
         //public virtual string add_info_2 { get; set; }
         //public virtual string add_info_3 { get; set; }

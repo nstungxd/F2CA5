@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -79,6 +80,8 @@ namespace CRUD.Core.Domain
         public virtual string muc_luong_dong_bhyt { get; set; }
         public virtual string muc_luong_phu_cap { get; set; }
         public virtual string muc_luong_bo_sung { get; set; }
+
+        public virtual IList<nsQuaTrinhDong> qua_trinh_dong { get; set; }
         //public virtual string add_info_4 { get; set; }
         //public virtual string add_info_5 { get; set; }
         //public virtual string add_info_6 { get; set; }

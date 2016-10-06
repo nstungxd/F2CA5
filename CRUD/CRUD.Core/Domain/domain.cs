@@ -9,7 +9,7 @@ namespace CRUD.Core.Domain
     [Serializable]
     public abstract class domain
     {
-        public virtual string ID { get; set; }
+        public virtual int ID { get; set; }
         public virtual DateTime amnd_date { get; set; } //insert ngay thang nam tuong tu nhu modify_date
         public virtual string amnd_state { get; set; } // Active or InActive
         public virtual string amnd_officer { get; set; } //TenTK

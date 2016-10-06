@@ -45,7 +45,7 @@ namespace CRUD.Core.Implements
 
         public nsQuaTrinhDong LayQuaTrinhDong(string id, string nhan_su_id, string toChucId)
         {
-            return this.Query.Where(x => x.ID == id && x.nhan_su_id == nhan_su_id && x.amnd_state == amnd_state_type.A && x.to_chuc_id == toChucId).FirstOrDefault();
+            return this.Query.Where(x => x.ID == Convert.ToInt32(id) && x.nhan_su_id == nhan_su_id && x.amnd_state == amnd_state_type.A && x.to_chuc_id == toChucId).FirstOrDefault();
         }
 
         public void Delete_ByNhanSuId(string nhanSuId)

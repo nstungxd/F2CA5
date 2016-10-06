@@ -31,17 +31,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FluentNHibernate">
-      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\FluentNHibernate.dll</HintPath>
+      <HintPath>packages\FluentNHibernate.2.0.3.0\lib\net40\FluentNHibernate.dll</HintPath>
     </Reference>
     <Reference Include="FX.Core">
-      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\FX.Core.dll</HintPath>
+      <HintPath>..\..\..\..\prc\BHXH.Web\Libs\FX.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Fx.Data, Version=2.0.0.9, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\Fx.Data.dll</HintPath>
+    <Reference Include="Fx.Data">
+      <HintPath>..\..\..\..\prc\BHXH.Web\Libs\Fx.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>packages\Iesi.Collections.4.0.1.4000\lib\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\CRUD\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate">
-      <HintPath>..\..\..\..\..\VDC\CA\BHXH\prc\BHXH.Web\Libs\NHibernate.dll</HintPath>
+      <HintPath>packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -100,7 +105,9 @@
     <Compile Include="Mapping\nsQuaTrinhDongMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CRUD.Utils\CRUD.Utils.csproj">
       <Project>{f12631ce-111e-4bbf-befe-ace09047a1e9}</Project>

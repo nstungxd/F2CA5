@@ -11,7 +11,7 @@ namespace CRUD.Core.Mapping
         public nsNhanSuMap()
         {
             Table(typeof(nsNhanSu).Name);
-            Id(x => x.ID);
+            Id(x => x.ID).GeneratedBy.Identity();
             Map(x => x.amnd_date);
             Map(x => x.amnd_state);
             Map(x => x.amnd_officer);
@@ -86,6 +86,11 @@ namespace CRUD.Core.Mapping
             Map(x => x.ma_vung);
             Map(x => x.the_bhyt_so_thang);
             Map(x => x.chi_co_nam_sinh);
+
+            HasMany(x => x.qua_trinh_dong)
+                .Inverse()
+                .Cascade.All()
+                .KeyColumn("nhan_su_id");
         }
     }
 }
