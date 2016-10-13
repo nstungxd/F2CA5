@@ -7,10 +7,11 @@ using System.Web;
 using System.Web.Mvc;
 using CRUD.Utils;
 using Newtonsoft.Json;
+using CRUD.Common;
 
 namespace CRUD.Controllers
 {
-    //[Validate]
+    [Validate]
     //[Authorize]
     public class ProductController : BaseController
     {
@@ -18,6 +19,7 @@ namespace CRUD.Controllers
         // GET: /Product/
         public ActionResult Index()
         {
+            string a = CurrentContext.ThongTinChung.TenDangNhap;
             return View();
         }
         public ActionResult GetList(int pageIndex = 1, int pageSize = 0)

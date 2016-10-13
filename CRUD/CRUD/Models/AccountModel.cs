@@ -1,4 +1,7 @@
-﻿using System;
+﻿using IdentityManagement.Authorization;
+using IdentityManagement.Domain;
+using IdentityManagement.WebProviders;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -30,6 +33,23 @@ namespace CRUD.Models
             }
             message = "Sai tên đăng nhập hoặc mật khẩu";
             return true;
+        }
+    }
+    public class CustomAuthentication : FanxiAuthentication
+    {
+        public CustomAuthentication(IRBACMembershipProvider mMembershipProvider) : base(mMembershipProvider) { }
+        public CustomAuthentication(string mApplicationName, string mSessionFactoryConfigPath) : base(mApplicationName, mSessionFactoryConfigPath) { }
+
+        /// <summary>
+        /// custom authenticate menthod (dung de luu thong tin xac thuc)
+        /// </summary>
+        /// <param name="mUserName">username</param>
+        /// <param name="mPassword">thong tin</param>
+        /// <returns></returns>
+        public override UserIdentity Authenticate(string mUserName, string mPassword)
+        {
+            HttpRuntime.Cache.Insert(mUserName + "_data", mPassword);
+            return new UserIdentity(mUserName, new List<FanxiPermission>(), new string[0]);
         }
     }
 }
